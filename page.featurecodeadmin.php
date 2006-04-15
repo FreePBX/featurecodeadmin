@@ -94,7 +94,7 @@ $featurecodes = featurecodes_getAllFeaturesDetailed();
 	</tr>
 	</table>
 
-		<script language="javascript">
+	<script language="javascript">
 	<!--
 	
 	var theForm = document.frmAdmin;
@@ -123,24 +123,41 @@ $featurecodes = featurecodes_getAllFeaturesDetailed();
 		theForm.elements['custom#' + featureid].readOnly = chk.checked;
 	}
 	
-	// onsubmit, check that every non default has a custom code
+	// form validation
 	function frmAdmin_onsubmit() {
-		var msgError = "<?php echo _("Please enter a Feature Code or check Use Default for all Enabled Feature Codes"); ?>";
-
+		var msgErrorMissingFC = "<?php echo _("Please enter a Feature Code or check Use Default for all Enabled Feature Codes"); ?>";
+		var msgErrorDuplicateFC = "<?php echo _("Feature Codes have been duplicated"); ?>";
+		
 		for (var i=0; i<theForm.elements.length; i++) {
 			var theFld = theForm.elements[i];
 			if (theFld.name.substring(0,7) == "custom#") {
 				var featureid = theFld.name.substring(7);
+				// check that every non default has a custom code
 				if (!theForm.elements['usedefault_' + featureid].checked && theForm.elements['ena#' + featureid].value == 1) {
 					defaultEmptyOK = false;
 					if (!isDialDigits(theFld.value))
-						return warnInvalid(theFld, msgError);
+						return warnInvalid(theFld, msgErrorMissingFC);
+						
+					if (isDuplicated(theFld.name, theFld.value))
+						return warnInvalid(theFld, msgErrorDuplicateFC);
 				}
 			}
 		}
 		
+		
 		return true;
 	}
+
+	function isDuplicated(firstfldname, firstfc) {
+		for (var i=0; i<theForm.elements.length; i++) {
+			var theFld = theForm.elements[i];
+			if (theFld.name.substring(0,7) == "custom#" && theFld.name != firstfldname) {
+				if (theFld.value == firstfc)
+					return true;
+			}
+		}
+	}
+	
 	//-->
 	</script>
 	
