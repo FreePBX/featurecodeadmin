@@ -42,7 +42,7 @@ $featurecodes = featurecodes_getAllFeaturesDetailed();
 	<?php 
 	$currentmodule = "(none)";
 	foreach($featurecodes as $item) {
-		$moduledesc = _($item['moduledescription']);
+		$moduledesc = isset($item['moduledescription'])?_($item['moduledescription']):null;
 		$moduleena = ($item['moduleenabled'] == 1 ? true : false);
 
 		$featuredesc = _($item['featuredescription']);
