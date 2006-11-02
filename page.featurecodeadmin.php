@@ -56,12 +56,12 @@ $featurecodes = featurecodes_getAllFeaturesDetailed();
 			?>
 			<tr>
 				<td colspan="4">
-					<font color="Black" size="4">
+					<h4>
 					<?php echo $currentmodule; ?>
 					<?php if ($moduleena == false) {?>
 					<i>(<?php echo _("Disabled"); ?>)</i>
 					<?php } ?>
-					</font>
+					</h4>
 				</td>
 			</tr>
 			<?php
