@@ -127,6 +127,7 @@ $featurecodes = featurecodes_getAllFeaturesDetailed();
 	function frmAdmin_onsubmit() {
 		var msgErrorMissingFC = "<?php echo _("Please enter a Feature Code or check Use Default for all Enabled Feature Codes"); ?>";
 		var msgErrorDuplicateFC = "<?php echo _("Feature Codes have been duplicated"); ?>";
+		var msgErrorProceedOK = "<?php echo _("Are you sure you wish to proceed?"); ?>";
 		
 		for (var i=0; i<theForm.elements.length; i++) {
 			var theFld = theForm.elements[i];
@@ -139,7 +140,7 @@ $featurecodes = featurecodes_getAllFeaturesDetailed();
 						return warnInvalid(theFld, msgErrorMissingFC);
 						
 					if (isDuplicated(theFld.name, theFld.value))
-						return warnInvalid(theFld, msgErrorDuplicateFC);
+						return confirm(msgErrorDuplicateFC+".  "+msgErrorProceedOK);
 				}
 			}
 		}
