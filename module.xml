@@ -7,7 +7,7 @@
 	<menuitems>
 		<featurecodeadmin>Feature Codes</featurecodeadmin>
 	</menuitems>
-	<location>release/2.3/featurecodeadmin-1.0.4.tgz</location>
+	<location>release/2.3/featurecodeadmin-1.0.5.tgz</location>
 	<changelog>
 		*1.0.5* Fix install bug with featurecode release
 		*1.0.4* Add support for duplicate feature codes
@@ -15,5 +15,5 @@
 		*1.0.2* Fix minor font/display issues
 	</changelog>
 	<info>http://aussievoip.com.au/wiki/freePBX-FeatureCodeAdmin</info>
-	<md5sum>36760d53f71cac46ac8382309fdd1ff5</md5sum>
+	<md5sum>ff607fa983545b62da0be0441bc65fb3</md5sum>
 </module>
