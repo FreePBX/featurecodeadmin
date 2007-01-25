@@ -1,7 +1,7 @@
 <module>
 	<rawname>featurecodeadmin</rawname>
 	<name>Feature Code Admin</name>
-	<version>1.0.4</version>
+	<version>1.0.5</version>
 	<type>setup</type>
 	<category>Basic</category>
 	<menuitems>
@@ -9,11 +9,11 @@
 	</menuitems>
 	<location>release/2.3/featurecodeadmin-1.0.4.tgz</location>
 	<changelog>
+		*1.0.5* Fix install bug with featurecode release
 		*1.0.4* Add support for duplicate feature codes
 		*1.0.3* Add he_IL translation
 		*1.0.2* Fix minor font/display issues
 	</changelog>
-	<location>release/2.2/featurecodeadmin-1.0.4.tgz</location>
 	<info>http://aussievoip.com.au/wiki/freePBX-FeatureCodeAdmin</info>
 	<md5sum>36760d53f71cac46ac8382309fdd1ff5</md5sum>
 </module>
