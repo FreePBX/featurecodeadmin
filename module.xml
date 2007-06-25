@@ -1,19 +1,21 @@
 <module>
 	<rawname>featurecodeadmin</rawname>
 	<name>Feature Code Admin</name>
-	<version>1.0.5</version>
+	<version>1.0.5.1</version>
+	<candisable>no</candisable>
 	<type>setup</type>
 	<category>Basic</category>
 	<menuitems>
 		<featurecodeadmin>Feature Codes</featurecodeadmin>
 	</menuitems>
-	<location>release/2.3/featurecodeadmin-1.0.5.tgz</location>
+	<location>release/2.3/featurecodeadmin-1.0.5.1.tgz</location>
 	<changelog>
+	  *1.0.5.1* added candisable = no for module admin
 		*1.0.5* Fix install bug with featurecode release
 		*1.0.4* Add support for duplicate feature codes
 		*1.0.3* Add he_IL translation
 		*1.0.2* Fix minor font/display issues
 	</changelog>
 	<info>http://aussievoip.com.au/wiki/freePBX-FeatureCodeAdmin</info>
-	<md5sum>ff607fa983545b62da0be0441bc65fb3</md5sum>
+	<md5sum>e02a45549dc61268e615e3763d9d612a</md5sum>
 </module>
