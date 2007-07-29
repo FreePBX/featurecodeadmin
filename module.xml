@@ -3,6 +3,7 @@
 	<name>Feature Code Admin</name>
 	<version>1.0.5.1</version>
 	<candisable>no</candisable>
+	<canuninstall>no</canuninstall>
 	<type>setup</type>
 	<category>Basic</category>
 	<menuitems>
@@ -10,6 +11,7 @@
 	</menuitems>
 	<location>release/2.3/featurecodeadmin-1.0.5.1.tgz</location>
 	<changelog>
+	  *1.0.5.2* added canuninstall = no for module admin
 	  *1.0.5.1* added candisable = no for module admin
 		*1.0.5* Fix install bug with featurecode release
 		*1.0.4* Add support for duplicate feature codes
