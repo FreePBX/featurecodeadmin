@@ -9,7 +9,7 @@
 	<menuitems>
 		<featurecodeadmin>Feature Codes</featurecodeadmin>
 	</menuitems>
-	<location>release/2.3/featurecodeadmin-1.0.5.1.tgz</location>
+	<location>release/2.3/featurecodeadmin-1.0.5.2.tgz</location>
 	<changelog>
 	  *1.0.5.2* added canuninstall = no for module admin, bump for rc1
 	  *1.0.5.1* added candisable = no for module admin
@@ -18,5 +18,5 @@
 		*1.0.3* Add he_IL translation
 		*1.0.2* Fix minor font/display issues
 	</changelog>
-	<md5sum>e02a45549dc61268e615e3763d9d612a</md5sum>
+	<md5sum>8dbe40b6f108043e995092ae5100b26c</md5sum>
 </module>
