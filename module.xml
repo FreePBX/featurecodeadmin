@@ -1,7 +1,7 @@
 <module>
 	<rawname>featurecodeadmin</rawname>
 	<name>Feature Code Admin</name>
-	<version>1.0.5.2</version>
+	<version>1.0.5.3</version>
 	<candisable>no</candisable>
 	<canuninstall>no</canuninstall>
 	<type>setup</type>
@@ -9,8 +9,9 @@
 	<menuitems>
 		<featurecodeadmin>Feature Codes</featurecodeadmin>
 	</menuitems>
-	<location>release/2.3/featurecodeadmin-1.0.5.2.tgz</location>
+	<location>release/2.3/featurecodeadmin-1.0.5.3.tgz</location>
 	<changelog>
+	  *1.0.5.3* changed categories
 	  *1.0.5.2* added canuninstall = no for module admin, bump for rc1
 	  *1.0.5.1* added candisable = no for module admin
 		*1.0.5* Fix install bug with featurecode release
@@ -18,5 +19,5 @@
 		*1.0.3* Add he_IL translation
 		*1.0.2* Fix minor font/display issues
 	</changelog>
-	<md5sum>8dbe40b6f108043e995092ae5100b26c</md5sum>
+	<md5sum>177627b93f79c53bc43fbcac9bf6c0ad</md5sum>
 </module>
