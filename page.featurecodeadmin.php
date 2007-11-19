@@ -31,7 +31,47 @@ $featurecodes = featurecodes_getAllFeaturesDetailed();
 <div class="content">
 	<form autocomplete="off" name="frmAdmin" action="<?php $_SERVER['PHP_SELF'] ?>" method="post" onsubmit="return frmAdmin_onsubmit();">
 	<input type="hidden" name="display" value="<?php echo $dispnum?>">
-  	<input type="hidden" name="action" value="save">
+	<input type="hidden" name="action" value="save">
+
+	<?php
+			$exten_conflict_arr = array();
+			$conflict_url = array();
+			$exten_arr = array();
+			foreach ($featurecodes as $result) {
+				if (($result['featureenabled'] == 1) && ($result['moduleenabled'] == 1)) {
+					$exten_arr[] = ($result['customcode'] != '')?$result['customcode']:$result['defaultcode'];
+				}
+			}
+			$usage_arr = framework_check_extension_usage($exten_arr);
+			unset($usage_arr['featurecodeadmin']);
+			unset($usage_arr['miscapps']);
+			//var_dump($usage_arr);
+			if (!empty($usage_arr)) {
+				$conflict_url = framework_display_extension_usage_alert($usage_arr,false,false);
+			}
+			if (!empty($conflict_url)) {
+				$str = "You have feature code conflicts with extension numbers in other modules. This will result in unexpected and broken behavior.";
+				echo "<script>javascript:alert('$str')</script>";
+      	echo "<h4>"._("Feature Code Conflicts with other Extensions")."</h4>";
+      	echo implode('<br .>',$conflict_url);
+
+				// Create hash of conflicting extensions
+				//
+				foreach ($usage_arr as $module_name => $details) {
+					foreach (array_keys($details) as $exten_conflict) {
+						$exten_conflict_arr[$exten_conflict] = true;
+					}
+				}
+
+				// Now check for conflicts within featurecodes page
+				//
+				$unique_exten_arr = array_unique($exten_arr);
+				$feature_conflict_arr = array_diff_assoc($exten_arr, $unique_exten_arr);
+				foreach ($feature_conflict_arr as $value) {
+					$exten_conflict_arr[$value] = true;
+				}
+      }
+	?>
 	<table>
 	<tr><td colspan="4"><h3><?php echo _("Feature Code Admin"); ?><hr></h3></td></tr>
 	<tr>
@@ -50,6 +90,8 @@ $featurecodes = featurecodes_getAllFeaturesDetailed();
 		$featureena = ($item['featureenabled'] == 1 ? true : false);
 		$featurecodedefault = (isset($item['defaultcode']) ? $item['defaultcode'] : '');
 		$featurecodecustom = (isset($item['customcode']) ? $item['customcode'] : '');
+
+		$thiscode = ($featurecodecustom != '') ? $featurecodecustom : $featurecodedefault;
 		
 		if ($currentmodule != $moduledesc) {
 			$currentmodule = $moduledesc;
@@ -68,11 +110,24 @@ $featurecodes = featurecodes_getAllFeaturesDetailed();
 		}
 		?> 	
 		<tr>
-			<td> 
-				<?php echo $featuredesc; ?>
+		<?php 
+			if (array_key_exists($thiscode, $exten_conflict_arr)) { 
+				$style = "style='color:red'"; 
+				$background = "style='background:red'"; 
+				$strong = "<strong>";
+				$endstrong = "</strong>";
+			} else {
+				$style = ""; 
+				$background = ""; 
+				$strong = "";
+				$endstrong = "";
+			} 
+		?>
+			<td <?php echo $style ?>> 
+				<?php echo $strong.$featuredesc.$endstrong; ?>
 			</td>
 			<td>
-				<input type="text" name="custom#<?php echo $featureid; ?>" value="<?php echo $featurecodecustom; ?>" size="4">
+				<input type="text" name="custom#<?php echo $featureid; ?>" value="<?php echo $featurecodecustom; ?>" <?php echo $background; ?> size="4">
 			</td>
 			<td align="center">
 				<input type="checkbox" onclick="usedefault_onclick(this);" name="usedefault_<?php echo $featureid; ?>"<?php if ($featurecodecustom == '') echo "checked"; ?>>

@@ -40,4 +40,25 @@ function featurecodeadmin_update($req) {
 
 	needreload();
 }
+
+function featurecodeadmin_check_extensions($exten=true) {
+	$extenlist = array();
+	if (is_array($exten) && empty($exten)) {
+		return $extenlist;
+	}
+	$featurecodes = featurecodes_getAllFeaturesDetailed();
+
+	foreach ($featurecodes as $result) {
+		$thisexten = ($result['customcode'] != '')?$result['customcode']:$result['defaultcode'];
+
+		// Ignore disabled codes, and modules, and any exten not being requested unless all (true)
+		//
+		if (($result['featureenabled'] == 1) && ($result['moduleenabled'] == 1) && ($exten === true || in_array($thisexten, $exten))) {
+			$extenlist[$thisexten]['description'] = _("Featurecode: ").$result['featurename']." (".$result['modulename'].":".$result['featuredescription'].")";
+			$extenlist[$thisexten]['status'] = 'INUSE';
+			$extenlist[$thisexten]['edit_url'] = 'config.php?type=setup&display=featurecodeadmin';
+		}
+	}
+	return $extenlist;
+}
 ?>
