@@ -44,8 +44,6 @@ $featurecodes = featurecodes_getAllFeaturesDetailed();
 			}
 			$usage_arr = framework_check_extension_usage($exten_arr);
 			unset($usage_arr['featurecodeadmin']);
-			unset($usage_arr['miscapps']);
-			//var_dump($usage_arr);
 			if (!empty($usage_arr)) {
 				$conflict_url = framework_display_extension_usage_alert($usage_arr,false,false);
 			}
