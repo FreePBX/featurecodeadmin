@@ -1,0 +1,204 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-01-26 11:07+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Francesco Romano\n"
+"Language-Team: Italian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: page.featurecodeadmin.php:36
+msgid "Feature Code Admin"
+msgstr "Amministrazione Codici Sevizi"
+
+#: page.featurecodeadmin.php:39
+msgid "Use"
+msgstr "Utilizzare"
+
+#: page.featurecodeadmin.php:39
+msgid "Default"
+msgstr "Predefinito"
+
+#: page.featurecodeadmin.php:40
+msgid "Feature"
+msgstr "Servizio"
+
+#: page.featurecodeadmin.php:40
+msgid "Status"
+msgstr "Stato"
+
+#: page.featurecodeadmin.php:62 page.featurecodeadmin.php:85
+msgid "Disabled"
+msgstr "Disattivato"
+
+#: page.featurecodeadmin.php:84
+msgid "Enabled"
+msgstr "Attivato"
+
+msgid "Submit Changes"
+msgstr "Invia"
+
+msgid "Blacklist a number"
+msgstr "Inserisce un numero in Blacklist"
+
+msgid "Blacklist the last caller"
+msgstr "Inserisce l'ultimo chiamante in Blacklist"
+
+msgid "Remove a number from the blacklist"
+msgstr "Rimuove un numero dalla Blacklist"
+
+msgid "Call Forward"
+msgstr "Trasferimento di chiamata"
+
+msgid "Call Forward All Activate"
+msgstr "Attiva Trasferimento di Chiamata Incondizionato"
+
+msgid "Call Forward All Deactivate"
+msgstr "Disattiva Trasferimento di Chiamata Incondizionato"
+
+msgid "Call Forward All Prompting Deactivate"
+msgstr "Disattiva Trasferimento di Chiamata Incondizionato (chiede dettagli)"
+
+msgid "Call Forward Busy Activate"
+msgstr "Attiva Inolro di Chiamata su Occupato"
+
+msgid "Call Forward Busy Deactivate"
+msgstr "Disattiva Trasferimento di Chiamata su Occupato"
+
+msgid "Call Forward Busy Prompting Deactivate"
+msgstr "Disattiva Trasferimento di Chiamata su Occupato (chiede dettagli)"
+
+msgid "Call Forward No Answer/Unavailable Activate"
+msgstr "Attiva Trasferimento su Nessuna Risposta/Non disponibile"
+
+msgid "Call Forward No Answer/Unavailable Deactivate"
+msgstr "Disattiva Trasferimento su Nessuna Risposta/Non disponibile"
+
+msgid "Call Waiting"
+msgstr "Avviso di Chiamata"
+
+msgid "Call Waiting - Activate"
+msgstr "Attiva Avviso di Chiamata"
+
+msgid "Call Waiting - Deactivate"
+msgstr "Disattiva Avviso di Chiamata"
+
+msgid "Core"
+msgstr "Sistema"
+
+msgid "Call Pickup (Can be used with GXP-2000)"
+msgstr "Call Pickup"
+
+msgid "Simulate Incoming Call"
+msgstr "Simulazione chiamata in entrata"
+
+msgid "Simulate Incoming FAX Call"
+msgstr "Simulazione chiamata FAX in entrata"
+
+msgid "User Logoff"
+msgstr "Disconessione Utente"
+
+msgid "User Logon"
+msgstr "Connessione Utente"
+
+msgid "Dictation"
+msgstr "Dettatura"
+
+msgid "Email completed dictation"
+msgstr "Invio Email a Dettatura completata"
+
+msgid "Perform dictation"
+msgstr "Esecuzione Dettatura"
+
+msgid "Do-Not-Disturb (DND)"
+msgstr "Non Disturbare (DND)"
+
+msgid "DND Activate"
+msgstr "Attiva Non Disturbare"
+
+msgid "DND Deactivate"
+msgstr "Disattiva Non Disturbare"
+
+msgid "Info Services"
+msgstr "Servizi di informazione"
+
+msgid "Call Trace"
+msgstr "Ultimi numeri chiamati"
+
+msgid "Directory"
+msgstr "Elenco Telefonico"
+
+msgid "Echo Test"
+msgstr "Test dell'Eco"
+
+msgid "Speak Your Exten Number"
+msgstr "Riproduzione Numero Interno"
+
+msgid "Speaking Clock"
+msgstr "Ora e Data"
+
+msgid "Misc Applications"
+msgstr "Applicazioni Varie"
+
+msgid "Paging and Intercom"
+msgstr "Paging e Intercom"
+
+msgid "Intercom prefix"
+msgstr "Prefisso Intercom"
+
+msgid "User Intercom Allow"
+msgstr "Permetti Intercom"
+
+msgid "User Intercom Disallow"
+msgstr "Non permettere Intercom"
+
+msgid "Phonebook Directory"
+msgstr "Rubrica telefonica"
+
+msgid "Phonebook dial-by-name directory"
+msgstr "Rubrica telefonica (chiama-per-nome)"
+
+msgid "Recordings"
+msgstr "Registrazioni"
+
+msgid "Check Recording"
+msgstr "Controllo registrazione"
+
+msgid "Save Recording"
+msgstr "Registrazione"
+
+msgid "Speed dial functions"
+msgstr "Funzioni Selezione breve"
+
+msgid "Set user speed dial"
+msgstr "Imposta numero in Selezione breve"
+
+msgid "Speeddial prefix"
+msgstr "Prefisso Selezione breve"
+
+msgid  "Voicemail"
+msgstr "Casella Vocale"
+
+msgid "Dial Voicemail"
+msgstr "Menu Casella Vocale"
+
+msgid "My Voicemail"
+msgstr "Menu propria Casella Vocale"
+
+msgid "Please select an extension!"
+msgstr "Selezionare un interno!"
+
+msgid "Day Night Mode"
+msgstr "Servizio Giorno Notte"
+
+msgid "Day/Night Control Toggle"
+msgstr "Codice Servizio Giorno/Notte"
