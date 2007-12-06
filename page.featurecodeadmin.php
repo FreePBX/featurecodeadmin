@@ -80,10 +80,15 @@ $featurecodes = featurecodes_getAllFeaturesDetailed();
 	<?php 
 	$currentmodule = "(none)";
 	foreach($featurecodes as $item) {
-		$moduledesc = isset($item['moduledescription'])?_($item['moduledescription']):null;
-		$moduleena = ($item['moduleenabled'] == 1 ? true : false);
 
-		$featuredesc = _($item['featuredescription']);
+		// change domains to get the translations from each module
+		//
+		bindtextdomain($item['modulename'],"modules/".$item['modulename']."./i18n");
+		$moduledesc = isset($item['moduledescription'])?gettext($item['moduledescription']):null;
+		$featuredesc = gettext($item['featuredescription']);
+		bindtextdomain($dispnum,"modules/".$dispnum."./i18n");
+
+		$moduleena = ($item['moduleenabled'] == 1 ? true : false);
 		$featureid = $item['modulename'] . '#' . $item['featurename'];
 		$featureena = ($item['featureenabled'] == 1 ? true : false);
 		$featurecodedefault = (isset($item['defaultcode']) ? $item['defaultcode'] : '');
