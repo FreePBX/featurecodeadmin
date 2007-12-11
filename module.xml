@@ -1,7 +1,7 @@
 <module>
 	<rawname>featurecodeadmin</rawname>
 	<name>Feature Code Admin</name>
-	<version>1.0.5.3</version>
+	<version>2.4.0</version>
 	<candisable>no</candisable>
 	<canuninstall>no</canuninstall>
 	<type>setup</type>
@@ -9,8 +9,9 @@
 	<menuitems>
 		<featurecodeadmin>Feature Codes</featurecodeadmin>
 	</menuitems>
-	<location>release/2.3/featurecodeadmin-1.0.5.3.tgz</location>
+	<location>release/2.4/featurecodeadmin-2.4.0.tgz</location>
 	<changelog>
+		*2.4.0* Extension/dest registry, it translation
 	  *1.0.5.3* changed categories
 	  *1.0.5.2* added canuninstall = no for module admin, bump for rc1
 	  *1.0.5.1* added candisable = no for module admin
@@ -19,5 +20,5 @@
 		*1.0.3* Add he_IL translation
 		*1.0.2* Fix minor font/display issues
 	</changelog>
-	<md5sum>177627b93f79c53bc43fbcac9bf6c0ad</md5sum>
+	<md5sum>352e556c81c8bf5d208b0ab9e80566fa</md5sum>
 </module>
