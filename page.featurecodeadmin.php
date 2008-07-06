@@ -130,7 +130,7 @@ $featurecodes = featurecodes_getAllFeaturesDetailed();
 				<?php echo $strong.$featuredesc.$endstrong; ?>
 			</td>
 			<td>
-				<input type="text" name="custom#<?php echo $featureid; ?>" value="<?php echo $featurecodecustom; ?>" <?php echo $background; ?> size="4">
+				<input type="text" name="custom#<?php echo $featureid; ?>" value="<?php echo $featurecodecustom; ?>" <?php echo $background; ?> size="4" tabindex="<?php echo ++$tabindex;?>">
 			</td>
 			<td align="center">
 				<input type="checkbox" onclick="usedefault_onclick(this);" name="usedefault_<?php echo $featureid; ?>"<?php if ($featurecodecustom == '') echo "checked"; ?>>
