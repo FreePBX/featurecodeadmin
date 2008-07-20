@@ -9,7 +9,7 @@
 	<menuitems>
 		<featurecodeadmin>Feature Codes</featurecodeadmin>
 	</menuitems>
-	<location>release/2.4/featurecodeadmin-2.4.0.2.tgz</location>
+	<location>release/2.5/featurecodeadmin-2.5.0.tgz</location>
 	<changelog>
 		*2.5.0* #2845 tabindex, added ability to define default values in freepbx_featurecodes.conf
 		*2.4.0.2* #2843 Russian Translation
@@ -26,5 +26,5 @@
 	<depends>
 		<version>2.5.0alpha1</version>
 	</depends>
-	<md5sum>bcafd8242cb11d005598e76dfac0b001</md5sum>
+	<md5sum>e99ebcd3c19a3a135cff6a8c3a277790</md5sum>
 </module>
