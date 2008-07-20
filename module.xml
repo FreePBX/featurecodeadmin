@@ -1,7 +1,7 @@
 <module>
 	<rawname>featurecodeadmin</rawname>
 	<name>Feature Code Admin</name>
-	<version>2.4.0.2</version>
+	<version>2.5.0</version>
 	<candisable>no</candisable>
 	<canuninstall>no</canuninstall>
 	<type>setup</type>
@@ -11,6 +11,7 @@
 	</menuitems>
 	<location>release/2.4/featurecodeadmin-2.4.0.2.tgz</location>
 	<changelog>
+		*2.5.0* #2845 tabindex, added ability to define default values in freepbx_featurecodes.conf
 		*2.4.0.2* #2843 Russian Translation
 		*2.4.0.1* added depends on 2.4.0
 		*2.4.0* Extension/dest registry, it translation
@@ -23,7 +24,7 @@
 		*1.0.2* Fix minor font/display issues
 	</changelog>
 	<depends>
-		<version>2.4.0</version>
+		<version>2.5.0alpha1</version>
 	</depends>
 	<md5sum>bcafd8242cb11d005598e76dfac0b001</md5sum>
 </module>
