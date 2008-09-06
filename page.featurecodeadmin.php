@@ -83,10 +83,10 @@ $featurecodes = featurecodes_getAllFeaturesDetailed();
 
 		// change domains to get the translations from each module
 		//
-		bindtextdomain($item['modulename'],"modules/".$item['modulename']."./i18n");
+		bindtextdomain($item['modulename'],"modules/".$item['modulename']."/i18n");
 		$moduledesc = isset($item['moduledescription'])?gettext($item['moduledescription']):null;
 		$featuredesc = gettext($item['featuredescription']);
-		bindtextdomain($dispnum,"modules/".$dispnum."./i18n");
+		bindtextdomain($dispnum,"modules/".$dispnum."/i18n");
 
 		$moduleena = ($item['moduleenabled'] == 1 ? true : false);
 		$featureid = $item['modulename'] . '#' . $item['featurename'];
