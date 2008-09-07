@@ -81,16 +81,22 @@ $featurecodes = featurecodes_getAllFeaturesDetailed();
 	$currentmodule = "(none)";
 	foreach($featurecodes as $item) {
 
-		// change domains to get the translations from each module
-		//
+		$bind_domains = array();
+		if (isset($bind_domains[$item['modulename']]) || (extension_loaded('gettext') && is_dir("modules/".$item['modulename']."/i18n"))) {
+			if (!isset($bind_domains[$item['modulename']])) {
+				$bind_domains[$item['modulename']] = true;
+				bindtextdomain($item['modulename'],"modules/".$item['modulename']."/i18n");
+				bind_textdomain_codeset($item['modulename'], 'utf8');
+			}
 
-		if (extension_loaded('gettext') && is_dir("modules/".$item['modulename']."/i18n")) {
-			$text_domain = $item['modulename'];
-			bindtextdomain($text_domain,"modules/".$text_domain."/i18n");
-			bind_textdomain_codeset($text_domain, 'utf8');
-
-			$moduledesc = isset($item['moduledescription'])?dgettext($text_domain,$item['moduledescription']):null;
-			$featuredesc = dgettext($text_domain,$item['featuredescription']);
+			$moduledesc = isset($item['moduledescription'])?dgettext($item['modulename'],$item['moduledescription']):null;
+			if (($moduledesc !== null) && ($moduledesc == $item['moduledescription'])) {
+				$moduledesc = _($moduledesc);
+			}
+			$featuredesc = dgettext($item['modulename'],$item['featuredescription']);
+			if ($featuredesc == $item['featuredescription']) {
+				$featuredesc = _($featuredesc);
+			}
 		} else {
 			$moduledesc = isset($item['moduledescription'])?_($item['moduledescription']):null;
 			$featuredesc = _($item['featuredescription']);
