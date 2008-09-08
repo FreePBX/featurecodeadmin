@@ -1,7 +1,7 @@
 <module>
 	<rawname>featurecodeadmin</rawname>
 	<name>Feature Code Admin</name>
-	<version>2.5.0</version>
+	<version>2.5.0.1</version>
 	<candisable>no</candisable>
 	<canuninstall>no</canuninstall>
 	<type>setup</type>
@@ -9,8 +9,9 @@
 	<menuitems>
 		<featurecodeadmin>Feature Codes</featurecodeadmin>
 	</menuitems>
-	<location>release/2.5/featurecodeadmin-2.5.0.tgz</location>
+	<location>release/2.5/featurecodeadmin-2.5.0.1.tgz</location>
 	<changelog>
+		*2.5.0.1* #2461 Localization now works using i18n from hosting featurecode modules
 		*2.5.0* #2845 tabindex, added ability to define default values in freepbx_featurecodes.conf
 		*2.4.0.2* #2843 Russian Translation
 		*2.4.0.1* added depends on 2.4.0
@@ -26,5 +27,5 @@
 	<depends>
 		<version>2.5.0alpha1</version>
 	</depends>
-	<md5sum>e99ebcd3c19a3a135cff6a8c3a277790</md5sum>
+	<md5sum>79ed0c6c50c246156e550a3a091b20bb</md5sum>
 </module>
