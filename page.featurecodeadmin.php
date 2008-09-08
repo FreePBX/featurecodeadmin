@@ -48,7 +48,7 @@ $featurecodes = featurecodes_getAllFeaturesDetailed();
 				$conflict_url = framework_display_extension_usage_alert($usage_arr,false,false);
 			}
 			if (!empty($conflict_url)) {
-				$str = "_(You have feature code conflicts with extension numbers in other modules. This will result in unexpected and broken behavior.");
+				$str = _("You have feature code conflicts with extension numbers in other modules. This will result in unexpected and broken behavior.");
 				echo "<script>javascript:alert('$str')</script>";
       	echo "<h4>"._("Feature Code Conflicts with other Extensions")."</h4>";
       	echo implode('<br .>',$conflict_url);
