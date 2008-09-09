@@ -9,7 +9,7 @@
 	<menuitems>
 		<featurecodeadmin>Feature Codes</featurecodeadmin>
 	</menuitems>
-	<location>release/2.5/featurecodeadmin-2.5.0.1.tgz</location>
+	<location>release/2.5/featurecodeadmin-2.5.0.2.tgz</location>
 	<changelog>
 		*2.5.0.2* #3173 don't report conflicting extensions with featurmap codes
 		*2.5.0.1* #2461 Localization now works using i18n from hosting featurecode modules
@@ -28,5 +28,5 @@
 	<depends>
 		<version>2.5.0alpha1</version>
 	</depends>
-	<md5sum>79ed0c6c50c246156e550a3a091b20bb</md5sum>
+	<md5sum>14e292a05ad16ed155334ef2df7a984e</md5sum>
 </module>
