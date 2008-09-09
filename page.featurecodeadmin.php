@@ -38,7 +38,12 @@ $featurecodes = featurecodes_getAllFeaturesDetailed();
 			$conflict_url = array();
 			$exten_arr = array();
 			foreach ($featurecodes as $result) {
-				if (($result['featureenabled'] == 1) && ($result['moduleenabled'] == 1)) {
+				/* if the feature code starts with "In-Call Asterisk" then it is not conflicting with normal feature codes. This would be featuremap and future
+				 * application map type codes. This is a real kludge and instead there should be a category associated with these codes when the feature code
+				 * is created. However, the logic would be the same, thus my willingness to put in such a kludge for now. When the schema changes to add this
+				 * then this can be updated to reflect that
+				 */
+				if (($result['featureenabled'] == 1) && ($result['moduleenabled'] == 1) && substr($result['featuredescription'],0,16) != 'In-Call Asterisk') {
 					$exten_arr[] = ($result['customcode'] != '')?$result['customcode']:$result['defaultcode'];
 				}
 			}
