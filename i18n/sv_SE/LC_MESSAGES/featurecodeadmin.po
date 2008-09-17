@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: FreePBX featurecodeadmin\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-09-08 13:39+0200\n"
-"PO-Revision-Date: 2008-09-08 13:58+0100\n"
+"PO-Revision-Date: 2008-09-17 10:00+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -16,9 +16,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-Language: Swedish\n"
 "X-Poedit-Country: SWEDEN\n"
-
-msgid "Feature Codes"
-msgstr "Funktionskoder"
 
 #: functions.inc.php:57
 msgid "Featurecode: "
@@ -46,11 +43,11 @@ msgstr "standard"
 
 #: page.featurecodeadmin.php:78
 msgid "Feature"
-msgstr "Nuvarande"
+msgstr "Funktionskod"
 
 #: page.featurecodeadmin.php:78
 msgid "Status"
-msgstr "status"
+msgstr "Status"
 
 #: page.featurecodeadmin.php:92
 #: page.featurecodeadmin.php:101
@@ -81,7 +78,7 @@ msgstr "Skriv in en funktionskod eller välj Använd standard för alla aktivera
 
 #: page.featurecodeadmin.php:201
 msgid "Feature Codes have been duplicated"
-msgstr "Funktionskoden är en dublett"
+msgstr "Funktionskoden är en dubblett"
 
 #: page.featurecodeadmin.php:202
 msgid "Are you sure you wish to proceed?"
