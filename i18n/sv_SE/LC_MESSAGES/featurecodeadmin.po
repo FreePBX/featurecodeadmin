@@ -84,3 +84,6 @@ msgstr "Funktionskoden är en dubblett"
 msgid "Are you sure you wish to proceed?"
 msgstr "Är du säker på att du vill fortsätta?"
 
+#: module.xml
+msgid "Feature Codes"
+msgstr "Funktionskoder"
