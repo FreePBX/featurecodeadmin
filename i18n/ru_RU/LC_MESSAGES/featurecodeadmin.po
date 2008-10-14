@@ -99,6 +99,55 @@ msgstr "Главные"
 msgid "Call Pickup (Can be used with GXP-2000)"
 msgstr "Перехват звонка (можно использовать на GXP-2000)"
 
+#: amp_conf/htdocs/admin/modules/core/install.php:60
+msgid "ChanSpy"
+msgstr "Канал для прослушивания"
+
+#: amp_conf/htdocs/admin/modules/core/install.php:74
+msgid "Dial System FAX"
+msgstr "Набрать встроенный системный факс"
+
+#: amp_conf/htdocs/admin/modules/core/install.php:81
+msgid "Directed Call Pickup"
+msgstr "Прямой перехват звонка"
+
+#: amp_conf/htdocs/admin/modules/core/install.php:88
+msgid "Asterisk General Call Pickup"
+msgstr "Общий для всех - перехват звонка"
+
+#: amp_conf/htdocs/admin/modules/core/install.php:95
+msgid "In-Call Asterisk Blind Transfer"
+msgstr "Перевод звонка без уведомления"
+
+#: amp_conf/htdocs/admin/modules/core/install.php:102
+msgid "In-Call Asterisk Attended Transfer"
+msgstr "Перевод звонка с уведомлением"
+
+#: amp_conf/htdocs/admin/modules/core/install.php:109
+msgid "In-Call Asterisk Toggle Call Recording"
+msgstr "Включить запись разговора во время звонка"
+
+#: amp_conf/htdocs/admin/modules/core/install.php:116
+msgid "In-Call Asterisk Disconnect Code"
+msgstr "Разъеденить линию во время разговора"
+
+#: amp_conf/htdocs/admin/modules/core/install.php:126
+msgid "Checking if directdids need migrating.."
+msgstr "Проверить нужно ли переназначиь входящие DID's"
+
+#: amp_conf/htdocs/admin/modules/core/install.php:130
+msgid "starting migration"
+msgstr "начало миграции"
+
+#: amp_conf/htdocs/admin/modules/core/install.php:147
+msgid "User: "
+msgstr "Пользователь:"
+
+#: amp_conf/htdocs/admin/modules/core/install.php:150
+#, php-format
+msgid "ERROR: failed to insert %s for user %s"
+msgstr "ОШИБКА: не получилось назначить %s для пользователя %s"
+
 msgid "Simulate Incoming Call"
 msgstr "Симуляция входящего звонка"
 
