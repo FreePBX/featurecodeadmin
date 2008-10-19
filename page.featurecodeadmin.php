@@ -87,6 +87,7 @@ $featurecodes = featurecodes_getAllFeaturesDetailed();
 	foreach($featurecodes as $item) {
 
 		$bind_domains = array();
+		if ($item['modulename'] == 'core' ) textdomain('amp');
 		if (isset($bind_domains[$item['modulename']]) || (extension_loaded('gettext') && is_dir("modules/".$item['modulename']."/i18n"))) {
 			if (!isset($bind_domains[$item['modulename']])) {
 				$bind_domains[$item['modulename']] = true;
