@@ -20,6 +20,8 @@
 $action = isset($_REQUEST['action'])?$_REQUEST['action']:'';
 $dispnum = "featurecodeadmin"; //used for switch on config.php
 
+$tabindex = 0;
+
 //if submitting form, update database
 switch ($action) {
   case "save":
