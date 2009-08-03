@@ -11,7 +11,7 @@
 	<menuitems>
 		<featurecodeadmin>Feature Codes</featurecodeadmin>
 	</menuitems>
-	<location>release/2.5/featurecodeadmin-2.5.0.3.tgz</location>
+	<location>release/2.6/featurecodeadmin-2.6.0.0.tgz</location>
 	<changelog>
 		*2.6.0.0* localizations, misc
 		*2.5.0.3* fix for proper core localization
@@ -32,5 +32,5 @@
 	<depends>
 		<version>2.5.0alpha1</version>
 	</depends>
-	<md5sum>8a12f2675f0d1f39cb99d731a07c43a5</md5sum>
+	<md5sum>c7930d47996004fcffbd18ae85523f42</md5sum>
 </module>
