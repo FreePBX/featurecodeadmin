@@ -1,7 +1,7 @@
 <module>
 	<rawname>featurecodeadmin</rawname>
 	<name>Feature Code Admin</name>
-	<version>2.6.0.0</version>
+	<version>2.6.0.1</version>
 	<publisher>FreePBX</publisher>
 	<license>GPLv2+</license>
 	<candisable>no</candisable>
@@ -11,8 +11,9 @@
 	<menuitems>
 		<featurecodeadmin>Feature Codes</featurecodeadmin>
 	</menuitems>
-	<location>release/2.6/featurecodeadmin-2.6.0.0.tgz</location>
+	<location>release/2.6/featurecodeadmin-2.6.0.1.tgz</location>
 	<changelog>
+		*2.6.0.1* localizations
 		*2.6.0.0* localizations, misc
 		*2.5.0.3* fix for proper core localization
 		*2.5.0.2* #3173 don't report conflicting extensions with featurmap codes
@@ -32,5 +33,5 @@
 	<depends>
 		<version>2.5.0alpha1</version>
 	</depends>
-	<md5sum>c7930d47996004fcffbd18ae85523f42</md5sum>
+	<md5sum>1b1012a905dd9ebb96e07ebc30244942</md5sum>
 </module>
