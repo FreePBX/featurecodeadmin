@@ -13,13 +13,14 @@
 #    You should have received a copy of the GNU General Public License
 #    along with FreePBX.  If not, see <http://www.gnu.org/licenses/>.
 #
-#    Copyright 2008 FreePBX
-#, fuzzy
+# FreePBX language template for featurecodeadmin
+# Copyright (C) 2008, 2009, 2010 Bandwith.com
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-09-17 11:15+0200\n"
+"POT-Creation-Date: 2010-02-18 22:37+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,74 +28,82 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: functions.inc.php:57
+#: featurecodeadmin/featurecodeadmin.i18n.php:5
+#: featurecodeadmin/page.featurecodeadmin.php:86
+msgid "Feature Code Admin"
+msgstr ""
+
+#: featurecodeadmin/featurecodeadmin.i18n.php:7
+msgid "Basic"
+msgstr ""
+
+#: featurecodeadmin/featurecodeadmin.i18n.php:9
+msgid "Feature Codes"
+msgstr ""
+
+#: featurecodeadmin/functions.inc.php:73
 msgid "Featurecode: "
 msgstr ""
 
-#: page.featurecodeadmin.php:56
+#: featurecodeadmin/page.featurecodeadmin.php:63
 msgid ""
 "You have feature code conflicts with extension numbers in other modules. "
 "This will result in unexpected and broken behavior."
 msgstr ""
 
-#: page.featurecodeadmin.php:58
+#: featurecodeadmin/page.featurecodeadmin.php:65
 msgid "Feature Code Conflicts with other Extensions"
 msgstr ""
 
-#: page.featurecodeadmin.php:79
-msgid "Feature Code Admin"
-msgstr ""
-
-#: page.featurecodeadmin.php:82
+#: featurecodeadmin/page.featurecodeadmin.php:89
 msgid "Use"
 msgstr ""
 
-#: page.featurecodeadmin.php:82
+#: featurecodeadmin/page.featurecodeadmin.php:89
 msgid "Default"
 msgstr ""
 
-#: page.featurecodeadmin.php:83
+#: featurecodeadmin/page.featurecodeadmin.php:90
 msgid "Feature"
 msgstr ""
 
-#: page.featurecodeadmin.php:83
+#: featurecodeadmin/page.featurecodeadmin.php:90
 msgid "Status"
 msgstr ""
 
-#: page.featurecodeadmin.php:97 page.featurecodeadmin.php:106
+#: featurecodeadmin/page.featurecodeadmin.php:105
+#: featurecodeadmin/page.featurecodeadmin.php:114
 msgid "moduledescription"
 msgstr ""
 
-#: page.featurecodeadmin.php:101 page.featurecodeadmin.php:107
+#: featurecodeadmin/page.featurecodeadmin.php:109
+#: featurecodeadmin/page.featurecodeadmin.php:115
 msgid "featuredescription"
 msgstr ""
 
-#: page.featurecodeadmin.php:126 page.featurecodeadmin.php:162
+#: featurecodeadmin/page.featurecodeadmin.php:134
+#: featurecodeadmin/page.featurecodeadmin.php:170
 msgid "Disabled"
 msgstr ""
 
-#: page.featurecodeadmin.php:161
+#: featurecodeadmin/page.featurecodeadmin.php:169
 msgid "Enabled"
 msgstr ""
 
-#: page.featurecodeadmin.php:170
+#: featurecodeadmin/page.featurecodeadmin.php:178
 msgid "Submit Changes"
 msgstr ""
 
-#: page.featurecodeadmin.php:205
+#: featurecodeadmin/page.featurecodeadmin.php:213
 msgid ""
 "Please enter a Feature Code or check Use Default for all Enabled Feature "
 "Codes"
 msgstr ""
 
-#: page.featurecodeadmin.php:206
+#: featurecodeadmin/page.featurecodeadmin.php:214
 msgid "Feature Codes have been duplicated"
 msgstr ""
 
-#: page.featurecodeadmin.php:207
+#: featurecodeadmin/page.featurecodeadmin.php:215
 msgid "Are you sure you wish to proceed?"
-msgstr ""
-
-#: module.xml
-msgid "Feature Codes"
 msgstr ""
