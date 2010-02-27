@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-02-27 13:45+0100\n"
+"POT-Creation-Date: 2010-02-27 17:34+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,82 +28,60 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: featurecodeadmin/featurecodeadmin.i18n.php:5
-#: featurecodeadmin/page.featurecodeadmin.php:86
 msgid "Feature Code Admin"
 msgstr ""
 
-#: featurecodeadmin/featurecodeadmin.i18n.php:7
 msgid "Basic"
 msgstr ""
 
-#: featurecodeadmin/featurecodeadmin.i18n.php:9
 msgid "Feature Codes"
 msgstr ""
 
-#: featurecodeadmin/functions.inc.php:73
 msgid "Featurecode: "
 msgstr ""
 
-#: featurecodeadmin/page.featurecodeadmin.php:63
 msgid ""
 "You have feature code conflicts with extension numbers in other modules. "
 "This will result in unexpected and broken behavior."
 msgstr ""
 
-#: featurecodeadmin/page.featurecodeadmin.php:65
 msgid "Feature Code Conflicts with other Extensions"
 msgstr ""
 
-#: featurecodeadmin/page.featurecodeadmin.php:89
 msgid "Use"
 msgstr ""
 
-#: featurecodeadmin/page.featurecodeadmin.php:89
 msgid "Default"
 msgstr ""
 
-#: featurecodeadmin/page.featurecodeadmin.php:90
 msgid "Feature"
 msgstr ""
 
-#: featurecodeadmin/page.featurecodeadmin.php:90
 msgid "Status"
 msgstr ""
 
-#: featurecodeadmin/page.featurecodeadmin.php:105
-#: featurecodeadmin/page.featurecodeadmin.php:114
 msgid "moduledescription"
 msgstr ""
 
-#: featurecodeadmin/page.featurecodeadmin.php:109
-#: featurecodeadmin/page.featurecodeadmin.php:115
 msgid "featuredescription"
 msgstr ""
 
-#: featurecodeadmin/page.featurecodeadmin.php:134
-#: featurecodeadmin/page.featurecodeadmin.php:170
 msgid "Disabled"
 msgstr ""
 
-#: featurecodeadmin/page.featurecodeadmin.php:169
 msgid "Enabled"
 msgstr ""
 
-#: featurecodeadmin/page.featurecodeadmin.php:178
 msgid "Submit Changes"
 msgstr ""
 
-#: featurecodeadmin/page.featurecodeadmin.php:213
 msgid ""
 "Please enter a Feature Code or check Use Default for all Enabled Feature "
 "Codes"
 msgstr ""
 
-#: featurecodeadmin/page.featurecodeadmin.php:214
 msgid "Feature Codes have been duplicated"
 msgstr ""
 
-#: featurecodeadmin/page.featurecodeadmin.php:215
 msgid "Are you sure you wish to proceed?"
 msgstr ""
