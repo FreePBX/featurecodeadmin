@@ -77,4 +77,72 @@ function featurecodeadmin_check_extensions($exten=true) {
 	}
 	return $extenlist;
 }
+
+function featurecodeadmin_get_config($engine) {
+	global $ext;  // is this the best way to pass this?
+
+  switch($engine) {
+    case "asterisk":
+
+      $featurecodes = featurecodes_getAllFeaturesDetailed();
+
+      $contextname = 'ext-featurecodes';
+      foreach ($featurecodes as $result) {
+        // Ignore disabled codes, and modules, and ones not providing destinations
+        //
+        if ($result['featureenabled'] == 1 && $result['moduleenabled'] == 1 && $result['providedest'] == 1) {
+          $thisexten = ($result['customcode'] != '')?$result['customcode']:$result['defaultcode'];
+          $ext->add($contextname, $result['defaultcode'], '', new ext_goto('1',$thisexten,'from-internal'));
+        }
+      }
+    break;
+  }
+}
+
+function featurecodeadmin_destinations() {
+
+  $featurecodes = featurecodes_getAllFeaturesDetailed();
+	if (isset($featurecodes)) {
+    $text_domain = Array();
+    foreach ($featurecodes as $result) {
+      freepbx_debug($result);
+      // Ignore disabled codes, and modules, and ones not providing destinations
+      //
+      if ($result['featureenabled'] == 1 && $result['moduleenabled'] == 1 && $result['providedest'] == 1) {
+        $modulename = $result['modulename'];
+
+        // normally gettext is done by drawselects, but in this case we are getting strings from other modules as well
+        // where the translations are. We will therefore try to do the translation here. Then drawselects will try to
+        // translate against the already translated strings but should just fail and default to what we pass back
+        //
+        if (!isset($text_domain['modulename']) & $modulename != 'core') {
+          if (extension_loaded('gettext') && is_dir("modules/".$modulename."/i18n")) {
+            bindtextdomain($modulename,"modules/$modulename/i18n");
+            bind_textdomain_codeset($modulename, 'utf8');
+            $text_domain[$modulename] = true;
+          } else {
+            $text_domain[$modulename] = false;
+          }
+        }
+        if ($modulename != 'core' && $text_domain[$modulename]) {
+          $description = dgettext($modulename,$result['featuredescription']);
+          if ($description == $result['featuredescription']) {
+            $description = dgettext('amp',$description);
+          }
+        } else {
+          $description = dgettext('amp',$result['featuredescription']);
+        }
+        if ($description == $result['featuredescription']) {
+            $description = _($description);
+        }
+        $thisexten = ($result['customcode'] != '')?$result['customcode']:$result['defaultcode'];
+				$extens[] = array('destination' => 'ext-featurecodes,'.$result['defaultcode'].',1', 'description' => $description.' <'.$thisexten.'>');
+      }
+    }
+  }
+  if (isset($extens)) 
+    return $extens;
+  else
+    return null;
+}
 ?>
