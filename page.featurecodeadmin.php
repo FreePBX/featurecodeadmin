@@ -219,7 +219,7 @@ $featurecodes = featurecodes_getAllFeaturesDetailed();
 			if (theFld.name.substring(0,7) == "custom#") {
 				var featureid = theFld.name.substring(7);
 				// check that every non default has a custom code
-				if (!theForm.elements['usedefault_' + featureid].checked && theForm.elements['ena#' + featureid].value == 1) {
+				if (!theForm.elements['usedefault_' + featureid].checked) {
 					defaultEmptyOK = false;
 					if (!isDialDigits(theFld.value))
 						return warnInvalid(theFld, msgErrorMissingFC);

@@ -11,9 +11,9 @@
 	<menuitems>
 		<featurecodeadmin>Feature Codes</featurecodeadmin>
 	</menuitems>
-	<location>release/2.8/featurecodeadmin-2.8.0.0.tgz</location>
+	<location>release/2.8/featurecodeadmin-2.8.0.1.tgz</location>
 	<changelog>
-		*2.9.0.0* #4653 Generate Feature Code Destinations
+		*2.9.0.0* #4617, #4653 Generate Feature Code Destinations
 		*2.8.0.0* published 2.8 version
 		*2.7.0.0* localizations
 		*2.6.0.1* localizations
@@ -36,5 +36,5 @@
 	<depends>
 		<version>2.5.0alpha1</version>
 	</depends>
-	<md5sum>531628f1d9f7e4d09cf4c54bbe40c545</md5sum>
+	<md5sum>39a0f68a9846da446dcb81d1c75a11cb</md5sum>
 </module>
