@@ -105,7 +105,6 @@ function featurecodeadmin_destinations() {
 	if (isset($featurecodes)) {
     $text_domain = Array();
     foreach ($featurecodes as $result) {
-      freepbx_debug($result);
       // Ignore disabled codes, and modules, and ones not providing destinations
       //
       if ($result['featureenabled'] == 1 && $result['moduleenabled'] == 1 && $result['providedest'] == 1) {
