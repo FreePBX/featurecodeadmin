@@ -1,5 +1,6 @@
 <module>
 	<rawname>featurecodeadmin</rawname>
+	<repo>standard</repo>
 	<name>Feature Code Admin</name>
 	<version>2.9.0.0</version>
 	<publisher>FreePBX</publisher>
