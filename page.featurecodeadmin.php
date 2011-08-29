@@ -33,9 +33,6 @@ switch ($action) {
 $featurecodes = featurecodes_getAllFeaturesDetailed();
 ?>
 
-</div>
-
-<div class="content">
 	<form autocomplete="off" name="frmAdmin" action="<?php $_SERVER['PHP_SELF'] ?>" method="post" onsubmit="return frmAdmin_onsubmit();">
 	<input type="hidden" name="display" value="<?php echo $dispnum?>">
 	<input type="hidden" name="action" value="save">

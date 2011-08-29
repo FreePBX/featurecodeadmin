@@ -7,32 +7,13 @@
 	<license>GPLv2+</license>
 	<candisable>no</candisable>
 	<canuninstall>no</canuninstall>
-	<type>setup</type>
-	<category>Basic</category>
+	<category>Admin</category>
 	<menuitems>
 		<featurecodeadmin>Feature Codes</featurecodeadmin>
 	</menuitems>
 	<location>release/2.9/featurecodeadmin-2.9.0.0.tgz</location>
 	<changelog>
 		*2.9.0.0* #4617, #4653, #4655
-		*2.8.0.0* published 2.8 version
-		*2.7.0.0* localizations
-		*2.6.0.1* localizations
-		*2.6.0.0* localizations, misc
-		*2.5.0.3* fix for proper core localization
-		*2.5.0.2* #3173 don't report conflicting extensions with featurmap codes
-		*2.5.0.1* #2461 Localization now works using i18n from hosting featurecode modules
-		*2.5.0* #2845 tabindex, added ability to define default values in freepbx_featurecodes.conf
-		*2.4.0.2* #2843 Russian Translation
-		*2.4.0.1* added depends on 2.4.0
-		*2.4.0* Extension/dest registry, it translation
-	  *1.0.5.3* changed categories
-	  *1.0.5.2* added canuninstall = no for module admin, bump for rc1
-	  *1.0.5.1* added candisable = no for module admin
-		*1.0.5* Fix install bug with featurecode release
-		*1.0.4* Add support for duplicate feature codes
-		*1.0.3* Add he_IL translation
-		*1.0.2* Fix minor font/display issues
 	</changelog>
 	<depends>
 		<version>2.5.0alpha1</version>
