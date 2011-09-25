@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-09-17 11:15+0200\n"
+"POT-Creation-Date: 2011-09-23 09:52+0000\n"
 "PO-Revision-Date: 2009-04-20 13:56+0100\n"
 "Last-Translator: Séverine GUTIERREZ <severine@medialsace.fr>\n"
 "Language-Team: Français <LL@li.org>\n"
@@ -28,64 +28,56 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: functions.inc.php:57
+msgid "Feature Code Admin"
+msgstr "Admin de Code de Caractéristique"
+
+msgid "Admin"
+msgstr ""
+
+msgid "Feature Codes"
+msgstr "Code de Caractéristique"
+
 msgid "Featurecode: "
 msgstr "Code de la caractéristique :"
 
-#: page.featurecodeadmin.php:56
+msgid "featuredescription"
+msgstr "Description de la Caractéristique"
+
 msgid ""
 "You have feature code conflicts with extension numbers in other modules. "
 "This will result in unexpected and broken behavior."
 msgstr ""
-"Vous avez des conflits de code de caractéristique avec les numéros d'extension dans d'autres modules. "
-"Cela donne un comportement défectueux et inattendu."
+"Vous avez des conflits de code de caractéristique avec les numéros "
+"d'extension dans d'autres modules. Cela donne un comportement défectueux et "
+"inattendu."
 
-#: page.featurecodeadmin.php:58
 msgid "Feature Code Conflicts with other Extensions"
-msgstr ""
-"Conflits de Code de Caractéristique avec d'autres Extensions"
+msgstr "Conflits de Code de Caractéristique avec d'autres Extensions"
 
-#: page.featurecodeadmin.php:79
-msgid "Feature Code Admin"
-msgstr "Admin de Code de Caractéristique"
-
-#: page.featurecodeadmin.php:82
 msgid "Use"
 msgstr "Utiliser"
 
-#: page.featurecodeadmin.php:82
 msgid "Default"
 msgstr "Par Défaut"
 
-#: page.featurecodeadmin.php:83
 msgid "Feature"
 msgstr "Caractéristiques"
 
-#: page.featurecodeadmin.php:83
 msgid "Status"
 msgstr "Statut"
 
-#: page.featurecodeadmin.php:97 page.featurecodeadmin.php:106
 msgid "moduledescription"
 msgstr "Description du Module"
 
-#: page.featurecodeadmin.php:101 page.featurecodeadmin.php:107
-msgid "featuredescription"
-msgstr "Description de la Caractéristique"
-
-#: page.featurecodeadmin.php:126 page.featurecodeadmin.php:162
 msgid "Disabled"
 msgstr "Désactivé"
 
-#: page.featurecodeadmin.php:161
 msgid "Enabled"
 msgstr "Activé"
 
-#: page.featurecodeadmin.php:170
 msgid "Submit Changes"
 msgstr "Appliquer les Modifications"
 
-#: page.featurecodeadmin.php:205
 msgid ""
 "Please enter a Feature Code or check Use Default for all Enabled Feature "
 "Codes"
@@ -93,14 +85,8 @@ msgstr ""
 "Veuillez entrer un Code de Caractéristique ou cochez Utiliser Par Défaut "
 "pour tous les Codes de Caractéristique Activés"
 
-#: page.featurecodeadmin.php:206
 msgid "Feature Codes have been duplicated"
 msgstr "Les Codes de Caractéristique ont été dupliqués"
 
-#: page.featurecodeadmin.php:207
 msgid "Are you sure you wish to proceed?"
 msgstr "Êtes-vous sûr de vouloir procéder ?"
-
-#: module.xml
-msgid "Feature Codes"
-msgstr "Code de Caractéristique"

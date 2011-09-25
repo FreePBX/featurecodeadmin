@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX featurecodeadmin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-09-08 13:39+0200\n"
+"POT-Creation-Date: 2011-09-23 09:52+0000\n"
 "PO-Revision-Date: 2008-09-17 10:00+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -28,73 +28,64 @@ msgstr ""
 "X-Poedit-Language: Swedish\n"
 "X-Poedit-Country: SWEDEN\n"
 
-#: functions.inc.php:57
-msgid "Featurecode: "
-msgstr "Funktionskod:"
-
-#: page.featurecodeadmin.php:51
-msgid "You have feature code conflicts with extension numbers in other modules. This will result in unexpected and broken behavior."
-msgstr "Du har valt en funktionskod med samma siffror som en anknytning. Detta kommer INTE att fungera, välj annan funktionskod."
-
-#: page.featurecodeadmin.php:53
-msgid "Feature Code Conflicts with other Extensions"
-msgstr "Funktionskoden är samma som en anknytning"
-
-#: page.featurecodeadmin.php:74
 msgid "Feature Code Admin"
 msgstr "Funktionskodsadministration"
 
-#: page.featurecodeadmin.php:77
-msgid "Use"
-msgstr "Använd"
-
-#: page.featurecodeadmin.php:77
-msgid "Default"
-msgstr "standard"
-
-#: page.featurecodeadmin.php:78
-msgid "Feature"
-msgstr "Funktionskod"
-
-#: page.featurecodeadmin.php:78
-msgid "Status"
-msgstr "Status"
-
-#: page.featurecodeadmin.php:92
-#: page.featurecodeadmin.php:101
-msgid "moduledescription"
+msgid "Admin"
 msgstr ""
 
-#: page.featurecodeadmin.php:96
-#: page.featurecodeadmin.php:102
+msgid "Feature Codes"
+msgstr "Funktionskoder"
+
+msgid "Featurecode: "
+msgstr "Funktionskod:"
+
 msgid "featuredescription"
 msgstr ""
 
-#: page.featurecodeadmin.php:121
-#: page.featurecodeadmin.php:157
+msgid ""
+"You have feature code conflicts with extension numbers in other modules. "
+"This will result in unexpected and broken behavior."
+msgstr ""
+"Du har valt en funktionskod med samma siffror som en anknytning. Detta "
+"kommer INTE att fungera, välj annan funktionskod."
+
+msgid "Feature Code Conflicts with other Extensions"
+msgstr "Funktionskoden är samma som en anknytning"
+
+msgid "Use"
+msgstr "Använd"
+
+msgid "Default"
+msgstr "standard"
+
+msgid "Feature"
+msgstr "Funktionskod"
+
+msgid "Status"
+msgstr "Status"
+
+msgid "moduledescription"
+msgstr ""
+
 msgid "Disabled"
 msgstr "Avaktiverad"
 
-#: page.featurecodeadmin.php:156
 msgid "Enabled"
 msgstr "Aktiverad"
 
-#: page.featurecodeadmin.php:165
 msgid "Submit Changes"
 msgstr "Spara ändringar"
 
-#: page.featurecodeadmin.php:200
-msgid "Please enter a Feature Code or check Use Default for all Enabled Feature Codes"
-msgstr "Skriv in en funktionskod eller välj Använd standard för alla aktiverade funktionskoder"
+msgid ""
+"Please enter a Feature Code or check Use Default for all Enabled Feature "
+"Codes"
+msgstr ""
+"Skriv in en funktionskod eller välj Använd standard för alla aktiverade "
+"funktionskoder"
 
-#: page.featurecodeadmin.php:201
 msgid "Feature Codes have been duplicated"
 msgstr "Funktionskoden är en dubblett"
 
-#: page.featurecodeadmin.php:202
 msgid "Are you sure you wish to proceed?"
 msgstr "Är du säker på att du vill fortsätta?"
-
-#: module.xml
-msgid "Feature Codes"
-msgstr "Funktionskoder"
