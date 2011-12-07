@@ -110,30 +110,13 @@ function featurecodeadmin_destinations() {
       if ($result['featureenabled'] == 1 && $result['moduleenabled'] == 1 && $result['providedest'] == 1) {
         $modulename = $result['modulename'];
 
-        // normally gettext is done by drawselects, but in this case we are getting strings from other modules as well
-        // where the translations are. We will therefore try to do the translation here. Then drawselects will try to
-        // translate against the already translated strings but should just fail and default to what we pass back
-        //
-        if (!isset($text_domain['modulename']) & $modulename != 'core') {
-          if (extension_loaded('gettext') && is_dir("modules/".$modulename."/i18n")) {
-            bindtextdomain($modulename,"modules/$modulename/i18n");
-            bind_textdomain_codeset($modulename, 'utf8');
-            $text_domain[$modulename] = true;
-          } else {
-            $text_domain[$modulename] = false;
-          }
-        }
-        if ($modulename != 'core' && $text_domain[$modulename]) {
-          $description = dgettext($modulename,$result['featuredescription']);
-          if ($description == $result['featuredescription']) {
-            $description = dgettext('amp',$description);
-          }
-        } else {
-          $description = dgettext('amp',$result['featuredescription']);
-        }
+				$description = modgettext::_($result['featuredescription'], $modulename);
+				// Just in case the translation was not found in either the module or amp, we will try to see
+				// if they put it in the featurecode module i18n
         if ($description == $result['featuredescription']) {
             $description = _($description);
         }
+
         $thisexten = ($result['customcode'] != '')?$result['customcode']:$result['defaultcode'];
 				$extens[] = array('destination' => 'ext-featurecodes,'.$result['defaultcode'].',1', 'description' => $description.' <'.$thisexten.'>');
       }
