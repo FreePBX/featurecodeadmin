@@ -117,7 +117,6 @@ function featurecodeadmin_destinations() {
         if ($description == $result['featuredescription']) {
             $description = _($description);
         }
-
         $thisexten = ($result['customcode'] != '')?$result['customcode']:$result['defaultcode'];
 				$extens[] = array('destination' => 'ext-featurecodes,'.$result['defaultcode'].',1', 'description' => $description.' <'.$thisexten.'>');
       }
