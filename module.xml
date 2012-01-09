@@ -2,7 +2,7 @@
 	<rawname>featurecodeadmin</rawname>
 	<repo>standard</repo>
 	<name>Feature Code Admin</name>
-	<version>2.10.0.1</version>
+	<version>2.10.0.2</version>
 	<publisher>FreePBX</publisher>
 	<license>GPLv2+</license>
 	<candisable>no</candisable>
@@ -13,6 +13,7 @@
 	</menuitems>
 	<location>release/2.10/featurecodeadmin-2.10.0.1.tgz</location>
 	<changelog>
+		*2.10.0.2* #5506
 		*2.10.0.1* #5463
 		*2.10.0.0* new version changes
 		*2.9.0.0* #4617, #4653, #4655
