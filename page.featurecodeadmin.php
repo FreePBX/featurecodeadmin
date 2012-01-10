@@ -91,13 +91,13 @@ $featurecodes = featurecodes_getAllFeaturesDetailed();
 	$currentmodule = "(none)";
 	foreach($featurecodes as $item) {
 
-		$moduledesc = isset($item['moduledescription']) ? _($item['moduledescription'], $item['modulename']) : null;
+		$moduledesc = isset($item['moduledescription']) ? modgettext::_($item['moduledescription'], $item['modulename']) : null;
 		// just in case the translator put the translation in featurcodes module:
 		if (($moduledesc !== null) && ($moduledesc == $item['moduledescription'])) {
 			$moduledesc = _($moduledesc);
 		}
 
-		$featuredesc = _($item['featuredescription'], $item['modulename']);
+		$featuredesc = modgettext::_($item['featuredescription'], $item['modulename']);
 		// just in case the translator put the translation in featurcodes module:
 		if ($featuredesc == $item['featuredescription']) {
 			$featuredesc = _($featuredesc);
