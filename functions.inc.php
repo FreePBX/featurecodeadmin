@@ -140,9 +140,13 @@ function featurecodes_check_destinations($dest=true) {
 	}
 
 	$results = array();
-	foreach ($fcs as $fc) {
-		if (in_array($fc['destination'], $destlist)) {
-			$results[] = $fc;
+	if ($dest === true) {
+		$results = $fcs;
+	} else {
+		foreach ($fcs as $fc) {
+			if (in_array($fc['destination'], $dest)) {
+				$results[] = $fc;
+			}
 		}
 	}
 
