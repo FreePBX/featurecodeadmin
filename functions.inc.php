@@ -101,11 +101,11 @@ function featurecodeadmin_get_config($engine) {
   }
 }
 
-function featurecodeamin_getdest($exten) {
+function featurecodeadmin_getdest($exten) {
 	return array("ext-featurecodes,$exten,1");
 }
 
-function featurecodeamin_getdestinfo($dest) {
+function featurecodeadmin_getdestinfo($dest) {
 	if (substr(trim($dest),0,17) == 'ext-featurecodes,') {
 		$fcs = featurecodes_getAllFeaturesDetailed();
 		$found = false;
@@ -129,7 +129,7 @@ function featurecodeamin_getdestinfo($dest) {
 	}
 }
 
-function featurecodes_check_destinations($dest=true) {
+function featurecodeadmin_check_destinations($dest=true) {
 	global $active_modules;
 
 	$fcs = featurecodeadmin_destinations();
