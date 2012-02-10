@@ -79,6 +79,7 @@ function featurecodeadmin_check_extensions($exten=true) {
 	return $extenlist;
 }
 
+
 function featurecodeadmin_get_config($engine) {
 	global $ext;  // is this the best way to pass this?
 
@@ -98,6 +99,61 @@ function featurecodeadmin_get_config($engine) {
       }
     break;
   }
+}
+
+function featurecodeamin_getdest($exten) {
+	return array("ext-featurecodes,$exten,1");
+}
+
+function featurecodeamin_getdestinfo($dest) {
+	if (substr(trim($dest),0,17) == 'ext-featurecodes,') {
+		$fcs = featurecodes_getAllFeaturesDetailed();
+		$found = false;
+		foreach ($fcs as $fc) {
+			if ($fc['destination'] == $dest) {
+				$desc = $fc['description'];
+				$found = true;
+				break;
+			}
+		}
+		if (!$found) {
+			return array();
+		} else {
+			return array(
+				'description' => $desc,
+				'edit_url' => 'config.php?display=featurecodeadmin',
+				);
+		}
+	} else {
+		return false;
+	}
+}
+
+function featurecodes_check_destinations($dest=true) {
+	global $active_modules;
+
+	$fcs = featurecodeadmin_destinations();
+
+	$destlist = array();
+	if (is_array($dest) && empty($dest)) {
+		return $destlist;
+	}
+
+	$results = array();
+	foreach ($fcs as $fc) {
+		if (in_array($fc['destination'], $destlist)) {
+			$results[] = $fc;
+		}
+	}
+
+	foreach ($results as $result) {
+		$destlist[] = array(
+			'dest' => $result['destination'],
+			'description' => $result['description'],
+			'edit_url' => 'config.php?display=featurecodeadmin',
+		);
+	}
+	return $destlist;
 }
 
 function featurecodeadmin_destinations() {
