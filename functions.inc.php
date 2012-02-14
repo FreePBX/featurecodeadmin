@@ -109,9 +109,10 @@ function featurecodeadmin_getdestinfo($dest) {
 	if (substr(trim($dest),0,17) == 'ext-featurecodes,') {
 		$fcs = featurecodes_getAllFeaturesDetailed();
 		$found = false;
+		$dest = explode(',',$dest);
 		foreach ($fcs as $fc) {
-			if ($fc['destination'] == $dest) {
-				$desc = $fc['description'];
+			if ($fc['defaultcode'] == $dest[1]) {
+				$desc = $fc['featuredescription'];
 				$found = true;
 				break;
 			}
