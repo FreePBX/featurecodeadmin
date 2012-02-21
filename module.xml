@@ -11,7 +11,7 @@
 	<menuitems>
 		<featurecodeadmin>Feature Codes</featurecodeadmin>
 	</menuitems>
-	<location>release/2.10/featurecodeadmin-2.10.0.2.tgz</location>
+	<location>release/2.10/featurecodeadmin-2.10.0.3.tgz</location>
 	<changelog>
 		*2.10.0.3* #5488
 		*2.10.0.2* #5506 revert of r13179 
@@ -22,5 +22,5 @@
 	<depends>
 		<version>2.5.0alpha1</version>
 	</depends>
-	<md5sum>17dc0b69fdfd9faa3b3d02672bbaa2da</md5sum>
+	<md5sum>22b710c1adcd9144e356fc173fbfe65f</md5sum>
 </module>
