@@ -11,7 +11,7 @@
 	<menuitems>
 		<featurecodeadmin>Feature Codes</featurecodeadmin>
 	</menuitems>
-	<location>release/2.10/featurecodeadmin-2.10.0.3.tgz</location>
+	<location>release/2.11/featurecodeadmin-2.11.0.0.tgz</location>
 	<changelog>
 		*2.11.0.0* bump version
 		*2.10.0.3* #5488
@@ -23,5 +23,5 @@
 	<depends>
 		<version>2.5.0alpha1</version>
 	</depends>
-	<md5sum>22b710c1adcd9144e356fc173fbfe65f</md5sum>
+	<md5sum>8d3a776210d49d0fd03b66cd51e5b23d</md5sum>
 </module>
