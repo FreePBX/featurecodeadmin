@@ -23,4 +23,4 @@
 		<version>2.5.0alpha1</version>
 	</depends>
 	<md5sum>22b710c1adcd9144e356fc173fbfe65f</md5sum>
-</module>
+<supported><version>2.10</version></supported></module>
