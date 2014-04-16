@@ -2,9 +2,10 @@
 	<rawname>featurecodeadmin</rawname>
 	<repo>standard</repo>
 	<name>Feature Code Admin</name>
-	<version>2.11.0.0</version>
-	<publisher>FreePBX</publisher>
-	<license>GPLv2+</license>
+	<version>2.11.0.1</version>
+	<publisher>Schmooze Com Inc</publisher>
+	<license>GPLv3+</license>
+	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<candisable>no</candisable>
 	<canuninstall>no</canuninstall>
 	<category>Admin</category>
@@ -13,6 +14,7 @@
 	</menuitems>
 	<location>release/2.11/featurecodeadmin-2.11.0.0.tgz</location>
 	<changelog>
+		*2.11.0.1* Add license file
 		*2.11.0.0* bump version
 		*2.10.0.3* #5488
 		*2.10.0.2* #5506 revert of r13179 
