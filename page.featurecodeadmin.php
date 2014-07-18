@@ -1,4 +1,4 @@
-<?php 
+<?php
 if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed'); }
 // This file is part of FreePBX.
 //
@@ -34,7 +34,7 @@ switch ($action) {
 $featurecodes = featurecodes_getAllFeaturesDetailed();
 ?>
 
-	<form autocomplete="off" name="frmAdmin" action="<?php $_SERVER['PHP_SELF'] ?>" method="post" onsubmit="return frmAdmin_onsubmit();">
+	<form autocomplete="off" name="frmAdmin" action="" method="post" onsubmit="return frmAdmin_onsubmit();">
 	<input type="hidden" name="display" value="<?php echo $dispnum?>">
 	<input type="hidden" name="action" value="save">
 
@@ -87,7 +87,7 @@ $featurecodes = featurecodes_getAllFeaturesDetailed();
 		<td align="center"><b><?php echo _("Use"); ?><br><?php echo _("Default"); ?>?</b></td>
 		<td align="center"><b><?php echo _("Feature"); ?><br><?php echo _("Status"); ?></b></td>
 	</tr>
-	<?php 
+	<?php
 	$currentmodule = "(none)";
 	foreach($featurecodes as $item) {
 
@@ -114,7 +114,7 @@ $featurecodes = featurecodes_getAllFeaturesDetailed();
 		$featurecodecustom = (isset($item['customcode']) ? $item['customcode'] : '');
 
 		$thiscode = ($featurecodecustom != '') ? $featurecodecustom : $featurecodedefault;
-		
+
 		if ($currentmodule != $moduledesc) {
 			$currentmodule = $moduledesc;
 			?>
@@ -130,20 +130,20 @@ $featurecodes = featurecodes_getAllFeaturesDetailed();
 			</tr>
 			<?php
 		}
-		?> 	
+		?>
 		<tr>
-		<?php 
-			if (array_key_exists($thiscode, $exten_conflict_arr)) { 
-				$style = "style='color:red'"; 
-				$background = "style='background:red'"; 
+		<?php
+			if (array_key_exists($thiscode, $exten_conflict_arr)) {
+				$style = "style='color:red'";
+				$background = "style='background:red'";
 				$strong = "<strong>";
 				$endstrong = "</strong>";
 			} else {
-				$style = ""; 
-				$background = ""; 
+				$style = "";
+				$background = "";
 				$strong = "";
 				$endstrong = "";
-			} 
+			}
 		?>
 			<td <?php echo $style ?>>
 				<?php if(!empty($featurehelp)) {?>
@@ -166,22 +166,22 @@ $featurecodes = featurecodes_getAllFeaturesDetailed();
 				<option <?php if ($featureena == false) echo ("selected "); ?>value="0"><?php echo _("Disabled"); ?></option>
 				</select>
 			</td>
-		</tr>	
+		</tr>
 		<?php
 	}
  ?>
 	<tr>
-		<td colspan="4"><br><h6><input name="Submit" type="submit" value="<?php echo _("Submit Changes")?>"></h6></td>		
+		<td colspan="4"><br><h6><input name="Submit" type="submit" value="<?php echo _("Submit Changes")?>"></h6></td>
 	</tr>
 	</table>
 
 	<script language="javascript">
 	<!--
-	
+
 	var theForm = document.frmAdmin;
-	
+
 	callallusedefaults();
-	
+
 	// call the onclick function for all the Use Default boxes
 	function callallusedefaults() {
 		for (var i=0; i<theForm.elements.length; i++) {
@@ -191,25 +191,25 @@ $featurecodes = featurecodes_getAllFeaturesDetailed();
 			}
 		}
 	}
-		
+
 	// disabled the custom code box if using default and also puts the default number in the box
 	function usedefault_onclick(chk) {
 		var featureid = chk.name.substring(11);
 		if (chk.checked) {
-			theForm.elements['origcustom_' + featureid].value = theForm.elements['custom#' + featureid].value;			
+			theForm.elements['origcustom_' + featureid].value = theForm.elements['custom#' + featureid].value;
 			theForm.elements['custom#' + featureid].value = theForm.elements['default_' + featureid].value;
 		} else {
 			theForm.elements['custom#' + featureid].value = theForm.elements['origcustom_' + featureid].value;
 		}
 		theForm.elements['custom#' + featureid].readOnly = chk.checked;
 	}
-	
+
 	// form validation
 	function frmAdmin_onsubmit() {
 		var msgErrorMissingFC = "<?php echo _("Please enter a Feature Code or check Use Default for all Enabled Feature Codes"); ?>";
 		var msgErrorDuplicateFC = "<?php echo _("Feature Codes have been duplicated"); ?>";
 		var msgErrorProceedOK = "<?php echo _("Are you sure you wish to proceed?"); ?>";
-		
+
 		for (var i=0; i<theForm.elements.length; i++) {
 			var theFld = theForm.elements[i];
 			if (theFld.name.substring(0,7) == "custom#") {
@@ -219,14 +219,14 @@ $featurecodes = featurecodes_getAllFeaturesDetailed();
 					defaultEmptyOK = false;
 					if (!isDialDigits(theFld.value))
 						return warnInvalid(theFld, msgErrorMissingFC);
-						
+
 					if (isDuplicated(theFld.name, theFld.value))
 						return confirm(msgErrorDuplicateFC+".  "+msgErrorProceedOK);
 				}
 			}
 		}
-		
-		
+
+
 		return true;
 	}
 
@@ -239,8 +239,8 @@ $featurecodes = featurecodes_getAllFeaturesDetailed();
 			}
 		}
 	}
-	
+
 	//-->
 	</script>
-	
+
 	</form>
