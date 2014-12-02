@@ -1,21 +1,8 @@
 <?php 
 if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed'); }
-// This file is part of FreePBX.
-//
-//    FreePBX is free software: you can redistribute it and/or modify
-//    it under the terms of the GNU General Public License as published by
-//    the Free Software Foundation, either version 2 of the License, or
-//    (at your option) any later version.
-//
-//    FreePBX is distributed in the hope that it will be useful,
-//    but WITHOUT ANY WARRANTY; without even the implied warranty of
-//    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-//    GNU General Public License for more details.
-//
-//    You should have received a copy of the GNU General Public License
-//    along with FreePBX.  If not, see <http://www.gnu.org/licenses/>.
-//    Copyright (C) 2006 Niklas Larsson
-//    Copyright (C) 2006 Rob Thomas <xrobau@gmail.com>
+//	License for all code of this FreePBX module can be found in the license file inside the module directory
+//	Copyright (C) 2006 Niklas Larsson
+//	Copyright (C) 2014 Schmooze Com Inc.
 //
 
 $action = isset($_REQUEST['action'])?$_REQUEST['action']:'';
@@ -32,215 +19,226 @@ switch ($action) {
 }
 
 $featurecodes = featurecodes_getAllFeaturesDetailed();
+$exten_conflict_arr = array();
+$conflict_url = array();
+$exten_arr = array();
+foreach ($featurecodes as $result) {
+	/* if the feature code starts with "In-Call Asterisk" then it is not conflicting with normal feature codes. This would be featuremap and future
+	 * application map type codes. This is a real kludge and instead there should be a category associated with these codes when the feature code
+	 * is created. However, the logic would be the same, thus my willingness to put in such a kludge for now. When the schema changes to add this
+	 * then this can be updated to reflect that
+	 */
+	if (($result['featureenabled'] == 1) && ($result['moduleenabled'] == 1) && substr($result['featuredescription'],0,16) != 'In-Call Asterisk') {
+		$exten_arr[] = ($result['customcode'] != '')?$result['customcode']:$result['defaultcode'];
+	}
+}
+$usage_arr = framework_check_extension_usage($exten_arr);
+unset($usage_arr['featurecodeadmin']);
+if (!empty($usage_arr)) {
+	$conflict_url = framework_display_extension_usage_alert($usage_arr,false,false);
+}
+$conflicterror = '';
+if (!empty($conflict_url)) {
+	$str = _("You have feature code conflicts with extension numbers in other modules. This will result in unexpected and broken behavior.");
+	$conflicterror .= "<script>javascript:alert('$str')</script>";
+ 	$conflicterror .= "<h4>"._("Feature Code Conflicts with other Extensions")."</h4>";
+	$conflicterror .=  implode('<br />',$conflict_url);
+	// Create hash of conflicting extensions
+	//
+	foreach ($usage_arr as $module_name => $details) {
+		foreach (array_keys($details) as $exten_conflict) {
+			$exten_conflict_arr[$exten_conflict] = true;
+		}
+	}
+	// Now check for conflicts within featurecodes page
+	//
+	$unique_exten_arr = array_unique($exten_arr);
+	$feature_conflict_arr = array_diff_assoc($exten_arr, $unique_exten_arr);
+	foreach ($feature_conflict_arr as $value) {
+		$exten_conflict_arr[$value] = true;
+	}
+}
+$currentmodule = "(none)";
+$modlines = '';
+
+foreach($featurecodes as $item) {
+	$moduledesc = isset($item['moduledescription']) ? modgettext::_($item['moduledescription'], $item['modulename']) : null;
+	// just in case the translator put the translation in featurcodes module:
+	if (($moduledesc !== null) && ($moduledesc == $item['moduledescription'])) {
+		$moduledesc = _($moduledesc);
+	}
+	$featuredesc = modgettext::_($item['featuredescription'], $item['modulename']);
+	// just in case the translator put the translation in featurcodes module:
+	if ($featuredesc == $item['featuredescription']) {
+		$featuredesc = _($featuredesc);
+	}
+	$featurehelp = modgettext::_($item['featurehelptext'], $item['modulename']);
+	if ($featurehelp == $item['featurehelptext']) {
+		$featurehelp = _($featurehelp);
+	}
+	$moduleena = ($item['moduleenabled'] == 1 ? true : false);
+	$featureid = $item['modulename'] . '_' . $item['featurename'];
+	$featureena = ($item['featureenabled'] == 1 ? true : false);
+	$featurecodedefault = (isset($item['defaultcode']) ? $item['defaultcode'] : '');
+	$featurecodecustom = (isset($item['customcode']) ? $item['customcode'] : '');
+	if($featurecodecustom != ''){
+		$dychecked = '';
+		$dnchecked = 'checked';
+	}else{
+		$dychecked = 'checked';
+		$dnchecked = '';
+		$disablein = 'readonly';		
+	}
+	if($featureena){
+		$eychecked = 'checked';
+		$enchecked = '';		
+	}else{
+		$eychecked = '';
+		$enchecked = 'checked';	
+	}
+	$thiscode = ($featurecodecustom != '') ? $featurecodecustom : $featurecodedefault;
+$modlines .= <<<HERE
+<!--$modulename $featuredesc -->
+<div class="element-container">
+<div class="row">
+<div class="col-md-12">
+<div class="row">
+<div class="form-group">
+<div class="col-sm-5">
+<b>$featuredesc</b>
+</div>
+<div class="col-sm-1">
+<input type="hidden" name="default_$featureid" value="$featurecodedefault" id="default_$featureid">
+<input type="hidden" name="origcustom_$featureid" value="$featurecodecustom"  id="origcustom_$featureid">
+<input type="text" class="form-control" id="custom$featureid" name="custom#$featureid" value="$thiscode" $disablein required pattern="\*{0,2}[0-9]{0,5}">
+</div>
+<div class="col-sm-3">
+<span class="radioset">
+<input type="radio" name="usedefault_$featureid" onclick="usedefault_onclick(this);" class="form-control " id="usedefault_${featureid}1" tabindex="" value="1" $dychecked><label for="usedefault_${featureid}1">yes</label>
+<input type="radio" name="usedefault_$featureid" onclick="usedefault_onclick(this);" class="form-control " id="usedefault_${featureid}0" tabindex="" value="0" $dnchecked ><label for="usedefault_${featureid}0">no</label>
+</span>
+</div>
+<div class="col-sm-3">
+<span class="radioset">
+<input type="radio" name="ena#$featureid" onclick="" class="form-control " id="ena#${featureid}1" tabindex="" value="1" $eychecked><label for="ena#${featureid}1">yes</label>
+<input type="radio" name="ena#$featureid" onclick="" class="form-control " id="ena#${featureid}0" tabindex="" value="0" $enchecked><label for="ena#${featureid}0">no</label>
+</span>
+</div>
+</div>	
+</div>	
+</div>	
+</div>
+</div>
+HERE;
+}
+
 ?>
+<div class="contianer-fluid">
+	<div class="row">
+		<div class='col-sm-12'>
+			<div class='fpbx-container'>
+				<div class='display full-border'>
+					<div class="contianer-fluid">
+						<div class="section-title" data-for="featurecodeadmin">
+							<h3><i class="fa fa-asterisk"></i><?php echo _("Feature Code Admin"); ?></h3>
+						</div>
+						<div class="section" data-id="featurecodeadmin">
+							<form autocomplete="off "class="fpbx-submit" name="frmAdmin" action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post" onsubmit="return frmAdmin_onsubmit(this);">
+							<input type="hidden" name="display" value="<?php echo $dispnum ?>">
+							<input type="hidden" name="action" value="save">
+							<div class="element-container">
+								<div class="row">
+									<div class="col-md-12">
+										<div class="row">
+											<div class="form-group">
+												<div class="col-sm-5">
+												<h4>Description</h4>
+												</div>
+												<div class="col-sm-1">
+												<h4>Code</h4>
+												</div>
+												<div class="col-sm-3">
+												<h4>Default</h4>
+												</div>
+												<div class="col-sm-3">
+												<h4>Enabled</h4>
+												</div>
+											</div>	
+										</div>	
+									</div>	
+								</div>	
+							</div>	
+							<!--Generated-->	
+							<?php echo $modlines ?>
+							<!--END Generated-->
+							</form>		
+							</div>	
+						</div>	
+					</div>	
+				</div>	
+			</div>	
+		</div>
+	</div>				
+</div>				
 
-	<form autocomplete="off" name="frmAdmin" action="<?php $_SERVER['PHP_SELF'] ?>" method="post" onsubmit="return frmAdmin_onsubmit();">
-	<input type="hidden" name="display" value="<?php echo $dispnum?>">
-	<input type="hidden" name="action" value="save">
-
-	<?php
-			$exten_conflict_arr = array();
-			$conflict_url = array();
-			$exten_arr = array();
-			foreach ($featurecodes as $result) {
-				/* if the feature code starts with "In-Call Asterisk" then it is not conflicting with normal feature codes. This would be featuremap and future
-				 * application map type codes. This is a real kludge and instead there should be a category associated with these codes when the feature code
-				 * is created. However, the logic would be the same, thus my willingness to put in such a kludge for now. When the schema changes to add this
-				 * then this can be updated to reflect that
-				 */
-				if (($result['featureenabled'] == 1) && ($result['moduleenabled'] == 1) && substr($result['featuredescription'],0,16) != 'In-Call Asterisk') {
-					$exten_arr[] = ($result['customcode'] != '')?$result['customcode']:$result['defaultcode'];
-				}
-			}
-			$usage_arr = framework_check_extension_usage($exten_arr);
-			unset($usage_arr['featurecodeadmin']);
-			if (!empty($usage_arr)) {
-				$conflict_url = framework_display_extension_usage_alert($usage_arr,false,false);
-			}
-			if (!empty($conflict_url)) {
-				$str = _("You have feature code conflicts with extension numbers in other modules. This will result in unexpected and broken behavior.");
-				echo "<script>javascript:alert('$str')</script>";
-      	echo "<h4>"._("Feature Code Conflicts with other Extensions")."</h4>";
-      	echo implode('<br .>',$conflict_url);
-
-				// Create hash of conflicting extensions
-				//
-				foreach ($usage_arr as $module_name => $details) {
-					foreach (array_keys($details) as $exten_conflict) {
-						$exten_conflict_arr[$exten_conflict] = true;
-					}
-				}
-
-				// Now check for conflicts within featurecodes page
-				//
-				$unique_exten_arr = array_unique($exten_arr);
-				$feature_conflict_arr = array_diff_assoc($exten_arr, $unique_exten_arr);
-				foreach ($feature_conflict_arr as $value) {
-					$exten_conflict_arr[$value] = true;
-				}
-      }
-	?>
-	<table>
-	<tr><td colspan="4"><h3><?php echo _("Feature Code Admin"); ?><hr></h3></td></tr>
-	<tr>
-		<td colspan="2">&nbsp;</td>
-		<td align="center"><b><?php echo _("Use"); ?><br><?php echo _("Default"); ?>?</b></td>
-		<td align="center"><b><?php echo _("Feature"); ?><br><?php echo _("Status"); ?></b></td>
-	</tr>
-	<?php 
-	$currentmodule = "(none)";
-	foreach($featurecodes as $item) {
-
-		$moduledesc = isset($item['moduledescription']) ? modgettext::_($item['moduledescription'], $item['modulename']) : null;
-		// just in case the translator put the translation in featurcodes module:
-		if (($moduledesc !== null) && ($moduledesc == $item['moduledescription'])) {
-			$moduledesc = _($moduledesc);
-		}
-
-		$featuredesc = modgettext::_($item['featuredescription'], $item['modulename']);
-		// just in case the translator put the translation in featurcodes module:
-		if ($featuredesc == $item['featuredescription']) {
-			$featuredesc = _($featuredesc);
-		}
-		$featurehelp = modgettext::_($item['featurehelptext'], $item['modulename']);
-		if ($featurehelp == $item['featurehelptext']) {
-			$featurehelp = _($featurehelp);
-		}
-
-		$moduleena = ($item['moduleenabled'] == 1 ? true : false);
-		$featureid = $item['modulename'] . '#' . $item['featurename'];
-		$featureena = ($item['featureenabled'] == 1 ? true : false);
-		$featurecodedefault = (isset($item['defaultcode']) ? $item['defaultcode'] : '');
-		$featurecodecustom = (isset($item['customcode']) ? $item['customcode'] : '');
-
-		$thiscode = ($featurecodecustom != '') ? $featurecodecustom : $featurecodedefault;
-		
-		if ($currentmodule != $moduledesc) {
-			$currentmodule = $moduledesc;
-			?>
-			<tr>
-				<td colspan="4">
-					<h4>
-					<?php echo $currentmodule; ?>
-					<?php if ($moduleena == false) {?>
-					<i>(<?php echo _("Disabled"); ?>)</i>
-					<?php } ?>
-					</h4>
-				</td>
-			</tr>
-			<?php
-		}
-		?> 	
-		<tr>
-		<?php 
-			if (array_key_exists($thiscode, $exten_conflict_arr)) { 
-				$style = "style='color:red'"; 
-				$background = "style='background:red'"; 
-				$strong = "<strong>";
-				$endstrong = "</strong>";
-			} else {
-				$style = ""; 
-				$background = ""; 
-				$strong = "";
-				$endstrong = "";
-			} 
-		?>
-			<td <?php echo $style ?>>
-				<?php if(!empty($featurehelp)) {?>
-					<a class="info"><?php echo $strong.$featuredesc.$endstrong; ?><span><?php echo $featurehelp?></span></a>
-				<?php } else { ?>
-					<?php echo $strong.$featuredesc.$endstrong; ?>
-				<?php } ?>
-			</td>
-			<td>
-				<input type="text" name="custom#<?php echo $featureid; ?>" value="<?php echo $featurecodecustom; ?>" <?php echo $background; ?> size="4" tabindex="<?php echo ++$tabindex;?>">
-			</td>
-			<td align="center">
-				<input type="checkbox" onclick="usedefault_onclick(this);" name="usedefault_<?php echo $featureid; ?>"<?php if ($featurecodecustom == '') echo "checked"; ?>>
-				<input type="hidden" name="default_<?php echo $featureid; ?>" value="<?php echo $featurecodedefault; ?>">
-				<input type="hidden" name="origcustom_<?php echo $featureid; ?>" value="<?php echo $featurecodecustom; ?>">
-			</td>
-			<td>
-				<select name="ena#<?php echo $featureid; ?>">
-				<option <?php if ($featureena == true) echo ("selected "); ?>value="1"><?php echo _("Enabled"); ?></option>
-				<option <?php if ($featureena == false) echo ("selected "); ?>value="0"><?php echo _("Disabled"); ?></option>
-				</select>
-			</td>
-		</tr>	
-		<?php
-	}
- ?>
-	<tr>
-		<td colspan="4"><br><h6><input name="Submit" type="submit" value="<?php echo _("Submit Changes")?>"></h6></td>		
-	</tr>
-	</table>
-
-	<script language="javascript">
-	<!--
-	
-	var theForm = document.frmAdmin;
-	
-	callallusedefaults();
-	
-	// call the onclick function for all the Use Default boxes
-	function callallusedefaults() {
-		for (var i=0; i<theForm.elements.length; i++) {
-			var theFld = theForm.elements[i];
-			if (theFld.name.substring(0,11) == "usedefault_") {
-				usedefault_onclick(theFld);
-			}
-		}
-	}
-		
-	// disabled the custom code box if using default and also puts the default number in the box
-	function usedefault_onclick(chk) {
+<script>
+	function usedefault_onclick(chk){
 		var featureid = chk.name.substring(11);
-		if (chk.checked) {
-			theForm.elements['origcustom_' + featureid].value = theForm.elements['custom#' + featureid].value;			
-			theForm.elements['custom#' + featureid].value = theForm.elements['default_' + featureid].value;
-		} else {
-			theForm.elements['custom#' + featureid].value = theForm.elements['origcustom_' + featureid].value;
+		var btnval = chk.value;
+		var inputelem = $("#custom" + featureid);
+		var origcustom = $("#origcustom_" + featureid);
+		var defaultcode = $("#default_" + featureid);
+		if(btnval == 0){
+			inputelem.prop('readonly', false);
+			inputelem.val(origcustom.val());
+		}else{
+			inputelem.prop('readonly', true);
+			origcustom.val(inputelem.val());
+			inputelem.val(defaultcode.val());
 		}
-		theForm.elements['custom#' + featureid].readOnly = chk.checked;
 	}
-	
-	// form validation
-	function frmAdmin_onsubmit() {
+	function frmAdmin_onsubmit(theForm){
 		var msgErrorMissingFC = "<?php echo _("Please enter a Feature Code or check Use Default for all Enabled Feature Codes"); ?>";
 		var msgErrorDuplicateFC = "<?php echo _("Feature Codes have been duplicated"); ?>";
 		var msgErrorProceedOK = "<?php echo _("Are you sure you wish to proceed?"); ?>";
-		
+	
 		for (var i=0; i<theForm.elements.length; i++) {
 			var theFld = theForm.elements[i];
 			if (theFld.name.substring(0,7) == "custom#") {
 				var featureid = theFld.name.substring(7);
 				// check that every non default has a custom code
-				if (!theForm.elements['usedefault_' + featureid].checked) {
+			if (!theForm.elements['usedefault_' + featureid].checked) {
 					defaultEmptyOK = false;
-					if (!isDialDigits(theFld.value))
-						return warnInvalid(theFld, msgErrorMissingFC);
-						
-					if (isDuplicated(theFld.name, theFld.value))
-						return confirm(msgErrorDuplicateFC+".  "+msgErrorProceedOK);
-				}
-			}
-		}
-		
-		
-		return true;
-	}
-
-	function isDuplicated(firstfldname, firstfc) {
-		for (var i=0; i<theForm.elements.length; i++) {
-			var theFld = theForm.elements[i];
-			if (theFld.name.substring(0,7) == "custom#" && theFld.name != firstfldname) {
-				if (theFld.value == firstfc)
-					return true;
+			if (!isDialDigits(theFld.value))
+					return warnInvalid(theFld, msgErrorMissingFC);
+					
+			if (isDuplicated(theFld.name, theFld.value))
+					return confirm(msgErrorDuplicateFC+".  "+msgErrorProceedOK);
 			}
 		}
 	}
 	
-	//-->
-	</script>
 	
-	</form>
+	return true;
+}
+function isDuplicated(firstfldname, firstfc) {
+	var theForm = document.frmAdmin;
+	for (var i=0; i<theForm.elements.length; i++) {
+		var theFld = theForm.elements[i];
+		if (theFld.name.substring(0,7) == "custom#" && theFld.name != firstfldname) {
+			if (theFld.value == firstfc)
+				return true;
+		}
+	}
+}
+function callallusedefaults() {
+	var theForm = document.frmAdmin;
+	for (var i=0; i<theForm.elements.length; i++) {
+		var theFld = theForm.elements[i];
+		if (theFld.name.substring(0,11) == "usedefault_") {
+			usedefault_onclick(theFld);
+		}
+	}
+}
+//callallusedefaults();
+</script>
