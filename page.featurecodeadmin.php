@@ -77,7 +77,7 @@ foreach($featurecodes as $item) {
 		$featurehelp = _($featurehelp);
 	}
 	$moduleena = ($item['moduleenabled'] == 1 ? true : false);
-	$featureid = $item['modulename'] . '_' . $item['featurename'];
+	$featureid = $item['modulename'] . '#' . $item['featurename'];
 	$featureena = ($item['featureenabled'] == 1 ? true : false);
 	$featurecodedefault = (isset($item['defaultcode']) ? $item['defaultcode'] : '');
 	$featurecodecustom = (isset($item['customcode']) ? $item['customcode'] : '');
@@ -142,8 +142,13 @@ HERE;
 						<div class="section-title" data-for="featurecodeadmin">
 							<h3><i class="fa fa-asterisk"></i><?php echo _("Feature Code Admin"); ?></h3>
 						</div>
+						<div class="section-title" data-for="featurecodeadmin">
+							<!-- Conflict error may display here if there is one-->
+							<?php echo $conflicterror ?>
+							<!--End of error zone-->
+						</div>
 						<div class="section" data-id="featurecodeadmin">
-							<form autocomplete="off "class="fpbx-submit" name="frmAdmin" action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post" onsubmit="return frmAdmin_onsubmit(this);">
+							<form autocomplete="off "class="fpbx-submit" name="frmAdmin" action="/admin/config.php?display=featurecodeadmin" method="post" onsubmit="return frmAdmin_onsubmit(this);">
 							<input type="hidden" name="display" value="<?php echo $dispnum ?>">
 							<input type="hidden" name="action" value="save">
 							<div class="element-container">
@@ -181,64 +186,3 @@ HERE;
 	</div>				
 </div>				
 
-<script>
-	function usedefault_onclick(chk){
-		var featureid = chk.name.substring(11);
-		var btnval = chk.value;
-		var inputelem = $("#custom" + featureid);
-		var origcustom = $("#origcustom_" + featureid);
-		var defaultcode = $("#default_" + featureid);
-		if(btnval == 0){
-			inputelem.prop('readonly', false);
-			inputelem.val(origcustom.val());
-		}else{
-			inputelem.prop('readonly', true);
-			origcustom.val(inputelem.val());
-			inputelem.val(defaultcode.val());
-		}
-	}
-	function frmAdmin_onsubmit(theForm){
-		var msgErrorMissingFC = "<?php echo _("Please enter a Feature Code or check Use Default for all Enabled Feature Codes"); ?>";
-		var msgErrorDuplicateFC = "<?php echo _("Feature Codes have been duplicated"); ?>";
-		var msgErrorProceedOK = "<?php echo _("Are you sure you wish to proceed?"); ?>";
-	
-		for (var i=0; i<theForm.elements.length; i++) {
-			var theFld = theForm.elements[i];
-			if (theFld.name.substring(0,7) == "custom#") {
-				var featureid = theFld.name.substring(7);
-				// check that every non default has a custom code
-			if (!theForm.elements['usedefault_' + featureid].checked) {
-					defaultEmptyOK = false;
-			if (!isDialDigits(theFld.value))
-					return warnInvalid(theFld, msgErrorMissingFC);
-					
-			if (isDuplicated(theFld.name, theFld.value))
-					return confirm(msgErrorDuplicateFC+".  "+msgErrorProceedOK);
-			}
-		}
-	}
-	
-	
-	return true;
-}
-function isDuplicated(firstfldname, firstfc) {
-	var theForm = document.frmAdmin;
-	for (var i=0; i<theForm.elements.length; i++) {
-		var theFld = theForm.elements[i];
-		if (theFld.name.substring(0,7) == "custom#" && theFld.name != firstfldname) {
-			if (theFld.value == firstfc)
-				return true;
-		}
-	}
-}
-function callallusedefaults() {
-	var theForm = document.frmAdmin;
-	for (var i=0; i<theForm.elements.length; i++) {
-		var theFld = theForm.elements[i];
-		if (theFld.name.substring(0,11) == "usedefault_") {
-			usedefault_onclick(theFld);
-		}
-	}
-}
-//callallusedefaults();
-</script>
