@@ -102,6 +102,10 @@ $featurecodes = featurecodes_getAllFeaturesDetailed();
 		if ($featuredesc == $item['featuredescription']) {
 			$featuredesc = _($featuredesc);
 		}
+		$featurehelp = modgettext::_($item['featurehelptext'], $item['modulename']);
+		if ($featurehelp == $item['featurehelptext']) {
+			$featurehelp = _($featurehelp);
+		}
 
 		$moduleena = ($item['moduleenabled'] == 1 ? true : false);
 		$featureid = $item['modulename'] . '#' . $item['featurename'];
@@ -141,8 +145,12 @@ $featurecodes = featurecodes_getAllFeaturesDetailed();
 				$endstrong = "";
 			} 
 		?>
-			<td <?php echo $style ?>> 
-				<?php echo $strong.$featuredesc.$endstrong; ?>
+			<td <?php echo $style ?>>
+				<?php if(!empty($featurehelp)) {?>
+					<a class="info"><?php echo $strong.$featuredesc.$endstrong; ?><span><?php echo $featurehelp?></span></a>
+				<?php } else { ?>
+					<?php echo $strong.$featuredesc.$endstrong; ?>
+				<?php } ?>
 			</td>
 			<td>
 				<input type="text" name="custom#<?php echo $featureid; ?>" value="<?php echo $featurecodecustom; ?>" <?php echo $background; ?> size="4" tabindex="<?php echo ++$tabindex;?>">

@@ -2,7 +2,7 @@
 	<rawname>featurecodeadmin</rawname>
 	<repo>standard</repo>
 	<name>Feature Code Admin</name>
-	<version>2.11.0.0</version>
+	<version>12.0.0</version>
 	<publisher>FreePBX</publisher>
 	<license>GPLv2+</license>
 	<candisable>no</candisable>
@@ -11,8 +11,8 @@
 	<menuitems>
 		<featurecodeadmin>Feature Codes</featurecodeadmin>
 	</menuitems>
-	<location>release/2.11/featurecodeadmin-2.11.0.0.tgz</location>
 	<changelog>
+		*12.0.0* Add Help Text bubbles re FREEPBX-6903
 		*2.11.0.0* bump version
 		*2.10.0.3* #5488
 		*2.10.0.2* #5506 revert of r13179 
@@ -21,10 +21,11 @@
 		*2.9.0.0* #4617, #4653, #4655
 	</changelog>
 	<depends>
-		<version>2.5.0alpha1</version>
+		<version>12.0.1alpha16</version>
 	</depends>
 	<supported>
-		<version>2.10</version>
+		<version>12.0</version>
 	</supported>
 	<md5sum>8d3a776210d49d0fd03b66cd51e5b23d</md5sum>
+	<location>release/2.11/featurecodeadmin-2.11.0.0.tgz</location>
 </module>
