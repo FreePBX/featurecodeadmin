@@ -1,0 +1,108 @@
+# CREDITS for JAPANESE TRANSLATION
+# ================================
+# Current translation & maintenance: QLOOG, Inc. (Kobe, Japan)
+# Inquiries: info@qloog.com / www.qloog.com
+# 
+# This translation is a culmination of the hard work of
+# several outstanding individuals, which started in 2009 with the 
+# first-ever Japanese localization of FreePBX by Kenichi Fukaumi 
+# and Kazuhiro Tokuyama (FreePBX Japanized Project).
+#
+# Beginning in 2013, with the approval of the original authors, 
+# QLOOG undertook a large scale overhaul of the translation to 
+# expand it for compatibility with FreePBX 2.11. Our work is, 
+# of course, released under the same GPLv2 license as FreePBX. 
+# We only ask that you kindly retain these credits in honor of 
+# the time and effort that all of us have contributed. Enjoy!
+# 
+# This file is part of FreePBX.
+#
+#    FreePBX is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 2 of the License, or
+#    (at your option) any later version.
+#
+#    FreePBX is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with FreePBX.  If not, see <http://www.gnu.org/licenses/>.
+#
+# FreePBX language template for featurecodeadmin
+# Copyright (C) 2008, 2009, 2010 Bandwith.com
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: FreePBX 2.10.0.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-05 19:32+0900\n"
+"PO-Revision-Date: 2014-05-28 14:18+0200\n"
+"Last-Translator: Kevin <kevin@qloog.com>\n"
+"Language-Team: Japanese "
+"<http://git.freepbx.org/projects/freepbx/featurecodeadmin/ja/>\n"
+"Language: ja_JP\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 1.9-dev\n"
+
+msgid ""
+"You have feature code conflicts with extension numbers in other modules. "
+"This will result in unexpected and broken behavior."
+msgstr "他のモジュールと機能コードが衝突しています。動作が不定となりエラーが発生する可能性があります。"
+
+msgid "Feature Code Conflicts with other Extensions"
+msgstr "他の内線との機能コードの衝突"
+
+msgid "Feature Code Admin"
+msgstr "機能コード管理"
+
+msgid "Use"
+msgstr "デフォルトを"
+
+msgid "Default"
+msgstr "デフォルト"
+
+msgid "Feature"
+msgstr "機能"
+
+msgid "Status"
+msgstr "ステータス"
+
+msgid "Disabled"
+msgstr "無効"
+
+msgid "Enabled"
+msgstr "有効"
+
+msgid "Submit Changes"
+msgstr "変更を適用"
+
+msgid ""
+"Please enter a Feature Code or check Use Default for all Enabled Feature "
+"Codes"
+msgstr "機能コードを入力するか、「デフォルトを使う」をチェックして、すべての機能コードを有効にしてください。"
+
+msgid "Feature Codes have been duplicated"
+msgstr "機能コードが重複しています"
+
+msgid "Are you sure you wish to proceed?"
+msgstr "処理を続行しますか？"
+
+msgid "Featurecode: "
+msgstr "機能コード: "
+
+msgid "Admin"
+msgstr "アドミン"
+
+msgid "Feature Codes"
+msgstr "機能コード"
+
+#~ msgid "featuredescription"
+#~ msgstr "キー説明"
+
+#~ msgid "moduledescription"
+#~ msgstr "モジュール説明"
