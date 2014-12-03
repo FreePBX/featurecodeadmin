@@ -2,9 +2,10 @@
 	<rawname>featurecodeadmin</rawname>
 	<repo>standard</repo>
 	<name>Feature Code Admin</name>
-	<version>12.0.0</version>
-	<publisher>FreePBX</publisher>
-	<license>GPLv2+</license>
+	<version>12.0.1</version>
+	<publisher>Schmooze Com Inc</publisher>
+	<license>GPLv3+</license>
+	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<candisable>no</candisable>
 	<canuninstall>no</canuninstall>
 	<category>Admin</category>
@@ -12,7 +13,9 @@
 		<featurecodeadmin>Feature Codes</featurecodeadmin>
 	</menuitems>
 	<changelog>
+		*12.0.1* Licensing texts
 		*12.0.0* Add Help Text bubbles re FREEPBX-6903
+		*2.11.0.2* Add license file
 		*2.11.0.0* bump version
 		*2.10.0.3* #5488
 		*2.10.0.2* #5506 revert of r13179 
