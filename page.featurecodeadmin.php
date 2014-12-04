@@ -82,107 +82,120 @@ foreach($featurecodes as $item) {
 	$featurecodedefault = (isset($item['defaultcode']) ? $item['defaultcode'] : '');
 	$featurecodecustom = (isset($item['customcode']) ? $item['customcode'] : '');
 	if($featurecodecustom != ''){
-		$dychecked = '';
-		$dnchecked = 'checked';
+		$dchecked = 'checked';
+		$disablein = '';
 	}else{
-		$dychecked = 'checked';
-		$dnchecked = '';
+		$dchecked = '';
 		$disablein = 'readonly';		
 	}
 	if($featureena){
-		$eychecked = 'checked';
-		$enchecked = '';		
+		$echecked = 'checked';
 	}else{
-		$eychecked = '';
-		$enchecked = 'checked';	
+		$echecked = '';
 	}
 	$thiscode = ($featurecodecustom != '') ? $featurecodecustom : $featurecodedefault;
+	$thismodule = $item['modulename'];
+	$modlines .= '<form autocomplete="off "class="fpbx-submit" name="frmAdmin" action="/admin/config.php?display=featurecodeadmin" method="post" onsubmit="return frmAdmin_onsubmit(this);">';
+	$modlines .= '<input type="hidden" name="display" value="' . $dispnum .'">';
+	$modlines .= '<input type="hidden" name="action" value="save">';
+if($thismodule != $currentmodule){
+if($lastmodule != "(none)"){
+if($currentmodule != $lastmodule){
+$modlines .= <<<HERE
+</div>
+HERE;
+	
+}
+}
+$lastmodule = $currentmodule;
+$currentmodule = $thismodule;
+$title = ucfirst($thismodule);
+$modlines .= <<<HERE
+<div class="section-title" data-for="$thismodule">
+<h2><i class="fa fa-minus"></i> $title</h2>	
+</div>
+
+<div class="section" data-id="$thismodule">
+
+<div class="element-container">
+<div class="row">
+<div class="col-md-8">
+<div class="row">
+<div class="form-group">
+<div class="col-md-3">
+<h4>Description</h4>
+</div>
+<div class="col-md-2">
+<h4>Code</h4>
+</div>
+<div class="col-md-3">
+<h4>Actions</h4>
+</div>
+</div>	
+</div>	
+</div>	
+</div>	
+</div>		
+HERE;
+
+}
 $modlines .= <<<HERE
 <!--$modulename $featuredesc -->
 <div class="element-container">
 <div class="row">
-<div class="col-md-12">
+<div class="col-md-8">
 <div class="row">
 <div class="form-group">
-<div class="col-sm-5">
+<div class="col-md-3">
 <b>$featuredesc</b>
 </div>
-<div class="col-sm-1">
+<div class="col-md-2">
 <input type="hidden" name="default_$featureid" value="$featurecodedefault" id="default_$featureid">
 <input type="hidden" name="origcustom_$featureid" value="$featurecodecustom"  id="origcustom_$featureid">
+
 <input type="text" class="form-control" id="custom$featureid" name="custom#$featureid" value="$thiscode" $disablein required pattern="\*{0,2}[0-9]{0,5}">
+
 </div>
-<div class="col-sm-3">
+<div class="col-md-3">
 <span class="radioset">
-<input type="radio" name="usedefault_$featureid" onclick="usedefault_onclick(this);" class="form-control " id="usedefault_${featureid}1" tabindex="" value="1" $dychecked><label for="usedefault_${featureid}1">yes</label>
-<input type="radio" name="usedefault_$featureid" onclick="usedefault_onclick(this);" class="form-control " id="usedefault_${featureid}0" tabindex="" value="0" $dnchecked ><label for="usedefault_${featureid}0">no</label>
+<input type="checkbox" name="usedefault_$featureid" onclick="fcradioonclick(this);" id="usedefault_$featureid" $dchecked>
+<label for="usedefault_$featureid">Customize</label>
+</span>
+<span class="radioset">
+<input type="checkbox" name="ena#$featureid" onclick="" id="ena#$featureid" $echecked>
+<label for="ena#$featureid">Enabled</label>
 </span>
 </div>
-<div class="col-sm-3">
-<span class="radioset">
-<input type="radio" name="ena#$featureid" onclick="" class="form-control " id="ena#${featureid}1" tabindex="" value="1" $eychecked><label for="ena#${featureid}1">yes</label>
-<input type="radio" name="ena#$featureid" onclick="" class="form-control " id="ena#${featureid}0" tabindex="" value="0" $enchecked><label for="ena#${featureid}0">no</label>
-</span>
-</div>
 </div>	
 </div>	
 </div>	
-</div>
-</div>
+</div>	
+</div>	
+
 HERE;
 }
 
 ?>
 <div class="contianer-fluid">
 	<div class="row">
-		<div class='col-sm-12'>
+		<div class='col-md-12'>
 			<div class='fpbx-container'>
-				<div class='display full-border'>
-					<div class="contianer-fluid">
-						<div class="section-title" data-for="featurecodeadmin">
-							<h3><i class="fa fa-asterisk"></i><?php echo _("Feature Code Admin"); ?></h3>
-						</div>
-						<div class="section-title" data-for="featurecodeadmin">
-							<!-- Conflict error may display here if there is one-->
-							<?php echo $conflicterror ?>
-							<!--End of error zone-->
-						</div>
-						<div class="section" data-id="featurecodeadmin">
-							<form autocomplete="off "class="fpbx-submit" name="frmAdmin" action="/admin/config.php?display=featurecodeadmin" method="post" onsubmit="return frmAdmin_onsubmit(this);">
-							<input type="hidden" name="display" value="<?php echo $dispnum ?>">
-							<input type="hidden" name="action" value="save">
-							<div class="element-container">
-								<div class="row">
-									<div class="col-md-12">
-										<div class="row">
-											<div class="form-group">
-												<div class="col-sm-5">
-												<h4>Description</h4>
-												</div>
-												<div class="col-sm-1">
-												<h4>Code</h4>
-												</div>
-												<div class="col-sm-3">
-												<h4>Default</h4>
-												</div>
-												<div class="col-sm-3">
-												<h4>Enabled</h4>
-												</div>
-											</div>	
-										</div>	
-									</div>	
-								</div>	
-							</div>	
-							<!--Generated-->	
-							<?php echo $modlines ?>
-							<!--END Generated-->
-							</form>		
-							</div>	
-						</div>	
+				<div class="contianer">
+					<h1><?php echo _("Feature Code Admin"); ?></h1>
+					<div>
+						<!-- Conflict error may display here if there is one-->
+						<?php echo $conflicterror ?>
+						<!--End of error zone-->
+					</div>
+						<!--Generated-->	
+						<?php echo $modlines ?>
+						<!--END Generated-->
+						</form>		
 					</div>	
 				</div>	
-			</div>	
-		</div>
+			</div>
+		</div>				
 	</div>				
 </div>				
+
 
