@@ -2,7 +2,7 @@
 //	License for all code of this FreePBX module can be found in the license file inside the module directory
 //	Copyright (C) 2014 Schmooze Com Inc.
 namespace FreePBX\modules;
-class Featurecodeadmin implements BMO {
+class Featurecodeadmin implements \BMO {
 	public function __construct($freepbx = null) {
 		if ($freepbx == null) {
 			throw new Exception("Not given a FreePBX Object");

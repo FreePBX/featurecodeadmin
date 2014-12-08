@@ -16,9 +16,9 @@ function fcradioonclick(chk){
 }
 
 function frmAdmin_onsubmit(theForm){
-	var msgErrorMissingFC = "Please enter a Feature Code or check Use Default for all Enabled Feature Codes";
-	var msgErrorDuplicateFC = "Feature Codes have been duplicated";
-	var msgErrorProceedOK = "Are you sure you wish to proceed?";
+	var msgErrorMissingFC = _("Please enter a Feature Code or check Use Default for all Enabled Feature Codes");
+	var msgErrorDuplicateFC _(= "Feature Codes have been duplicated");
+	var msgErrorProceedOK = _("Are you sure you wish to proceed?");
 
 	for (var i=0; i<theForm.elements.length; i++) {
 		var theFld = theForm.elements[i];
