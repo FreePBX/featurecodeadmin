@@ -15,7 +15,7 @@ class Featurecodeadmin implements \BMO {
 	public function restore($backup) {}
 	public function doConfigPageInit($page) {}
 	public function getActionBar($request) {
-    	$buttons = array();
+		$buttons = array();
 		switch($request['display']) {
 			case 'featurecodeadmin':
 				$buttons = array(
@@ -34,5 +34,5 @@ class Featurecodeadmin implements \BMO {
 		}
 		return $buttons;
 	}
-	
+
 }
