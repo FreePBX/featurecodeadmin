@@ -1,65 +1,38 @@
-function fcradioonclick(chk){
-	console.log("HERE");
-	var featureid = chk.name.substring(11).replace('#','\\#');
-	var inputelem = $("#custom" + featureid);
-	var origcustom = $("#origcustom_" + featureid);
-	var defaultcode = $("#default_" + featureid);
-	console.log(featureid);
-	if(chk.checked){
-		inputelem.prop('readonly', false);
-		inputelem.val(origcustom.val());
-	}else{
-		inputelem.prop('readonly', true);
-		origcustom.val(inputelem.val());
-		inputelem.val(defaultcode.val());
-	}
-}
-
-function frmAdmin_onsubmit(theForm){
-	var msgErrorMissingFC = _("Please enter a Feature Code or check Use Default for all Enabled Feature Codes");
-	var msgErrorDuplicateFC _(= "Feature Codes have been duplicated");
-	var msgErrorProceedOK = _("Are you sure you wish to proceed?");
-
-	for (var i=0; i<theForm.elements.length; i++) {
-		var theFld = theForm.elements[i];
-		if (theFld.name.substring(0,7) == "custom#") {
-			var featureid = theFld.name.substring(7);
-			// check that every non default has a custom code
-			if (!theForm.elements['usedefault_' + featureid].checked) {
-				defaultEmptyOK = false;
-				if (!isDialDigits(theFld.value)){
-					return warnInvalid(theFld, msgErrorMissingFC);
-				}
-			}
+$(function() {
+	$(".custom").click(function() {
+		var id = $(this).data("for"), input = $("#" + id);
+		if (input.length === 0) {
+			return;
 		}
-		if (isDuplicated(theFld.name, theFld.value)){
-				return confirm(msgErrorDuplicateFC+".  "+msgErrorProceedOK);
+		if ($(this).is(":checked")) {
+			input.prop("readonly", false);
+			input.val(input.data("custom"));
+		} else {
+			input.data("custom", input.val());
+			input.prop("readonly", true);
+			input.val(input.data("default"));
 		}
-	
-	}	
-	return true;
-}
-
-function isDuplicated(firstfldname, firstfc) {
-	var fcs = new Array();
-	$("input[type=text]").each(function() {
-		fcs.push($(this).val());
 	});
-	var occurs = $.grep(fcs,function(elem){ return elem === firstfc; }).length;
-	if( occurs > 1 ) { 
-		return true;
-	}else{
-		return false;
-	}
 
-}
+	//bind like this for popovers!
+	$("form[name=frmAdmin]")[0].onsubmit = function() {
+		var msgErrorMissingFC = _("Please enter a Feature Code or uncheck Customize"),
+		fcs = [],
+		error = null;
 
-function callallusedefaults() {
-	var theForm = document.frmAdmin;
-	for (var i=0; i<theForm.elements.length; i++) {
-		var theFld = theForm.elements[i];
-		if (theFld.name.substring(0,11) == "usedefault_") {
-			usedefault_onclick(theFld);
+		$(".code").each(function(i, v) {
+			var input = $(v);
+			fcs.push(input.val());
+			if (!input.prop("readonly") && input.val().trim() === "") {
+				error = { "item": input, "message": msgErrorMissingFC };
+				return false;
+			}
+		});
+
+		if (error !== null) {
+			return warnInvalid(error.item, error.message);
+		} else {
+			return true;
 		}
-	}
-}
+	};
+});

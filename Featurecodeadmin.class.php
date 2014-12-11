@@ -35,4 +35,26 @@ class Featurecodeadmin implements \BMO {
 		return $buttons;
 	}
 
+	public function update($codes=array()) {
+		if(!empty($codes)) {
+			foreach($codes as $module => $features) {
+				foreach($features as $name => $data) {
+					$fcc = new \featurecode($module, $name);
+					if(!empty($data['enable'])) {
+						$fcc->setEnabled(true);
+					} else {
+						$fcc->setEnabled(false);
+					}
+
+					if(empty($data['customize']) || ($data['code'] == $fcc->getDefault())) {
+						$fcc->setCode('');
+					} else {
+						$fcc->setCode($data['code']);
+					}
+					$fcc->update();
+				}
+			}
+		}
+	}
+
 }
