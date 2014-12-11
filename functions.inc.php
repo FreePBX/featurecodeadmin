@@ -1,51 +1,9 @@
-<?php 
+<?php
 if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed'); }
 //	License for all code of this FreePBX module can be found in the license file inside the module directory
 //	Copyright (C) 2006 Rob Thomas <xrobau@gmail.com>
 //	Copyright (C) 2014 Schmooze Com Inc.
 //
-
-
-function featurecodeadmin_update($req) {
-	foreach ($req as $key => $item) {
-		// Split up...
-		// 0 - action
-		// 1 - modulename
-		// 2 - featurename
-		$arr = explode("#", $key);
-		if (count($arr) == 3) {
-			$action = $arr[0];
-			$modulename = $arr[1];
-			$featurename = $arr[2];
-			$fieldvalue = $item;
-			
-			// Is there a more efficient way of doing this?
-			switch ($action)
-			{
-				case "ena":
-					$fcc = new featurecode($modulename, $featurename);
-					if ($fieldvalue == 1) {
-						$fcc->setEnabled(true);
-					} else {
-						$fcc->setEnabled(false);
-					}
-					$fcc->update();
-					break;
-				case "custom":
-					$fcc = new featurecode($modulename, $featurename);
-					if ($fieldvalue == $fcc->getDefault()) {
-						$fcc->setCode(''); // using default
-					} else {
-						$fcc->setCode($fieldvalue);
-					}
-					$fcc->update();
-					break;
-			}
-		}
-	}
-
-	needreload();
-}
 
 function featurecodeadmin_check_extensions($exten=true) {
 	$extenlist = array();
@@ -172,7 +130,7 @@ function featurecodeadmin_destinations() {
       }
     }
   }
-  if (isset($extens)) 
+  if (isset($extens))
     return $extens;
   else
     return null;

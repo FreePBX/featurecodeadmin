@@ -54,6 +54,7 @@ class Featurecodeadmin implements \BMO {
 					$fcc->update();
 				}
 			}
+			needreload();
 		}
 	}
 

@@ -13,7 +13,9 @@ $tabindex = 0;
 //if submitting form, update database
 switch ($action) {
 	case "save":
-		\FreePBX::Featurecodeadmin()->update($_POST['fc']);
+		if(!empty($_POST['fc'])) {
+			\FreePBX::Featurecodeadmin()->update($_POST['fc']);
+		}
 	break;
 }
 
