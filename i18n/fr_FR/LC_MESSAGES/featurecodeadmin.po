@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-09-23 09:52+0000\n"
+"POT-Creation-Date: 2015-02-11 17:55-0500\n"
 "PO-Revision-Date: 2009-04-20 13:56+0100\n"
 "Last-Translator: Séverine GUTIERREZ <severine@medialsace.fr>\n"
 "Language-Team: Français <LL@li.org>\n"
@@ -28,21 +28,64 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:197
+msgid "Are you sure you wish to proceed?"
+msgstr "Êtes-vous sûr de vouloir procéder ?"
+
+#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:73
+msgid "Default"
+msgstr "Par Défaut"
+
+#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:112
+#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:152
+msgid "Disabled"
+msgstr "Désactivé"
+
+#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:151
+msgid "Enabled"
+msgstr "Activé"
+
+#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:74
+msgid "Feature"
+msgstr "Caractéristiques"
+
+#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:70
 msgid "Feature Code Admin"
 msgstr "Admin de Code de Caractéristique"
 
-msgid "Admin"
-msgstr ""
+#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:49
+msgid "Feature Code Conflicts with other Extensions"
+msgstr "Conflits de Code de Caractéristique avec d'autres Extensions"
 
-msgid "Feature Codes"
-msgstr "Code de Caractéristique"
+#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:196
+msgid "Feature Codes have been duplicated"
+msgstr "Les Codes de Caractéristique ont été dupliqués"
 
+#: /usr/src/freepbx/featurecodeadmin/functions.inc.php:61
 msgid "Featurecode: "
 msgstr "Code de la caractéristique :"
 
-msgid "featuredescription"
-msgstr "Description de la Caractéristique"
+#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:195
+msgid ""
+"Please enter a Feature Code or check Use Default for all Enabled Feature "
+"Codes"
+msgstr ""
+"Veuillez entrer un Code de Caractéristique ou cochez Utiliser Par Défaut "
+"pour tous les Codes de Caractéristique Activés"
 
+#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:74
+msgid "Status"
+msgstr "Statut"
+
+#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:160
+msgid "Submit Changes"
+msgstr "Appliquer les Modifications"
+
+#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:73
+msgid "Use"
+msgstr "Utiliser"
+
+#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:47
 msgid ""
 "You have feature code conflicts with extension numbers in other modules. "
 "This will result in unexpected and broken behavior."
@@ -51,42 +94,11 @@ msgstr ""
 "d'extension dans d'autres modules. Cela donne un comportement défectueux et "
 "inattendu."
 
-msgid "Feature Code Conflicts with other Extensions"
-msgstr "Conflits de Code de Caractéristique avec d'autres Extensions"
+#~ msgid "Feature Codes"
+#~ msgstr "Code de Caractéristique"
 
-msgid "Use"
-msgstr "Utiliser"
+#~ msgid "featuredescription"
+#~ msgstr "Description de la Caractéristique"
 
-msgid "Default"
-msgstr "Par Défaut"
-
-msgid "Feature"
-msgstr "Caractéristiques"
-
-msgid "Status"
-msgstr "Statut"
-
-msgid "moduledescription"
-msgstr "Description du Module"
-
-msgid "Disabled"
-msgstr "Désactivé"
-
-msgid "Enabled"
-msgstr "Activé"
-
-msgid "Submit Changes"
-msgstr "Appliquer les Modifications"
-
-msgid ""
-"Please enter a Feature Code or check Use Default for all Enabled Feature "
-"Codes"
-msgstr ""
-"Veuillez entrer un Code de Caractéristique ou cochez Utiliser Par Défaut "
-"pour tous les Codes de Caractéristique Activés"
-
-msgid "Feature Codes have been duplicated"
-msgstr "Les Codes de Caractéristique ont été dupliqués"
-
-msgid "Are you sure you wish to proceed?"
-msgstr "Êtes-vous sûr de vouloir procéder ?"
+#~ msgid "moduledescription"
+#~ msgstr "Description du Module"

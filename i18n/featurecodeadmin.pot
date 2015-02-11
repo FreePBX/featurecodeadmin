@@ -1,11 +1,15 @@
-# FreePBX language template
-# Copyright 2013 Schmooze Com Inc
+# This file is part of FreePBX.
+#
+# For licensing information, please see the file named LICENSE located in the module directory
+#
+# FreePBX language template for featurecodeadmin
+# Copyright (C) 2008-2015 Sangoma, Inc.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-09-23 09:52+0000\n"
+"POT-Creation-Date: 2015-02-11 17:55-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,60 +17,63 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "Feature Code Admin"
+#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:197
+msgid "Are you sure you wish to proceed?"
 msgstr ""
 
-msgid "Admin"
-msgstr ""
-
-msgid "Feature Codes"
-msgstr ""
-
-msgid "Featurecode: "
-msgstr ""
-
-msgid "featuredescription"
-msgstr ""
-
-msgid ""
-"You have feature code conflicts with extension numbers in other modules. "
-"This will result in unexpected and broken behavior."
-msgstr ""
-
-msgid "Feature Code Conflicts with other Extensions"
-msgstr ""
-
-msgid "Use"
-msgstr ""
-
+#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:73
 msgid "Default"
 msgstr ""
 
-msgid "Feature"
-msgstr ""
-
-msgid "Status"
-msgstr ""
-
-msgid "moduledescription"
-msgstr ""
-
+#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:112
+#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:152
 msgid "Disabled"
 msgstr ""
 
+#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:151
 msgid "Enabled"
 msgstr ""
 
-msgid "Submit Changes"
+#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:74
+msgid "Feature"
 msgstr ""
 
+#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:70
+msgid "Feature Code Admin"
+msgstr ""
+
+#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:49
+msgid "Feature Code Conflicts with other Extensions"
+msgstr ""
+
+#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:196
+msgid "Feature Codes have been duplicated"
+msgstr ""
+
+#: /usr/src/freepbx/featurecodeadmin/functions.inc.php:61
+msgid "Featurecode: "
+msgstr ""
+
+#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:195
 msgid ""
 "Please enter a Feature Code or check Use Default for all Enabled Feature "
 "Codes"
 msgstr ""
 
-msgid "Feature Codes have been duplicated"
+#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:74
+msgid "Status"
 msgstr ""
 
-msgid "Are you sure you wish to proceed?"
+#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:160
+msgid "Submit Changes"
+msgstr ""
+
+#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:73
+msgid "Use"
+msgstr ""
+
+#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:47
+msgid ""
+"You have feature code conflicts with extension numbers in other modules. "
+"This will result in unexpected and broken behavior."
 msgstr ""

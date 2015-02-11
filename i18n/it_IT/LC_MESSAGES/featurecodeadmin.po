@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-09-23 09:52+0000\n"
+"POT-Creation-Date: 2015-02-11 17:55-0500\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Francesco Romano <francesco.romano@alteclab.it>\n"
 "Language-Team: Italian\n"
@@ -12,55 +12,44 @@ msgstr ""
 "X-Poedit-Language: Italian\n"
 "X-Poedit-Country: ITALY\n"
 
-msgid "Feature Code Admin"
-msgstr "Amministrazione Codici Sevizi"
+#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:197
+msgid "Are you sure you wish to proceed?"
+msgstr "Sei sicuro di voler procedere?"
 
-msgid "Admin"
-msgstr ""
-
-msgid "Feature Codes"
-msgstr "Codici Servizi"
-
-msgid "Featurecode: "
-msgstr "Codice Sevizio"
-
-msgid "featuredescription"
-msgstr "descrizionecodice"
-
-msgid ""
-"You have feature code conflicts with extension numbers in other modules. "
-"This will result in unexpected and broken behavior."
-msgstr ""
-"Hai un codice servizio in conflitto con altre numerazione di interni di "
-"altri moduli. Questo potrebbe causare comportamenti strani ed inaspetatti."
-
-msgid "Feature Code Conflicts with other Extensions"
-msgstr "Un Codice Servizio va in conflitto con un altro interno"
-
-msgid "Use"
-msgstr "Utilizzare"
-
+#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:73
 msgid "Default"
 msgstr "Predefinito"
 
-msgid "Feature"
-msgstr "Servizio"
-
-msgid "Status"
-msgstr "Stato"
-
-msgid "moduledescription"
-msgstr "descrizionemodulo"
-
+#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:112
+#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:152
 msgid "Disabled"
 msgstr "Disattivato"
 
+#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:151
 msgid "Enabled"
 msgstr "Attivato"
 
-msgid "Submit Changes"
-msgstr "Conferma Cambiamenti"
+#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:74
+msgid "Feature"
+msgstr "Servizio"
 
+#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:70
+msgid "Feature Code Admin"
+msgstr "Amministrazione Codici Sevizi"
+
+#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:49
+msgid "Feature Code Conflicts with other Extensions"
+msgstr "Un Codice Servizio va in conflitto con un altro interno"
+
+#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:196
+msgid "Feature Codes have been duplicated"
+msgstr "Alcuni Codici Servizio sono dublicati"
+
+#: /usr/src/freepbx/featurecodeadmin/functions.inc.php:61
+msgid "Featurecode: "
+msgstr "Codice Sevizio"
+
+#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:195
 msgid ""
 "Please enter a Feature Code or check Use Default for all Enabled Feature "
 "Codes"
@@ -68,11 +57,34 @@ msgstr ""
 "Prego immettere un Codice Servizio o impostare su Utilizza Predefinito per "
 "l'attivazione di tutti i Codici Servizi"
 
-msgid "Feature Codes have been duplicated"
-msgstr "Alcuni Codici Servizio sono dublicati"
+#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:74
+msgid "Status"
+msgstr "Stato"
 
-msgid "Are you sure you wish to proceed?"
-msgstr "Sei sicuro di voler procedere?"
+#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:160
+msgid "Submit Changes"
+msgstr "Conferma Cambiamenti"
+
+#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:73
+msgid "Use"
+msgstr "Utilizzare"
+
+#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:47
+msgid ""
+"You have feature code conflicts with extension numbers in other modules. "
+"This will result in unexpected and broken behavior."
+msgstr ""
+"Hai un codice servizio in conflitto con altre numerazione di interni di "
+"altri moduli. Questo potrebbe causare comportamenti strani ed inaspetatti."
+
+#~ msgid "Feature Codes"
+#~ msgstr "Codici Servizi"
+
+#~ msgid "featuredescription"
+#~ msgstr "descrizionecodice"
+
+#~ msgid "moduledescription"
+#~ msgstr "descrizionemodulo"
 
 #~ msgid "Blacklist a number"
 #~ msgstr "Inserisce un numero in Blacklist"
