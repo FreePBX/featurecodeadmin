@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX v2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-11 17:55-0500\n"
+"POT-Creation-Date: 2015-02-20 19:32-0500\n"
 "PO-Revision-Date: 2014-07-21 17:01+0200\n"
 "Last-Translator: Chavdar <chavdar_75@yahoo.com>\n"
 "Language-Team: Bulgarian <http://git.freepbx.org/projects/freepbx/"
@@ -22,44 +22,51 @@ msgstr ""
 "X-Poedit-Country: BULGARIA\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:197
+#: featurecodeadmin.i18n.php:4
+msgid "Admin"
+msgstr "Админ"
+
+#: page.featurecodeadmin.php:197
 msgid "Are you sure you wish to proceed?"
 msgstr "Сигурни ли сте че искате да продължите?"
 
-#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:73
+#: page.featurecodeadmin.php:73
 msgid "Default"
 msgstr "По-подразбиране"
 
-#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:112
-#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:152
+#: page.featurecodeadmin.php:112 page.featurecodeadmin.php:152
 msgid "Disabled"
 msgstr "Забранен"
 
-#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:151
+#: page.featurecodeadmin.php:151
 msgid "Enabled"
 msgstr "Разрешен"
 
-#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:74
+#: page.featurecodeadmin.php:74
 msgid "Feature"
 msgstr "Специален код"
 
-#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:70
+#: featurecodeadmin.i18n.php:3 page.featurecodeadmin.php:70
 msgid "Feature Code Admin"
 msgstr "Специални Кодове"
 
-#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:49
+#: page.featurecodeadmin.php:49
 msgid "Feature Code Conflicts with other Extensions"
 msgstr "Специалният Код е в конфликт с други Вътрешни Номера"
 
-#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:196
+#: featurecodeadmin.i18n.php:5
+msgid "Feature Codes"
+msgstr "Специални Кодове"
+
+#: page.featurecodeadmin.php:196
 msgid "Feature Codes have been duplicated"
 msgstr "Специалните Кодове се повтарят"
 
-#: /usr/src/freepbx/featurecodeadmin/functions.inc.php:61
+#: functions.inc.php:61
 msgid "Featurecode: "
 msgstr "Специален Код: "
 
-#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:195
+#: page.featurecodeadmin.php:195
 msgid ""
 "Please enter a Feature Code or check Use Default for all Enabled Feature "
 "Codes"
@@ -67,31 +74,25 @@ msgstr ""
 "Моля въведете Специален Код или маркирайте Използвай По-подразбиране за да "
 "Разрешите Специалните Кодове"
 
-#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:74
+#: page.featurecodeadmin.php:74
 msgid "Status"
 msgstr "Състояние"
 
-#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:160
+#: page.featurecodeadmin.php:160
 msgid "Submit Changes"
 msgstr "Приеми Промените"
 
-#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:73
+#: page.featurecodeadmin.php:73
 msgid "Use"
 msgstr "Използвай"
 
-#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:47
+#: page.featurecodeadmin.php:47
 msgid ""
 "You have feature code conflicts with extension numbers in other modules. "
 "This will result in unexpected and broken behavior."
 msgstr ""
 "Вие имате специален код, който е в конфликт с вътрешни номера в други "
 "модули. Това може да доведе до неочакван и неправилен режим на работа."
-
-#~ msgid "Admin"
-#~ msgstr "Админ"
-
-#~ msgid "Feature Codes"
-#~ msgstr "Специални Кодове"
 
 #~ msgid "featuredescription"
 #~ msgstr "описание на специалния код"

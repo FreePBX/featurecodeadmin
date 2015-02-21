@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-11 17:55-0500\n"
+"POT-Creation-Date: 2015-02-20 19:32-0500\n"
 "PO-Revision-Date: 2009-01-31 00:33+0800\n"
 "Last-Translator: 周征晟 <zhougongjizhe@163.com>\n"
 "Language-Team: EdwardBadBoy <zhougongjizhe@163.com>\n"
@@ -18,69 +18,73 @@ msgstr ""
 "X-Poedit-Country: CHINA\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:197
+#: featurecodeadmin.i18n.php:4
+msgid "Admin"
+msgstr ""
+
+#: page.featurecodeadmin.php:197
 msgid "Are you sure you wish to proceed?"
 msgstr "你确定要继续吗？"
 
-#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:73
+#: page.featurecodeadmin.php:73
 msgid "Default"
 msgstr "默认"
 
-#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:112
-#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:152
+#: page.featurecodeadmin.php:112 page.featurecodeadmin.php:152
 msgid "Disabled"
 msgstr "禁用"
 
-#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:151
+#: page.featurecodeadmin.php:151
 msgid "Enabled"
 msgstr "启用"
 
-#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:74
+#: page.featurecodeadmin.php:74
 msgid "Feature"
 msgstr "功能"
 
-#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:70
+#: featurecodeadmin.i18n.php:3 page.featurecodeadmin.php:70
 msgid "Feature Code Admin"
 msgstr "功能代码管理"
 
-#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:49
+#: page.featurecodeadmin.php:49
 msgid "Feature Code Conflicts with other Extensions"
 msgstr "功能代码与其他分机有冲突"
 
-#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:196
+#: featurecodeadmin.i18n.php:5
+msgid "Feature Codes"
+msgstr "功能代码"
+
+#: page.featurecodeadmin.php:196
 msgid "Feature Codes have been duplicated"
 msgstr "功能代码已被复制"
 
-#: /usr/src/freepbx/featurecodeadmin/functions.inc.php:61
+#: functions.inc.php:61
 msgid "Featurecode: "
 msgstr "功能代码："
 
-#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:195
+#: page.featurecodeadmin.php:195
 msgid ""
 "Please enter a Feature Code or check Use Default for all Enabled Feature "
 "Codes"
 msgstr "请输入一个功能代码或为所有启用的功能代码钩选“使用默认”"
 
-#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:74
+#: page.featurecodeadmin.php:74
 msgid "Status"
 msgstr "状态"
 
-#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:160
+#: page.featurecodeadmin.php:160
 msgid "Submit Changes"
 msgstr "提交更改"
 
-#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:73
+#: page.featurecodeadmin.php:73
 msgid "Use"
 msgstr "使用"
 
-#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:47
+#: page.featurecodeadmin.php:47
 msgid ""
 "You have feature code conflicts with extension numbers in other modules. "
 "This will result in unexpected and broken behavior."
 msgstr "你的功能代码在其他的模块中与分机号有冲突。这将导致未知的错误行为。"
-
-#~ msgid "Feature Codes"
-#~ msgstr "功能代码"
 
 #~ msgid "featuredescription"
 #~ msgstr "功能描述"

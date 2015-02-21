@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX featurecodeadmin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-11 17:55-0500\n"
+"POT-Creation-Date: 2015-02-20 19:32-0500\n"
 "PO-Revision-Date: 2008-09-17 10:00+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -28,44 +28,51 @@ msgstr ""
 "X-Poedit-Language: Swedish\n"
 "X-Poedit-Country: SWEDEN\n"
 
-#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:197
+#: featurecodeadmin.i18n.php:4
+msgid "Admin"
+msgstr ""
+
+#: page.featurecodeadmin.php:197
 msgid "Are you sure you wish to proceed?"
 msgstr "Är du säker på att du vill fortsätta?"
 
-#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:73
+#: page.featurecodeadmin.php:73
 msgid "Default"
 msgstr "standard"
 
-#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:112
-#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:152
+#: page.featurecodeadmin.php:112 page.featurecodeadmin.php:152
 msgid "Disabled"
 msgstr "Avaktiverad"
 
-#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:151
+#: page.featurecodeadmin.php:151
 msgid "Enabled"
 msgstr "Aktiverad"
 
-#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:74
+#: page.featurecodeadmin.php:74
 msgid "Feature"
 msgstr "Funktionskod"
 
-#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:70
+#: featurecodeadmin.i18n.php:3 page.featurecodeadmin.php:70
 msgid "Feature Code Admin"
 msgstr "Funktionskodsadministration"
 
-#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:49
+#: page.featurecodeadmin.php:49
 msgid "Feature Code Conflicts with other Extensions"
 msgstr "Funktionskoden är samma som en anknytning"
 
-#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:196
+#: featurecodeadmin.i18n.php:5
+msgid "Feature Codes"
+msgstr "Funktionskoder"
+
+#: page.featurecodeadmin.php:196
 msgid "Feature Codes have been duplicated"
 msgstr "Funktionskoden är en dubblett"
 
-#: /usr/src/freepbx/featurecodeadmin/functions.inc.php:61
+#: functions.inc.php:61
 msgid "Featurecode: "
 msgstr "Funktionskod:"
 
-#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:195
+#: page.featurecodeadmin.php:195
 msgid ""
 "Please enter a Feature Code or check Use Default for all Enabled Feature "
 "Codes"
@@ -73,25 +80,22 @@ msgstr ""
 "Skriv in en funktionskod eller välj Använd standard för alla aktiverade "
 "funktionskoder"
 
-#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:74
+#: page.featurecodeadmin.php:74
 msgid "Status"
 msgstr "Status"
 
-#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:160
+#: page.featurecodeadmin.php:160
 msgid "Submit Changes"
 msgstr "Spara ändringar"
 
-#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:73
+#: page.featurecodeadmin.php:73
 msgid "Use"
 msgstr "Använd"
 
-#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:47
+#: page.featurecodeadmin.php:47
 msgid ""
 "You have feature code conflicts with extension numbers in other modules. "
 "This will result in unexpected and broken behavior."
 msgstr ""
 "Du har valt en funktionskod med samma siffror som en anknytning. Detta "
 "kommer INTE att fungera, välj annan funktionskod."
-
-#~ msgid "Feature Codes"
-#~ msgstr "Funktionskoder"

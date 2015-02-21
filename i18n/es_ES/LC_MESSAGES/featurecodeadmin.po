@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX - featurecodeadmin module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-11 17:55-0500\n"
+"POT-Creation-Date: 2015-02-20 19:32-0500\n"
 "PO-Revision-Date: 2009-01-22 11:03+0100\n"
 "Last-Translator: Juan Asensio Sánchez <okelet@gmail.com>\n"
 "Language-Team: Juan Asensio Sánchez <okelet@gmail.com>\n"
@@ -13,45 +13,52 @@ msgstr ""
 "X-Poedit-Country: SPAIN\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:197
+#: featurecodeadmin.i18n.php:4
+msgid "Admin"
+msgstr ""
+
+#: page.featurecodeadmin.php:197
 msgid "Are you sure you wish to proceed?"
 msgstr "¿Está seguro de que desea continuar?"
 
-#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:73
+#: page.featurecodeadmin.php:73
 msgid "Default"
 msgstr "Por defecto"
 
-#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:112
-#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:152
+#: page.featurecodeadmin.php:112 page.featurecodeadmin.php:152
 msgid "Disabled"
 msgstr "Deshabilitado"
 
-#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:151
+#: page.featurecodeadmin.php:151
 msgid "Enabled"
 msgstr "Habilitado"
 
-#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:74
+#: page.featurecodeadmin.php:74
 msgid "Feature"
 msgstr "Característica"
 
-#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:70
+#: featurecodeadmin.i18n.php:3 page.featurecodeadmin.php:70
 msgid "Feature Code Admin"
 msgstr "Códigos de características"
 
-#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:49
+#: page.featurecodeadmin.php:49
 msgid "Feature Code Conflicts with other Extensions"
 msgstr ""
 "Los códigos de características están en conflicto con otras extensiones"
 
-#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:196
+#: featurecodeadmin.i18n.php:5
+msgid "Feature Codes"
+msgstr "Códigos de características"
+
+#: page.featurecodeadmin.php:196
 msgid "Feature Codes have been duplicated"
 msgstr "Hay códigos de características duplicados"
 
-#: /usr/src/freepbx/featurecodeadmin/functions.inc.php:61
+#: functions.inc.php:61
 msgid "Featurecode: "
 msgstr "Código de la característica:"
 
-#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:195
+#: page.featurecodeadmin.php:195
 msgid ""
 "Please enter a Feature Code or check Use Default for all Enabled Feature "
 "Codes"
@@ -59,19 +66,19 @@ msgstr ""
 "Por favor, introduzca un código de característica, o seleccione \"Por defecto"
 "\" para todos los códigos de características habilitados"
 
-#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:74
+#: page.featurecodeadmin.php:74
 msgid "Status"
 msgstr "Estado"
 
-#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:160
+#: page.featurecodeadmin.php:160
 msgid "Submit Changes"
 msgstr "Enviar cambios"
 
-#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:73
+#: page.featurecodeadmin.php:73
 msgid "Use"
 msgstr "Usar"
 
-#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:47
+#: page.featurecodeadmin.php:47
 msgid ""
 "You have feature code conflicts with extension numbers in other modules. "
 "This will result in unexpected and broken behavior."
@@ -79,9 +86,6 @@ msgstr ""
 "Tiene conflictos en los códigos de características con los números de "
 "extensiones en otros módulos. Esto hará que se produzcan resultados "
 "inesperados y un comportamiento erróneo."
-
-#~ msgid "Feature Codes"
-#~ msgstr "Códigos de características"
 
 #~ msgid "featuredescription"
 #~ msgstr "Descripción de la característica"

@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-11 17:55-0500\n"
+"POT-Creation-Date: 2015-02-20 19:32-0500\n"
 "PO-Revision-Date: 2009-05-11 20:09-0300\n"
 "Last-Translator: Marcelo Araujo <marcelo.araujo@voffice.com.br>\n"
 "Language-Team: midiVTS team <team@midivts.org.br>\n"
@@ -30,44 +30,51 @@ msgstr ""
 "X-Poedit-Country: BRAZIL\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:197
+#: featurecodeadmin.i18n.php:4
+msgid "Admin"
+msgstr ""
+
+#: page.featurecodeadmin.php:197
 msgid "Are you sure you wish to proceed?"
 msgstr "Tem certeza que deseja continuar?"
 
-#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:73
+#: page.featurecodeadmin.php:73
 msgid "Default"
 msgstr "Padrão"
 
-#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:112
-#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:152
+#: page.featurecodeadmin.php:112 page.featurecodeadmin.php:152
 msgid "Disabled"
 msgstr "Desabilitado"
 
-#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:151
+#: page.featurecodeadmin.php:151
 msgid "Enabled"
 msgstr "Habilitado"
 
-#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:74
+#: page.featurecodeadmin.php:74
 msgid "Feature"
 msgstr "Facilidade"
 
-#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:70
+#: featurecodeadmin.i18n.php:3 page.featurecodeadmin.php:70
 msgid "Feature Code Admin"
 msgstr "Administrador do Códigos de Facilidades"
 
-#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:49
+#: page.featurecodeadmin.php:49
 msgid "Feature Code Conflicts with other Extensions"
 msgstr "Código de Facilidade conflita com outras extensões"
 
-#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:196
+#: featurecodeadmin.i18n.php:5
+msgid "Feature Codes"
+msgstr "Códigos de Facilidades"
+
+#: page.featurecodeadmin.php:196
 msgid "Feature Codes have been duplicated"
 msgstr "Códigos de Facilidades foram duplicados"
 
-#: /usr/src/freepbx/featurecodeadmin/functions.inc.php:61
+#: functions.inc.php:61
 msgid "Featurecode: "
 msgstr "Código de facilidade:"
 
-#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:195
+#: page.featurecodeadmin.php:195
 msgid ""
 "Please enter a Feature Code or check Use Default for all Enabled Feature "
 "Codes"
@@ -75,28 +82,25 @@ msgstr ""
 "Por favor, entre com o Código da Facilidade ou selecione Usar Padrão para "
 "todos os Códigos de Facilidades. "
 
-#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:74
+#: page.featurecodeadmin.php:74
 msgid "Status"
 msgstr "Status"
 
-#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:160
+#: page.featurecodeadmin.php:160
 msgid "Submit Changes"
 msgstr "Submeter mudanças"
 
-#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:73
+#: page.featurecodeadmin.php:73
 msgid "Use"
 msgstr "Usar"
 
-#: /usr/src/freepbx/featurecodeadmin/page.featurecodeadmin.php:47
+#: page.featurecodeadmin.php:47
 msgid ""
 "You have feature code conflicts with extension numbers in other modules. "
 "This will result in unexpected and broken behavior."
 msgstr ""
 "Você tem um código de facilidade que conflita com os números de extensão nos "
 "outros módulos. Isto irá resultar em um comportamento errado inesperado."
-
-#~ msgid "Feature Codes"
-#~ msgstr "Códigos de Facilidades"
 
 #~ msgid "featuredescription"
 #~ msgstr "descrição da facilidade"
