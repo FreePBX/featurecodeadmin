@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-20 19:32-0500\n"
+"POT-Creation-Date: 2015-03-06 21:46-0500\n"
 "PO-Revision-Date: 2008-01-31 16:38+0100\n"
 "Last-Translator: Alexander Kozyrev <ceo@postmet.com>\n"
 "Language-Team: Russian <faq@postmet.com>\n"
@@ -16,77 +16,79 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: featurecodeadmin.i18n.php:4
+#: featurecodeadmin.i18n.php:6 featurecodeadmin.i18n.php:10
 msgid "Admin"
 msgstr "Админ"
 
-#: page.featurecodeadmin.php:197
-msgid "Are you sure you wish to proceed?"
-msgstr "Вы уверены, что хотите продолжить?"
-
-#: page.featurecodeadmin.php:73
-msgid "Default"
-msgstr "по умолчанию"
-
-#: page.featurecodeadmin.php:112 page.featurecodeadmin.php:152
-msgid "Disabled"
-msgstr "Деактивировано"
-
-#: page.featurecodeadmin.php:151
-msgid "Enabled"
-msgstr "Активировано"
-
-#: page.featurecodeadmin.php:74
-msgid "Feature"
-msgstr "Сервис"
-
-#: featurecodeadmin.i18n.php:3 page.featurecodeadmin.php:70
+#: featurecodeadmin.i18n.php:4 views/main.php:9
 msgid "Feature Code Admin"
 msgstr "Управление сервисными кодами"
 
-#: page.featurecodeadmin.php:49
+#: page.featurecodeadmin.php:44
 msgid "Feature Code Conflicts with other Extensions"
 msgstr "Сервисный код конфликтует с другим внутренним номером"
 
-#: featurecodeadmin.i18n.php:5
+#: featurecodeadmin.i18n.php:8
 msgid "Feature Codes"
 msgstr "Сервисные коды"
 
-#: page.featurecodeadmin.php:196
-msgid "Feature Codes have been duplicated"
-msgstr "Найдено дублирование сервисных кодов"
-
-#: functions.inc.php:61
+#: functions.inc.php:20
 msgid "Featurecode: "
 msgstr "Сервисный код"
 
-#: page.featurecodeadmin.php:195
-msgid ""
-"Please enter a Feature Code or check Use Default for all Enabled Feature "
-"Codes"
+#: assets/js/featurecodeadmin.js:19
+msgid "Please enter a Feature Code or uncheck Customize"
 msgstr ""
-"Пожалуйста введите сервисный код или отметье 'по умолчанию' для всех "
-"Активированных Сервисов"
 
-#: page.featurecodeadmin.php:74
-msgid "Status"
-msgstr "Статус"
+#: Featurecodeadmin.class.php:25
+msgid "Reset"
+msgstr ""
 
-#: page.featurecodeadmin.php:160
-msgid "Submit Changes"
-msgstr "Подтвердить изменения"
+#: Featurecodeadmin.class.php:30
+msgid "Submit"
+msgstr ""
 
-#: page.featurecodeadmin.php:73
-msgid "Use"
-msgstr "Используется"
-
-#: page.featurecodeadmin.php:47
+#: page.featurecodeadmin.php:42
 msgid ""
 "You have feature code conflicts with extension numbers in other modules. "
 "This will result in unexpected and broken behavior."
 msgstr ""
 "Обнаружен конфликт серивсного кода с внутренним номером в другом модуле. Что "
 "может привести к неожиданному и некорректному поведению"
+
+#~ msgid "Are you sure you wish to proceed?"
+#~ msgstr "Вы уверены, что хотите продолжить?"
+
+#~ msgid "Default"
+#~ msgstr "по умолчанию"
+
+#~ msgid "Disabled"
+#~ msgstr "Деактивировано"
+
+#~ msgid "Enabled"
+#~ msgstr "Активировано"
+
+#~ msgid "Feature"
+#~ msgstr "Сервис"
+
+#~ msgid "Feature Codes have been duplicated"
+#~ msgstr "Найдено дублирование сервисных кодов"
+
+#~ msgid ""
+#~ "Please enter a Feature Code or check Use Default for all Enabled Feature "
+#~ "Codes"
+#~ msgstr ""
+#~ "Пожалуйста введите сервисный код или отметье 'по умолчанию' для всех "
+#~ "Активированных Сервисов"
+
+#~ msgid "Status"
+#~ msgstr "Статус"
+
+#~ msgid "Submit Changes"
+#~ msgstr "Подтвердить изменения"
+
+#~ msgid "Use"
+#~ msgstr "Используется"
 
 #~ msgid "Blacklist a number"
 #~ msgstr "Номер - в Черный список"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-20 19:32-0500\n"
+"POT-Creation-Date: 2015-03-06 21:46-0500\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Francesco Romano <francesco.romano@alteclab.it>\n"
 "Language-Team: Italian\n"
@@ -12,77 +12,79 @@ msgstr ""
 "X-Poedit-Language: Italian\n"
 "X-Poedit-Country: ITALY\n"
 
-#: featurecodeadmin.i18n.php:4
+#: featurecodeadmin.i18n.php:6 featurecodeadmin.i18n.php:10
 msgid "Admin"
 msgstr ""
 
-#: page.featurecodeadmin.php:197
-msgid "Are you sure you wish to proceed?"
-msgstr "Sei sicuro di voler procedere?"
-
-#: page.featurecodeadmin.php:73
-msgid "Default"
-msgstr "Predefinito"
-
-#: page.featurecodeadmin.php:112 page.featurecodeadmin.php:152
-msgid "Disabled"
-msgstr "Disattivato"
-
-#: page.featurecodeadmin.php:151
-msgid "Enabled"
-msgstr "Attivato"
-
-#: page.featurecodeadmin.php:74
-msgid "Feature"
-msgstr "Servizio"
-
-#: featurecodeadmin.i18n.php:3 page.featurecodeadmin.php:70
+#: featurecodeadmin.i18n.php:4 views/main.php:9
 msgid "Feature Code Admin"
 msgstr "Amministrazione Codici Sevizi"
 
-#: page.featurecodeadmin.php:49
+#: page.featurecodeadmin.php:44
 msgid "Feature Code Conflicts with other Extensions"
 msgstr "Un Codice Servizio va in conflitto con un altro interno"
 
-#: featurecodeadmin.i18n.php:5
+#: featurecodeadmin.i18n.php:8
 msgid "Feature Codes"
 msgstr "Codici Servizi"
 
-#: page.featurecodeadmin.php:196
-msgid "Feature Codes have been duplicated"
-msgstr "Alcuni Codici Servizio sono dublicati"
-
-#: functions.inc.php:61
+#: functions.inc.php:20
 msgid "Featurecode: "
 msgstr "Codice Sevizio"
 
-#: page.featurecodeadmin.php:195
-msgid ""
-"Please enter a Feature Code or check Use Default for all Enabled Feature "
-"Codes"
+#: assets/js/featurecodeadmin.js:19
+msgid "Please enter a Feature Code or uncheck Customize"
 msgstr ""
-"Prego immettere un Codice Servizio o impostare su Utilizza Predefinito per "
-"l'attivazione di tutti i Codici Servizi"
 
-#: page.featurecodeadmin.php:74
-msgid "Status"
-msgstr "Stato"
+#: Featurecodeadmin.class.php:25
+msgid "Reset"
+msgstr ""
 
-#: page.featurecodeadmin.php:160
-msgid "Submit Changes"
-msgstr "Conferma Cambiamenti"
+#: Featurecodeadmin.class.php:30
+msgid "Submit"
+msgstr ""
 
-#: page.featurecodeadmin.php:73
-msgid "Use"
-msgstr "Utilizzare"
-
-#: page.featurecodeadmin.php:47
+#: page.featurecodeadmin.php:42
 msgid ""
 "You have feature code conflicts with extension numbers in other modules. "
 "This will result in unexpected and broken behavior."
 msgstr ""
 "Hai un codice servizio in conflitto con altre numerazione di interni di "
 "altri moduli. Questo potrebbe causare comportamenti strani ed inaspetatti."
+
+#~ msgid "Are you sure you wish to proceed?"
+#~ msgstr "Sei sicuro di voler procedere?"
+
+#~ msgid "Default"
+#~ msgstr "Predefinito"
+
+#~ msgid "Disabled"
+#~ msgstr "Disattivato"
+
+#~ msgid "Enabled"
+#~ msgstr "Attivato"
+
+#~ msgid "Feature"
+#~ msgstr "Servizio"
+
+#~ msgid "Feature Codes have been duplicated"
+#~ msgstr "Alcuni Codici Servizio sono dublicati"
+
+#~ msgid ""
+#~ "Please enter a Feature Code or check Use Default for all Enabled Feature "
+#~ "Codes"
+#~ msgstr ""
+#~ "Prego immettere un Codice Servizio o impostare su Utilizza Predefinito "
+#~ "per l'attivazione di tutti i Codici Servizi"
+
+#~ msgid "Status"
+#~ msgstr "Stato"
+
+#~ msgid "Submit Changes"
+#~ msgstr "Conferma Cambiamenti"
+
+#~ msgid "Use"
+#~ msgstr "Utilizzare"
 
 #~ msgid "featuredescription"
 #~ msgstr "descrizionecodice"
