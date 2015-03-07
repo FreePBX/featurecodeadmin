@@ -1,3 +1,20 @@
+# CREDITS for JAPANESE TRANSLATION
+# ================================
+# Current translation & maintenance: QLOOG, Inc. (Kobe, Japan)
+# Inquiries: info@qloog.com / www.qloog.com
+#
+# This translation is a culmination of the hard work of
+# several outstanding individuals, which started in 2009 with the 
+# first-ever Japanese localization of FreePBX by Kenichi Fukaumi 
+# and Kazuhiro Tokuyama (FreePBX Japanized Project).
+#
+# Beginning in 2013, with the approval of the original authors, 
+# QLOOG undertook a large scale overhaul of the translation to 
+# expand it for compatibility with FreePBX 2.11. Our work is, 
+# of course, released under the same GPLv2 license as FreePBX. 
+# We only ask that you kindly retain these credits in honor of 
+# the time and effort that all of us have contributed. Enjoy!
+#
 # This file is part of FreePBX.
 #
 #    FreePBX is free software: you can redistribute it and/or modify
@@ -13,97 +30,99 @@
 #    You should have received a copy of the GNU General Public License
 #    along with FreePBX.  If not, see <http://www.gnu.org/licenses/>.
 #
-# Copyright 2009, Marcelo Araujo
+# FreePBX language template for featurecodeadmin
+# Copyright (C) 2008, 2009, 2010 Bandwith.com
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: FreePBX 2.5.1\n"
+"Project-Id-Version: FreePBX 2.10.0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-02-20 19:32-0500\n"
-"PO-Revision-Date: 2009-05-11 20:09-0300\n"
-"Last-Translator: Marcelo Araujo <marcelo.araujo@voffice.com.br>\n"
-"Language-Team: midiVTS team <team@midivts.org.br>\n"
+"PO-Revision-Date: 2014-05-28 14:18+0200\n"
+"Last-Translator: Kevin <kevin@qloog.com>\n"
+"Language-Team: Japanese <http://git.freepbx.org/projects/freepbx/"
+"featurecodeadmin/ja/>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Language: Portuguese\n"
-"X-Poedit-Country: BRAZIL\n"
-"X-Poedit-SourceCharset: utf-8\n"
+"Language: ja_JP\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 1.9-dev\n"
 
 #: featurecodeadmin.i18n.php:4
 msgid "Admin"
-msgstr ""
+msgstr "アドミン"
 
 #: page.featurecodeadmin.php:197
 msgid "Are you sure you wish to proceed?"
-msgstr "Tem certeza que deseja continuar?"
+msgstr "処理を続行しますか？"
 
 #: page.featurecodeadmin.php:73
 msgid "Default"
-msgstr "Padrão"
+msgstr "デフォルト"
 
 #: page.featurecodeadmin.php:112 page.featurecodeadmin.php:152
 msgid "Disabled"
-msgstr "Desabilitado"
+msgstr "無効"
 
 #: page.featurecodeadmin.php:151
 msgid "Enabled"
-msgstr "Habilitado"
+msgstr "有効"
 
 #: page.featurecodeadmin.php:74
 msgid "Feature"
-msgstr "Facilidade"
+msgstr "機能"
 
 #: featurecodeadmin.i18n.php:3 page.featurecodeadmin.php:70
 msgid "Feature Code Admin"
-msgstr "Administrador do Códigos de Facilidades"
+msgstr "機能コード管理"
 
 #: page.featurecodeadmin.php:49
 msgid "Feature Code Conflicts with other Extensions"
-msgstr "Código de Facilidade conflita com outras extensões"
+msgstr "他の内線との機能コードの衝突"
 
 #: featurecodeadmin.i18n.php:5
 msgid "Feature Codes"
-msgstr "Códigos de Facilidades"
+msgstr "機能コード"
 
 #: page.featurecodeadmin.php:196
 msgid "Feature Codes have been duplicated"
-msgstr "Códigos de Facilidades foram duplicados"
+msgstr "機能コードが重複しています"
 
 #: functions.inc.php:61
 msgid "Featurecode: "
-msgstr "Código de facilidade:"
+msgstr "機能コード: "
 
 #: page.featurecodeadmin.php:195
 msgid ""
 "Please enter a Feature Code or check Use Default for all Enabled Feature "
 "Codes"
 msgstr ""
-"Por favor, entre com o Código da Facilidade ou selecione Usar Padrão para "
-"todos os Códigos de Facilidades. "
+"機能コードを入力するか、「デフォルトを使う」をチェックして、すべての機能コー"
+"ドを有効にしてください。"
 
 #: page.featurecodeadmin.php:74
 msgid "Status"
-msgstr "Status"
+msgstr "ステータス"
 
 #: page.featurecodeadmin.php:160
 msgid "Submit Changes"
-msgstr "Submeter mudanças"
+msgstr "変更を適用"
 
 #: page.featurecodeadmin.php:73
 msgid "Use"
-msgstr "Usar"
+msgstr "デフォルトを"
 
 #: page.featurecodeadmin.php:47
 msgid ""
 "You have feature code conflicts with extension numbers in other modules. "
 "This will result in unexpected and broken behavior."
 msgstr ""
-"Você tem um código de facilidade que conflita com os números de extensão nos "
-"outros módulos. Isto irá resultar em um comportamento errado inesperado."
+"他のモジュールと機能コードが衝突しています。動作が不定となりエラーが発生する"
+"可能性があります。"
 
 #~ msgid "featuredescription"
-#~ msgstr "descrição da facilidade"
+#~ msgstr "キー説明"
 
 #~ msgid "moduledescription"
-#~ msgstr "descrição do módulo"
+#~ msgstr "モジュール説明"

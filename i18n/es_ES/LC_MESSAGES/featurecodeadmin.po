@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX - featurecodeadmin module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-09-23 09:52+0000\n"
+"POT-Creation-Date: 2015-02-20 19:32-0500\n"
 "PO-Revision-Date: 2009-01-22 11:03+0100\n"
 "Last-Translator: Juan Asensio Sánchez <okelet@gmail.com>\n"
 "Language-Team: Juan Asensio Sánchez <okelet@gmail.com>\n"
@@ -13,21 +13,72 @@ msgstr ""
 "X-Poedit-Country: SPAIN\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-msgid "Feature Code Admin"
-msgstr "Códigos de características"
-
+#: featurecodeadmin.i18n.php:4
 msgid "Admin"
 msgstr ""
 
+#: page.featurecodeadmin.php:197
+msgid "Are you sure you wish to proceed?"
+msgstr "¿Está seguro de que desea continuar?"
+
+#: page.featurecodeadmin.php:73
+msgid "Default"
+msgstr "Por defecto"
+
+#: page.featurecodeadmin.php:112 page.featurecodeadmin.php:152
+msgid "Disabled"
+msgstr "Deshabilitado"
+
+#: page.featurecodeadmin.php:151
+msgid "Enabled"
+msgstr "Habilitado"
+
+#: page.featurecodeadmin.php:74
+msgid "Feature"
+msgstr "Característica"
+
+#: featurecodeadmin.i18n.php:3 page.featurecodeadmin.php:70
+msgid "Feature Code Admin"
+msgstr "Códigos de características"
+
+#: page.featurecodeadmin.php:49
+msgid "Feature Code Conflicts with other Extensions"
+msgstr ""
+"Los códigos de características están en conflicto con otras extensiones"
+
+#: featurecodeadmin.i18n.php:5
 msgid "Feature Codes"
 msgstr "Códigos de características"
 
+#: page.featurecodeadmin.php:196
+msgid "Feature Codes have been duplicated"
+msgstr "Hay códigos de características duplicados"
+
+#: functions.inc.php:61
 msgid "Featurecode: "
 msgstr "Código de la característica:"
 
-msgid "featuredescription"
-msgstr "Descripción de la característica"
+#: page.featurecodeadmin.php:195
+msgid ""
+"Please enter a Feature Code or check Use Default for all Enabled Feature "
+"Codes"
+msgstr ""
+"Por favor, introduzca un código de característica, o seleccione \"Por defecto"
+"\" para todos los códigos de características habilitados"
 
+#: page.featurecodeadmin.php:74
+msgid "Status"
+msgstr "Estado"
+
+#: page.featurecodeadmin.php:160
+msgid "Submit Changes"
+msgstr "Enviar cambios"
+
+#: page.featurecodeadmin.php:73
+msgid "Use"
+msgstr "Usar"
+
+#: page.featurecodeadmin.php:47
 msgid ""
 "You have feature code conflicts with extension numbers in other modules. "
 "This will result in unexpected and broken behavior."
@@ -36,43 +87,8 @@ msgstr ""
 "extensiones en otros módulos. Esto hará que se produzcan resultados "
 "inesperados y un comportamiento erróneo."
 
-msgid "Feature Code Conflicts with other Extensions"
-msgstr ""
-"Los códigos de características están en conflicto con otras extensiones"
+#~ msgid "featuredescription"
+#~ msgstr "Descripción de la característica"
 
-msgid "Use"
-msgstr "Usar"
-
-msgid "Default"
-msgstr "Por defecto"
-
-msgid "Feature"
-msgstr "Característica"
-
-msgid "Status"
-msgstr "Estado"
-
-msgid "moduledescription"
-msgstr "Descripción del módulo"
-
-msgid "Disabled"
-msgstr "Deshabilitado"
-
-msgid "Enabled"
-msgstr "Habilitado"
-
-msgid "Submit Changes"
-msgstr "Enviar cambios"
-
-msgid ""
-"Please enter a Feature Code or check Use Default for all Enabled Feature "
-"Codes"
-msgstr ""
-"Por favor, introduzca un código de característica, o seleccione \"Por defecto"
-"\" para todos los códigos de características habilitados"
-
-msgid "Feature Codes have been duplicated"
-msgstr "Hay códigos de características duplicados"
-
-msgid "Are you sure you wish to proceed?"
-msgstr "¿Está seguro de que desea continuar?"
+#~ msgid "moduledescription"
+#~ msgstr "Descripción del módulo"
