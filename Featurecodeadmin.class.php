@@ -57,5 +57,20 @@ class Featurecodeadmin implements \BMO {
 			needreload();
 		}
 	}
+	public function printExtensions(){
+		$ret = array();
+		$ret['title'] = _("Feature Codes");
+		$featurecodes = \featurecodes_getAllFeaturesDetailed();
+		$ret['textdesc'] = _('Description');
+    	$ret['numdesc'] = _("Code");
+    	$ret['items'] = array();
+    	foreach ($featurecodes as $fc) {
+    		if($fc['featureenabled'] && $fc['moduleenabled']){
+    			$code = $fc['customcode']?$fc['customcode']:$fc['defaultcode'];
+    			$ret['items'][] = array($fc['featuredescription'],$code);
+    		}
+    	}
+		return $ret;
+	}
 
 }

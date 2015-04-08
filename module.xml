@@ -22,6 +22,11 @@
 		*2.10.0.0* new version changes
 		*2.9.0.0* #4617, #4653, #4655
 	</changelog>
+	<hooks>
+		<featurecodeadmin namespace="FreePBX\modules" class="Printextensions">
+			<method namespace="FreePBX\modules" class="Featurecodeadmin" callingMethod="getSections">printExtensions</method>
+		</featurecodeadmin>
+	</hooks>
 	<depends>
 		<version>13.0</version>
 	</depends>
