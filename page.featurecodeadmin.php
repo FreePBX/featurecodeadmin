@@ -64,17 +64,17 @@ $modules = array();
 foreach($featurecodes as $item) {
 	$moduledesc = isset($item['moduledescription']) ? modgettext::_($item['moduledescription'], $item['modulename']) : null;
 	// just in case the translator put the translation in featurcodes module:
-	if (($moduledesc !== null) && ($moduledesc == $item['moduledescription'])) {
+	if (($moduledesc !== null) && !empty($moduledesc) && ($moduledesc == $item['moduledescription'])) {
 		$moduledesc = _($moduledesc);
 	}
-	$featuredesc = modgettext::_($item['featuredescription'], $item['modulename']);
+	$featuredesc = !empty($item['featuredescription']) ? modgettext::_($item['featuredescription'], $item['modulename']) : "";
 	// just in case the translator put the translation in featurcodes module:
-	if ($featuredesc == $item['featuredescription']) {
+	if (!empty($item['featuredescription']) && ($featuredesc == $item['featuredescription'])) {
 		$featuredesc = _($featuredesc);
 	}
-	$help = modgettext::_($item['featurehelptext'], $item['modulename']);
-	if ($help == $item['featurehelptext']) {
-		$help = _($featurehelp);
+	$help = !empty($item['featurehelptext']) ? modgettext::_($item['featurehelptext'], $item['modulename']) : "";
+	if (!empty($item['featurehelptext']) && ($help == $item['featurehelptext'])) {
+		$help = _($help);
 	}
 	//TODO: What did we do here before when the module was disabled?
 	//bueller, bueller, bueller

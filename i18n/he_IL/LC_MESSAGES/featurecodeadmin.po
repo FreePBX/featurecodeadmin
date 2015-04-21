@@ -50,10 +50,31 @@ msgid "Submit"
 msgstr ""
 
 #: page.featurecodeadmin.php:42
-msgid ""
-"You have feature code conflicts with extension numbers in other modules. "
-"This will result in unexpected and broken behavior."
+msgid "You have feature code conflicts with extension numbers in other modules. This will result in unexpected and broken behavior."
 msgstr ""
+
+#: page.featurecodeadmin.php:197
+msgid "Are you sure you wish to proceed?"
+msgstr ""
+
+#: page.featurecodeadmin.php:196
+msgid "Feature Codes have been duplicated"
+msgstr ""
+
+#: page.featurecodeadmin.php:195
+msgid "Please enter a Feature Code or check Use Default for all Enabled Feature Codes"
+msgstr ""
+
+#: page.featurecodeadmin.php:160
+msgid "Submit Changes"
+msgstr ""
+
+#: page.featurecodeadmin.php:77
+msgid "none"
+msgstr ""
+
+#~ msgid "Use"
+#~ msgstr "השתמש"
 
 #~ msgid "Default"
 #~ msgstr "ברירת מחדל"
@@ -69,6 +90,3 @@ msgstr ""
 
 #~ msgid "Status"
 #~ msgstr "סטטוס"
-
-#~ msgid "Use"
-#~ msgstr "השתמש"

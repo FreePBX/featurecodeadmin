@@ -63,12 +63,12 @@ msgid "Submit"
 msgstr ""
 
 #: page.featurecodeadmin.php:42
-msgid ""
-"You have feature code conflicts with extension numbers in other modules. "
-"This will result in unexpected and broken behavior."
+msgid "You have feature code conflicts with extension numbers in other modules. This will result in unexpected and broken behavior."
+msgstr "Você tem um código de facilidade que conflita com os números de extensão nos outros módulos. Isto irá resultar em um comportamento errado inesperado."
+
+#: page.featurecodeadmin.php:77
+msgid "none"
 msgstr ""
-"Você tem um código de facilidade que conflita com os números de extensão nos "
-"outros módulos. Isto irá resultar em um comportamento errado inesperado."
 
 #~ msgid "Are you sure you wish to proceed?"
 #~ msgstr "Tem certeza que deseja continuar?"
@@ -88,12 +88,8 @@ msgstr ""
 #~ msgid "Feature Codes have been duplicated"
 #~ msgstr "Códigos de Facilidades foram duplicados"
 
-#~ msgid ""
-#~ "Please enter a Feature Code or check Use Default for all Enabled Feature "
-#~ "Codes"
-#~ msgstr ""
-#~ "Por favor, entre com o Código da Facilidade ou selecione Usar Padrão para "
-#~ "todos os Códigos de Facilidades. "
+#~ msgid "Please enter a Feature Code or check Use Default for all Enabled Feature Codes"
+#~ msgstr "Por favor, entre com o Código da Facilidade ou selecione Usar Padrão para todos os Códigos de Facilidades. "
 
 #~ msgid "Status"
 #~ msgstr "Status"

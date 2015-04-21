@@ -61,13 +61,12 @@ msgid "Submit"
 msgstr ""
 
 #: page.featurecodeadmin.php:42
-msgid ""
-"You have feature code conflicts with extension numbers in other modules. "
-"This will result in unexpected and broken behavior."
+msgid "You have feature code conflicts with extension numbers in other modules. This will result in unexpected and broken behavior."
+msgstr "Vous avez des conflits de code de caractéristique avec les numéros d'extension dans d'autres modules. Cela donne un comportement défectueux et inattendu."
+
+#: page.featurecodeadmin.php:77
+msgid "none"
 msgstr ""
-"Vous avez des conflits de code de caractéristique avec les numéros "
-"d'extension dans d'autres modules. Cela donne un comportement défectueux et "
-"inattendu."
 
 #~ msgid "Are you sure you wish to proceed?"
 #~ msgstr "Êtes-vous sûr de vouloir procéder ?"
@@ -87,12 +86,8 @@ msgstr ""
 #~ msgid "Feature Codes have been duplicated"
 #~ msgstr "Les Codes de Caractéristique ont été dupliqués"
 
-#~ msgid ""
-#~ "Please enter a Feature Code or check Use Default for all Enabled Feature "
-#~ "Codes"
-#~ msgstr ""
-#~ "Veuillez entrer un Code de Caractéristique ou cochez Utiliser Par Défaut "
-#~ "pour tous les Codes de Caractéristique Activés"
+#~ msgid "Please enter a Feature Code or check Use Default for all Enabled Feature Codes"
+#~ msgstr "Veuillez entrer un Code de Caractéristique ou cochez Utiliser Par Défaut pour tous les Codes de Caractéristique Activés"
 
 #~ msgid "Status"
 #~ msgstr "Statut"

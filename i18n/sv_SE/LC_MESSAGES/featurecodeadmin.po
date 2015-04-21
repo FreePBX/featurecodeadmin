@@ -61,12 +61,12 @@ msgid "Submit"
 msgstr ""
 
 #: page.featurecodeadmin.php:42
-msgid ""
-"You have feature code conflicts with extension numbers in other modules. "
-"This will result in unexpected and broken behavior."
+msgid "You have feature code conflicts with extension numbers in other modules. This will result in unexpected and broken behavior."
+msgstr "Du har valt en funktionskod med samma siffror som en anknytning. Detta kommer INTE att fungera, välj annan funktionskod."
+
+#: page.featurecodeadmin.php:77
+msgid "none"
 msgstr ""
-"Du har valt en funktionskod med samma siffror som en anknytning. Detta "
-"kommer INTE att fungera, välj annan funktionskod."
 
 #~ msgid "Are you sure you wish to proceed?"
 #~ msgstr "Är du säker på att du vill fortsätta?"
@@ -86,12 +86,8 @@ msgstr ""
 #~ msgid "Feature Codes have been duplicated"
 #~ msgstr "Funktionskoden är en dubblett"
 
-#~ msgid ""
-#~ "Please enter a Feature Code or check Use Default for all Enabled Feature "
-#~ "Codes"
-#~ msgstr ""
-#~ "Skriv in en funktionskod eller välj Använd standard för alla aktiverade "
-#~ "funktionskoder"
+#~ msgid "Please enter a Feature Code or check Use Default for all Enabled Feature Codes"
+#~ msgstr "Skriv in en funktionskod eller välj Använd standard för alla aktiverade funktionskoder"
 
 #~ msgid "Status"
 #~ msgstr "Status"
