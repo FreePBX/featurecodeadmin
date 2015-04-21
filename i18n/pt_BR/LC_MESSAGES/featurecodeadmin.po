@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-20 19:32-0500\n"
+"POT-Creation-Date: 2015-04-21 16:30-0400\n"
 "PO-Revision-Date: 2009-05-11 20:09-0300\n"
 "Last-Translator: Marcelo Araujo <marcelo.araujo@voffice.com.br>\n"
 "Language-Team: midiVTS team <team@midivts.org.br>\n"
@@ -30,7 +30,7 @@ msgstr ""
 "X-Poedit-Country: BRAZIL\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: featurecodeadmin.i18n.php:4
+#: featurecodeadmin.i18n.php:6 featurecodeadmin.i18n.php:10
 msgid "Admin"
 msgstr ""
 
@@ -54,7 +54,7 @@ msgstr "Habilitado"
 msgid "Feature"
 msgstr "Facilidade"
 
-#: featurecodeadmin.i18n.php:3 page.featurecodeadmin.php:70
+#: featurecodeadmin.i18n.php:4 page.featurecodeadmin.php:70
 msgid "Feature Code Admin"
 msgstr "Administrador do Códigos de Facilidades"
 
@@ -62,7 +62,7 @@ msgstr "Administrador do Códigos de Facilidades"
 msgid "Feature Code Conflicts with other Extensions"
 msgstr "Código de Facilidade conflita com outras extensões"
 
-#: featurecodeadmin.i18n.php:5
+#: featurecodeadmin.i18n.php:8
 msgid "Feature Codes"
 msgstr "Códigos de Facilidades"
 
@@ -101,6 +101,10 @@ msgid ""
 msgstr ""
 "Você tem um código de facilidade que conflita com os números de extensão nos "
 "outros módulos. Isto irá resultar em um comportamento errado inesperado."
+
+#: page.featurecodeadmin.php:77
+msgid "none"
+msgstr ""
 
 #~ msgid "featuredescription"
 #~ msgstr "descrição da facilidade"

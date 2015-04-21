@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX v2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-20 19:32-0500\n"
+"POT-Creation-Date: 2015-04-21 16:30-0400\n"
 "PO-Revision-Date: 2014-07-21 17:01+0200\n"
 "Last-Translator: Chavdar <chavdar_75@yahoo.com>\n"
 "Language-Team: Bulgarian <http://git.freepbx.org/projects/freepbx/"
@@ -22,7 +22,7 @@ msgstr ""
 "X-Poedit-Country: BULGARIA\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: featurecodeadmin.i18n.php:4
+#: featurecodeadmin.i18n.php:6 featurecodeadmin.i18n.php:10
 msgid "Admin"
 msgstr "Админ"
 
@@ -46,7 +46,7 @@ msgstr "Разрешен"
 msgid "Feature"
 msgstr "Специален код"
 
-#: featurecodeadmin.i18n.php:3 page.featurecodeadmin.php:70
+#: featurecodeadmin.i18n.php:4 page.featurecodeadmin.php:70
 msgid "Feature Code Admin"
 msgstr "Специални Кодове"
 
@@ -54,7 +54,7 @@ msgstr "Специални Кодове"
 msgid "Feature Code Conflicts with other Extensions"
 msgstr "Специалният Код е в конфликт с други Вътрешни Номера"
 
-#: featurecodeadmin.i18n.php:5
+#: featurecodeadmin.i18n.php:8
 msgid "Feature Codes"
 msgstr "Специални Кодове"
 
@@ -93,6 +93,10 @@ msgid ""
 msgstr ""
 "Вие имате специален код, който е в конфликт с вътрешни номера в други "
 "модули. Това може да доведе до неочакван и неправилен режим на работа."
+
+#: page.featurecodeadmin.php:77
+msgid "none"
+msgstr ""
 
 #~ msgid "featuredescription"
 #~ msgstr "описание на специалния код"

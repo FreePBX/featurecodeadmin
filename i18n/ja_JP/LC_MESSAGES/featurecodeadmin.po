@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-20 19:32-0500\n"
+"POT-Creation-Date: 2015-04-21 16:30-0400\n"
 "PO-Revision-Date: 2014-05-28 14:18+0200\n"
 "Last-Translator: Kevin <kevin@qloog.com>\n"
 "Language-Team: Japanese <http://git.freepbx.org/projects/freepbx/"
@@ -49,7 +49,7 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 1.9-dev\n"
 
-#: featurecodeadmin.i18n.php:4
+#: featurecodeadmin.i18n.php:6 featurecodeadmin.i18n.php:10
 msgid "Admin"
 msgstr "アドミン"
 
@@ -73,7 +73,7 @@ msgstr "有効"
 msgid "Feature"
 msgstr "機能"
 
-#: featurecodeadmin.i18n.php:3 page.featurecodeadmin.php:70
+#: featurecodeadmin.i18n.php:4 page.featurecodeadmin.php:70
 msgid "Feature Code Admin"
 msgstr "機能コード管理"
 
@@ -81,7 +81,7 @@ msgstr "機能コード管理"
 msgid "Feature Code Conflicts with other Extensions"
 msgstr "他の内線との機能コードの衝突"
 
-#: featurecodeadmin.i18n.php:5
+#: featurecodeadmin.i18n.php:8
 msgid "Feature Codes"
 msgstr "機能コード"
 
@@ -120,6 +120,10 @@ msgid ""
 msgstr ""
 "他のモジュールと機能コードが衝突しています。動作が不定となりエラーが発生する"
 "可能性があります。"
+
+#: page.featurecodeadmin.php:77
+msgid "none"
+msgstr ""
 
 #~ msgid "featuredescription"
 #~ msgstr "キー説明"

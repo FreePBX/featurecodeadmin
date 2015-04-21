@@ -2,22 +2,22 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX - featurecodeadmin module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-20 19:32-0500\n"
+"POT-Creation-Date: 2015-04-21 16:30-0400\n"
 "PO-Revision-Date: 2015-03-27 12:17+0200\n"
 "Last-Translator: Ernesto <ecasas@sangoma.com>\n"
-"Language-Team: Spanish "
-"<http://weblate.freepbx.org/projects/freepbx/featurecodeadmin/es_ES/>\n"
-"Language: es_ES\n"
+"Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/"
+"featurecodeadmin/es_ES/>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: es_ES\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.2-dev\n"
 "X-Poedit-Language: Spanish\n"
 "X-Poedit-Country: SPAIN\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: featurecodeadmin.i18n.php:4
+#: featurecodeadmin.i18n.php:6 featurecodeadmin.i18n.php:10
 msgid "Admin"
 msgstr "Administ"
 
@@ -41,7 +41,7 @@ msgstr "Habilitado"
 msgid "Feature"
 msgstr "Característica"
 
-#: featurecodeadmin.i18n.php:3 page.featurecodeadmin.php:70
+#: featurecodeadmin.i18n.php:4 page.featurecodeadmin.php:70
 msgid "Feature Code Admin"
 msgstr "Códigos de características"
 
@@ -50,7 +50,7 @@ msgid "Feature Code Conflicts with other Extensions"
 msgstr ""
 "Los códigos de características están en conflicto con otras extensiones"
 
-#: featurecodeadmin.i18n.php:5
+#: featurecodeadmin.i18n.php:8
 msgid "Feature Codes"
 msgstr "Códigos de características"
 
@@ -90,6 +90,10 @@ msgstr ""
 "Tiene conflictos en los códigos de características con los números de "
 "extensiones en otros módulos. Esto hará que se produzcan resultados "
 "inesperados y un comportamiento erróneo."
+
+#: page.featurecodeadmin.php:77
+msgid "none"
+msgstr ""
 
 #~ msgid "featuredescription"
 #~ msgstr "Descripción de la característica"

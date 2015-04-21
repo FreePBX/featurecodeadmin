@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-20 19:32-0500\n"
+"POT-Creation-Date: 2015-04-21 16:30-0400\n"
 "PO-Revision-Date: 2009-04-20 13:56+0100\n"
 "Last-Translator: Séverine GUTIERREZ <severine@medialsace.fr>\n"
 "Language-Team: Français <LL@li.org>\n"
@@ -28,7 +28,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: featurecodeadmin.i18n.php:4
+#: featurecodeadmin.i18n.php:6 featurecodeadmin.i18n.php:10
 msgid "Admin"
 msgstr ""
 
@@ -52,7 +52,7 @@ msgstr "Activé"
 msgid "Feature"
 msgstr "Caractéristiques"
 
-#: featurecodeadmin.i18n.php:3 page.featurecodeadmin.php:70
+#: featurecodeadmin.i18n.php:4 page.featurecodeadmin.php:70
 msgid "Feature Code Admin"
 msgstr "Admin de Code de Caractéristique"
 
@@ -60,7 +60,7 @@ msgstr "Admin de Code de Caractéristique"
 msgid "Feature Code Conflicts with other Extensions"
 msgstr "Conflits de Code de Caractéristique avec d'autres Extensions"
 
-#: featurecodeadmin.i18n.php:5
+#: featurecodeadmin.i18n.php:8
 msgid "Feature Codes"
 msgstr "Code de Caractéristique"
 
@@ -100,6 +100,10 @@ msgstr ""
 "Vous avez des conflits de code de caractéristique avec les numéros "
 "d'extension dans d'autres modules. Cela donne un comportement défectueux et "
 "inattendu."
+
+#: page.featurecodeadmin.php:77
+msgid "none"
+msgstr ""
 
 #~ msgid "featuredescription"
 #~ msgstr "Description de la Caractéristique"

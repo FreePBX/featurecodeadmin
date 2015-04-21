@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX featurecodeadmin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-20 19:32-0500\n"
+"POT-Creation-Date: 2015-04-21 16:30-0400\n"
 "PO-Revision-Date: 2008-09-17 10:00+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -28,7 +28,7 @@ msgstr ""
 "X-Poedit-Language: Swedish\n"
 "X-Poedit-Country: SWEDEN\n"
 
-#: featurecodeadmin.i18n.php:4
+#: featurecodeadmin.i18n.php:6 featurecodeadmin.i18n.php:10
 msgid "Admin"
 msgstr ""
 
@@ -52,7 +52,7 @@ msgstr "Aktiverad"
 msgid "Feature"
 msgstr "Funktionskod"
 
-#: featurecodeadmin.i18n.php:3 page.featurecodeadmin.php:70
+#: featurecodeadmin.i18n.php:4 page.featurecodeadmin.php:70
 msgid "Feature Code Admin"
 msgstr "Funktionskodsadministration"
 
@@ -60,7 +60,7 @@ msgstr "Funktionskodsadministration"
 msgid "Feature Code Conflicts with other Extensions"
 msgstr "Funktionskoden är samma som en anknytning"
 
-#: featurecodeadmin.i18n.php:5
+#: featurecodeadmin.i18n.php:8
 msgid "Feature Codes"
 msgstr "Funktionskoder"
 
@@ -99,3 +99,7 @@ msgid ""
 msgstr ""
 "Du har valt en funktionskod med samma siffror som en anknytning. Detta "
 "kommer INTE att fungera, välj annan funktionskod."
+
+#: page.featurecodeadmin.php:77
+msgid "none"
+msgstr ""
