@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: 1.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-04-21 16:30-0400\n"
-"PO-Revision-Date: 2015-04-23 15:02+0200\n"
-"Last-Translator: Yuriy <alliancesko@gmail.com>\n"
+"PO-Revision-Date: 2015-05-04 20:38+0200\n"
+"Last-Translator: Andrew <andrew.nagy@the159.com>\n"
 "Language-Team: Russian "
 "<http://weblate.freepbx.org/projects/freepbx/featurecodeadmin/ru_RU/>\n"
 "Language: ru_RU\n"
@@ -66,12 +66,13 @@ msgid "Featurecode: "
 msgstr "Сервисный код: "
 
 #: page.featurecodeadmin.php:195
+#, fuzzy
 msgid ""
 "Please enter a Feature Code or check Use Default for all Enabled Feature "
 "Codes"
 msgstr ""
-"Пожалуйста введите сервисный код или отметьте 'Использовать по умолчанию' "
-"для всех Активированных Сервисов"
+"Пожалуйста введите сервисный код или отметьте Использовать по умолчанию для "
+"всех Активированных Сервисов"
 
 #: page.featurecodeadmin.php:74
 msgid "Status"
