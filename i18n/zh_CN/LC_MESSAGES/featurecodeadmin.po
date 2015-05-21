@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-06 21:46-0500\n"
+"POT-Creation-Date: 2015-05-21 18:09-0400\n"
 "PO-Revision-Date: 2009-01-31 00:33+0800\n"
 "Last-Translator: 周征晟 <zhougongjizhe@163.com>\n"
 "Language-Team: EdwardBadBoy <zhougongjizhe@163.com>\n"
@@ -18,11 +18,15 @@ msgstr ""
 "X-Poedit-Country: CHINA\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: featurecodeadmin.i18n.php:6 featurecodeadmin.i18n.php:10
-msgid "Admin"
+#: Featurecodeadmin.class.php:65
+msgid "Code"
 msgstr ""
 
-#: featurecodeadmin.i18n.php:4 views/main.php:9
+#: Featurecodeadmin.class.php:64
+msgid "Description"
+msgstr ""
+
+#: views/main.php:9
 msgid "Feature Code Admin"
 msgstr "功能代码管理"
 
@@ -30,7 +34,7 @@ msgstr "功能代码管理"
 msgid "Feature Code Conflicts with other Extensions"
 msgstr "功能代码与其他分机有冲突"
 
-#: featurecodeadmin.i18n.php:8
+#: Featurecodeadmin.class.php:62
 msgid "Feature Codes"
 msgstr "功能代码"
 
@@ -51,12 +55,10 @@ msgid "Submit"
 msgstr ""
 
 #: page.featurecodeadmin.php:42
-msgid "You have feature code conflicts with extension numbers in other modules. This will result in unexpected and broken behavior."
+msgid ""
+"You have feature code conflicts with extension numbers in other modules. "
+"This will result in unexpected and broken behavior."
 msgstr "你的功能代码在其他的模块中与分机号有冲突。这将导致未知的错误行为。"
-
-#: page.featurecodeadmin.php:77
-msgid "none"
-msgstr ""
 
 #~ msgid "Are you sure you wish to proceed?"
 #~ msgstr "你确定要继续吗？"
@@ -76,7 +78,9 @@ msgstr ""
 #~ msgid "Feature Codes have been duplicated"
 #~ msgstr "功能代码已被复制"
 
-#~ msgid "Please enter a Feature Code or check Use Default for all Enabled Feature Codes"
+#~ msgid ""
+#~ "Please enter a Feature Code or check Use Default for all Enabled Feature "
+#~ "Codes"
 #~ msgstr "请输入一个功能代码或为所有启用的功能代码钩选“使用默认”"
 
 #~ msgid "Status"

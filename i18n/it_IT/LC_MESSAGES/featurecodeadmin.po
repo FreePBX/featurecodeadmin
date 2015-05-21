@@ -1,8 +1,12 @@
-#: featurecodeadmin.i18n.php:6 featurecodeadmin.i18n.php:10
-msgid "Admin"
+#: Featurecodeadmin.class.php:65
+msgid "Code"
 msgstr ""
 
-#: featurecodeadmin.i18n.php:4 views/main.php:9
+#: Featurecodeadmin.class.php:64
+msgid "Description"
+msgstr ""
+
+#: views/main.php:9
 msgid "Feature Code Admin"
 msgstr ""
 
@@ -10,7 +14,7 @@ msgstr ""
 msgid "Feature Code Conflicts with other Extensions"
 msgstr ""
 
-#: featurecodeadmin.i18n.php:8
+#: Featurecodeadmin.class.php:62
 msgid "Feature Codes"
 msgstr ""
 
@@ -31,9 +35,7 @@ msgid "Submit"
 msgstr ""
 
 #: page.featurecodeadmin.php:42
-msgid "You have feature code conflicts with extension numbers in other modules. This will result in unexpected and broken behavior."
-msgstr ""
-
-#: page.featurecodeadmin.php:77
-msgid "none"
+msgid ""
+"You have feature code conflicts with extension numbers in other modules. "
+"This will result in unexpected and broken behavior."
 msgstr ""

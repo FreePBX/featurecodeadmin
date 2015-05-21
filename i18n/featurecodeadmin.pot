@@ -9,19 +9,23 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-06 21:46-0500\n"
+"POT-Creation-Date: 2015-05-21 18:09-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: featurecodeadmin.i18n.php:6 featurecodeadmin.i18n.php:10
-msgid "Admin"
+#: Featurecodeadmin.class.php:65
+msgid "Code"
 msgstr ""
 
-#: featurecodeadmin.i18n.php:4 views/main.php:9
+#: Featurecodeadmin.class.php:64
+msgid "Description"
+msgstr ""
+
+#: views/main.php:9
 msgid "Feature Code Admin"
 msgstr ""
 
@@ -29,7 +33,7 @@ msgstr ""
 msgid "Feature Code Conflicts with other Extensions"
 msgstr ""
 
-#: featurecodeadmin.i18n.php:8
+#: Featurecodeadmin.class.php:62
 msgid "Feature Codes"
 msgstr ""
 
@@ -50,49 +54,7 @@ msgid "Submit"
 msgstr ""
 
 #: page.featurecodeadmin.php:42
-msgid "You have feature code conflicts with extension numbers in other modules. This will result in unexpected and broken behavior."
-msgstr ""
-
-#: page.featurecodeadmin.php:197
-msgid "Are you sure you wish to proceed?"
-msgstr ""
-
-#: page.featurecodeadmin.php:73
-msgid "Default"
-msgstr ""
-
-#: page.featurecodeadmin.php:112 page.featurecodeadmin.php:152
-msgid "Disabled"
-msgstr ""
-
-#: page.featurecodeadmin.php:151
-msgid "Enabled"
-msgstr ""
-
-#: page.featurecodeadmin.php:74
-msgid "Feature"
-msgstr ""
-
-#: page.featurecodeadmin.php:196
-msgid "Feature Codes have been duplicated"
-msgstr ""
-
-#: page.featurecodeadmin.php:195
-msgid "Please enter a Feature Code or check Use Default for all Enabled Feature Codes"
-msgstr ""
-
-#: page.featurecodeadmin.php:74
-msgid "Status"
-msgstr ""
-
-#: page.featurecodeadmin.php:160
-msgid "Submit Changes"
-msgstr ""
-
-#: page.featurecodeadmin.php:73
-msgid "Use"
-msgstr ""
-
-#: page.featurecodeadmin.php:77
-msgid "none"
+msgid ""
+"You have feature code conflicts with extension numbers in other modules. "
+"This will result in unexpected and broken behavior."
 msgstr ""

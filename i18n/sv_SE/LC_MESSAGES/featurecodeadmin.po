@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX featurecodeadmin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-06 21:46-0500\n"
+"POT-Creation-Date: 2015-05-21 18:09-0400\n"
 "PO-Revision-Date: 2008-09-17 10:00+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -28,11 +28,15 @@ msgstr ""
 "X-Poedit-Language: Swedish\n"
 "X-Poedit-Country: SWEDEN\n"
 
-#: featurecodeadmin.i18n.php:6 featurecodeadmin.i18n.php:10
-msgid "Admin"
+#: Featurecodeadmin.class.php:65
+msgid "Code"
 msgstr ""
 
-#: featurecodeadmin.i18n.php:4 views/main.php:9
+#: Featurecodeadmin.class.php:64
+msgid "Description"
+msgstr ""
+
+#: views/main.php:9
 msgid "Feature Code Admin"
 msgstr "Funktionskodsadministration"
 
@@ -40,7 +44,7 @@ msgstr "Funktionskodsadministration"
 msgid "Feature Code Conflicts with other Extensions"
 msgstr "Funktionskoden är samma som en anknytning"
 
-#: featurecodeadmin.i18n.php:8
+#: Featurecodeadmin.class.php:62
 msgid "Feature Codes"
 msgstr "Funktionskoder"
 
@@ -61,12 +65,12 @@ msgid "Submit"
 msgstr ""
 
 #: page.featurecodeadmin.php:42
-msgid "You have feature code conflicts with extension numbers in other modules. This will result in unexpected and broken behavior."
-msgstr "Du har valt en funktionskod med samma siffror som en anknytning. Detta kommer INTE att fungera, välj annan funktionskod."
-
-#: page.featurecodeadmin.php:77
-msgid "none"
+msgid ""
+"You have feature code conflicts with extension numbers in other modules. "
+"This will result in unexpected and broken behavior."
 msgstr ""
+"Du har valt en funktionskod med samma siffror som en anknytning. Detta "
+"kommer INTE att fungera, välj annan funktionskod."
 
 #~ msgid "Are you sure you wish to proceed?"
 #~ msgstr "Är du säker på att du vill fortsätta?"
@@ -86,8 +90,12 @@ msgstr ""
 #~ msgid "Feature Codes have been duplicated"
 #~ msgstr "Funktionskoden är en dubblett"
 
-#~ msgid "Please enter a Feature Code or check Use Default for all Enabled Feature Codes"
-#~ msgstr "Skriv in en funktionskod eller välj Använd standard för alla aktiverade funktionskoder"
+#~ msgid ""
+#~ "Please enter a Feature Code or check Use Default for all Enabled Feature "
+#~ "Codes"
+#~ msgstr ""
+#~ "Skriv in en funktionskod eller välj Använd standard för alla aktiverade "
+#~ "funktionskoder"
 
 #~ msgid "Status"
 #~ msgstr "Status"

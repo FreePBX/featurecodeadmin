@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-06 21:46-0500\n"
+"POT-Creation-Date: 2015-05-21 18:09-0400\n"
 "PO-Revision-Date: 2009-04-20 13:56+0100\n"
 "Last-Translator: Séverine GUTIERREZ <severine@medialsace.fr>\n"
 "Language-Team: Français <LL@li.org>\n"
@@ -28,11 +28,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: featurecodeadmin.i18n.php:6 featurecodeadmin.i18n.php:10
-msgid "Admin"
+#: Featurecodeadmin.class.php:65
+msgid "Code"
 msgstr ""
 
-#: featurecodeadmin.i18n.php:4 views/main.php:9
+#: Featurecodeadmin.class.php:64
+msgid "Description"
+msgstr ""
+
+#: views/main.php:9
 msgid "Feature Code Admin"
 msgstr "Admin de Code de Caractéristique"
 
@@ -40,7 +44,7 @@ msgstr "Admin de Code de Caractéristique"
 msgid "Feature Code Conflicts with other Extensions"
 msgstr "Conflits de Code de Caractéristique avec d'autres Extensions"
 
-#: featurecodeadmin.i18n.php:8
+#: Featurecodeadmin.class.php:62
 msgid "Feature Codes"
 msgstr "Code de Caractéristique"
 
@@ -61,12 +65,13 @@ msgid "Submit"
 msgstr ""
 
 #: page.featurecodeadmin.php:42
-msgid "You have feature code conflicts with extension numbers in other modules. This will result in unexpected and broken behavior."
-msgstr "Vous avez des conflits de code de caractéristique avec les numéros d'extension dans d'autres modules. Cela donne un comportement défectueux et inattendu."
-
-#: page.featurecodeadmin.php:77
-msgid "none"
+msgid ""
+"You have feature code conflicts with extension numbers in other modules. "
+"This will result in unexpected and broken behavior."
 msgstr ""
+"Vous avez des conflits de code de caractéristique avec les numéros "
+"d'extension dans d'autres modules. Cela donne un comportement défectueux et "
+"inattendu."
 
 #~ msgid "Are you sure you wish to proceed?"
 #~ msgstr "Êtes-vous sûr de vouloir procéder ?"
@@ -86,8 +91,12 @@ msgstr ""
 #~ msgid "Feature Codes have been duplicated"
 #~ msgstr "Les Codes de Caractéristique ont été dupliqués"
 
-#~ msgid "Please enter a Feature Code or check Use Default for all Enabled Feature Codes"
-#~ msgstr "Veuillez entrer un Code de Caractéristique ou cochez Utiliser Par Défaut pour tous les Codes de Caractéristique Activés"
+#~ msgid ""
+#~ "Please enter a Feature Code or check Use Default for all Enabled Feature "
+#~ "Codes"
+#~ msgstr ""
+#~ "Veuillez entrer un Code de Caractéristique ou cochez Utiliser Par Défaut "
+#~ "pour tous les Codes de Caractéristique Activés"
 
 #~ msgid "Status"
 #~ msgstr "Statut"
