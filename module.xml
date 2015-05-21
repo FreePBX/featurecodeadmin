@@ -2,7 +2,7 @@
 	<rawname>featurecodeadmin</rawname>
 	<repo>standard</repo>
 	<name>Feature Code Admin</name>
-	<version>13.0.1alpha1</version>
+	<version>13.0.1alpha2</version>
 	<publisher>FreePBX</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -13,11 +13,12 @@
 		<featurecodeadmin>Feature Codes</featurecodeadmin>
 	</menuitems>
 	<changelog>
+		*13.0.1alpha2* Visual Tweaks and fixes
 		*13.0.1alpha1* Consistency changes
 		*12.0.0* Add Help Text bubbles re FREEPBX-6903
 		*2.11.0.0* bump version
 		*2.10.0.3* #5488
-		*2.10.0.2* #5506 revert of r13179 
+		*2.10.0.2* #5506 revert of r13179
 		*2.10.0.1* #5463
 		*2.10.0.0* new version changes
 		*2.9.0.0* #4617, #4653, #4655
