@@ -11,14 +11,12 @@ msgstr ""
 "POT-Creation-Date: 2015-05-21 18:09-0400\n"
 "PO-Revision-Date: 2015-05-04 20:38+0200\n"
 "Last-Translator: Andrew <andrew.nagy@the159.com>\n"
-"Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/"
-"featurecodeadmin/ru_RU/>\n"
+"Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/featurecodeadmin/ru_RU/>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ru_RU\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
-"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 2.2-dev\n"
 
 #: Featurecodeadmin.class.php:65
@@ -58,41 +56,12 @@ msgid "Submit"
 msgstr ""
 
 #: page.featurecodeadmin.php:42
-msgid ""
-"You have feature code conflicts with extension numbers in other modules. "
-"This will result in unexpected and broken behavior."
-msgstr ""
-"Обнаружен конфликт сервисного кода с внутренним номером в другом модуле. Что "
-"может привести к неожиданному и некорректному поведению."
+msgid "You have feature code conflicts with extension numbers in other modules. This will result in unexpected and broken behavior."
+msgstr "Обнаружен конфликт сервисного кода с внутренним номером в другом модуле. Что может привести к неожиданному и некорректному поведению."
 
-#~ msgid "Admin"
-#~ msgstr "Админ"
-
-#~ msgid "Are you sure you wish to proceed?"
-#~ msgstr "Вы уверены, что хотите продолжить?"
-
-#~ msgid "Default"
-#~ msgstr "по умолчанию"
-
-#~ msgid "Disabled"
-#~ msgstr "Выключено"
-
-#~ msgid "Enabled"
-#~ msgstr "Включено"
-
-#~ msgid "Feature"
-#~ msgstr "Сервис"
-
-#~ msgid "Feature Codes have been duplicated"
-#~ msgstr "Найдено дублирование сервисных кодов"
-
-#, fuzzy
-#~ msgid ""
-#~ "Please enter a Feature Code or check Use Default for all Enabled Feature "
-#~ "Codes"
-#~ msgstr ""
-#~ "Пожалуйста введите сервисный код или отметьте Использовать по умолчанию "
-#~ "для всех Активированных Сервисов"
+#: page.featurecodeadmin.php:195
+msgid "Please enter a Feature Code or check Use Default for all Enabled Feature Codes"
+msgstr "Пожалуйста введите сервисный код или отметьте Использовать по умолчанию для всех включенных сервисных кодов"
 
 #~ msgid "Status"
 #~ msgstr "Статус"
@@ -106,14 +75,20 @@ msgstr ""
 #~ msgid "none"
 #~ msgstr "ничто"
 
+#~ msgid "Admin"
+#~ msgstr "Админ"
+
+#~ msgid "Are you sure you wish to proceed?"
+#~ msgstr "Вы уверены, что хотите продолжить?"
+
+#~ msgid "Asterisk General Call Pickup"
+#~ msgstr "Общий для всех - перехват звонка"
+
 #~ msgid "Blacklist a number"
 #~ msgstr "Номер - в Черный список"
 
 #~ msgid "Blacklist the last caller"
 #~ msgstr "Последний позвонивший - в Черный список"
-
-#~ msgid "Remove a number from the blacklist"
-#~ msgstr "Удалить номер из Черного списка"
 
 #~ msgid "Call Forward"
 #~ msgstr "Перевод звонка"
@@ -134,15 +109,19 @@ msgstr ""
 #~ msgstr "Перевод звонков при состоянии Занято - активировать"
 
 #~ msgid "Call Forward Busy Prompting Deactivate"
-#~ msgstr ""
-#~ "Предложенио о переводе звонков при состоянии Занято - деактивировать"
+#~ msgstr "Предложенио о переводе звонков при состоянии Занято - деактивировать"
 
 #~ msgid "Call Forward No Answer/Unavailable Activate"
 #~ msgstr "Перевод звонков при состоянии Не отвечен/Не доступен - активировать"
 
 #~ msgid "Call Forward No Answer/Unavailable Deactivate"
-#~ msgstr ""
-#~ "Перевод звонков при состоянии Не отвечен/Не доступен - деактивировать"
+#~ msgstr "Перевод звонков при состоянии Не отвечен/Не доступен - деактивировать"
+
+#~ msgid "Call Pickup (Can be used with GXP-2000)"
+#~ msgstr "Перехват звонка (можно использовать на GXP-2000)"
+
+#~ msgid "Call Trace"
+#~ msgstr "Трассировка звонка"
 
 #~ msgid "Call Waiting"
 #~ msgstr "Ожидание звонка (возможность приёма второго звонка)"
@@ -153,71 +132,17 @@ msgstr ""
 #~ msgid "Call Waiting - Deactivate"
 #~ msgstr "Ожидание звонка - деактировать"
 
-#~ msgid "Core"
-#~ msgstr "Главные"
-
-#~ msgid "Call Pickup (Can be used with GXP-2000)"
-#~ msgstr "Перехват звонка (можно использовать на GXP-2000)"
-
 #~ msgid "ChanSpy"
 #~ msgstr "Канал для прослушивания"
 
-#~ msgid "Dial System FAX"
-#~ msgstr "Набрать встроенный системный факс"
-
-#~ msgid "Directed Call Pickup"
-#~ msgstr "Прямой перехват звонка"
-
-#~ msgid "Asterisk General Call Pickup"
-#~ msgstr "Общий для всех - перехват звонка"
-
-#~ msgid "In-Call Asterisk Blind Transfer"
-#~ msgstr "Перевод звонка без уведомления"
-
-#~ msgid "In-Call Asterisk Attended Transfer"
-#~ msgstr "Перевод звонка с уведомлением"
-
-#~ msgid "In-Call Asterisk Toggle Call Recording"
-#~ msgstr "Включить запись разговора во время звонка"
-
-#~ msgid "In-Call Asterisk Disconnect Code"
-#~ msgstr "Разъеденить линию во время разговора"
+#~ msgid "Check Recording"
+#~ msgstr "Проверить запись"
 
 #~ msgid "Checking if directdids need migrating.."
 #~ msgstr "Проверить нужно ли переназначиь входящие DID's"
 
-#~ msgid "starting migration"
-#~ msgstr "начало миграции"
-
-#~ msgid "User: "
-#~ msgstr "Пользователь:"
-
-#~ msgid "ERROR: failed to insert %s for user %s"
-#~ msgstr "ОШИБКА: не получилось назначить %s для пользователя %s"
-
-#~ msgid "Simulate Incoming Call"
-#~ msgstr "Симуляция входящего звонка"
-
-#~ msgid "Simulate Incoming FAX Call"
-#~ msgstr "Симуляция входящего факса"
-
-#~ msgid "User Logoff"
-#~ msgstr "Выход пользователя"
-
-#~ msgid "User Logon"
-#~ msgstr "Вход пользователя"
-
-#~ msgid "Dictation"
-#~ msgstr "Надиктовка"
-
-#~ msgid "Email completed dictation"
-#~ msgstr "Надиктовка сообщения в электронную почту"
-
-#~ msgid "Perform dictation"
-#~ msgstr "Начать надиктовку"
-
-#~ msgid "Do-Not-Disturb (DND)"
-#~ msgstr "Не беспокоить (DND)"
+#~ msgid "Core"
+#~ msgstr "Главные"
 
 #~ msgid "DND Activate"
 #~ msgstr "Активировать режим Не беспокоить"
@@ -225,38 +150,83 @@ msgstr ""
 #~ msgid "DND Deactivate"
 #~ msgstr "Деактивировать режим Не беспокоить"
 
-#~ msgid "Info Services"
-#~ msgstr "Информационный сервис"
+#~ msgid "Day Night Mode"
+#~ msgstr "Режим день/ночь"
 
-#~ msgid "Call Trace"
-#~ msgstr "Трассировка звонка"
+#~ msgid "Day/Night Control Toggle"
+#~ msgstr "Переключение режима день/ночь"
+
+#~ msgid "Default"
+#~ msgstr "по умолчанию"
+
+#~ msgid "Dial System FAX"
+#~ msgstr "Набрать встроенный системный факс"
+
+#~ msgid "Dial Voicemail"
+#~ msgstr "Доступ в Голосовую почту"
+
+#~ msgid "Dictation"
+#~ msgstr "Надиктовка"
+
+#~ msgid "Directed Call Pickup"
+#~ msgstr "Прямой перехват звонка"
 
 #~ msgid "Directory"
 #~ msgstr "Сервис директорий"
 
+#~ msgid "Disabled"
+#~ msgstr "Выключено"
+
+#~ msgid "Do-Not-Disturb (DND)"
+#~ msgstr "Не беспокоить (DND)"
+
+#~ msgid "ERROR: failed to insert %s for user %s"
+#~ msgstr "ОШИБКА: не получилось назначить %s для пользователя %s"
+
 #~ msgid "Echo Test"
 #~ msgstr "Эхо тест"
 
-#~ msgid "Speak Your Exten Number"
-#~ msgstr "Ваш внутренний номер..."
+#~ msgid "Email completed dictation"
+#~ msgstr "Надиктовка сообщения в электронную почту"
 
-#~ msgid "Speaking Clock"
-#~ msgstr "Говорящие часы"
+#~ msgid "Enabled"
+#~ msgstr "Включено"
 
-#~ msgid "Misc Applications"
-#~ msgstr "Дополнительные приложения"
+#~ msgid "Feature"
+#~ msgstr "Сервис"
 
-#~ msgid "Paging and Intercom"
-#~ msgstr "Пейджинг и интерком"
+#~ msgid "Feature Codes have been duplicated"
+#~ msgstr "Найдено дублирование сервисных кодов"
+
+#~ msgid "In-Call Asterisk Attended Transfer"
+#~ msgstr "Перевод звонка с уведомлением"
+
+#~ msgid "In-Call Asterisk Blind Transfer"
+#~ msgstr "Перевод звонка без уведомления"
+
+#~ msgid "In-Call Asterisk Disconnect Code"
+#~ msgstr "Разъеденить линию во время разговора"
+
+#~ msgid "In-Call Asterisk Toggle Call Recording"
+#~ msgstr "Включить запись разговора во время звонка"
+
+#~ msgid "Info Services"
+#~ msgstr "Информационный сервис"
 
 #~ msgid "Intercom prefix"
 #~ msgstr "Префикс для интеркома"
 
-#~ msgid "User Intercom Allow"
-#~ msgstr "Разрешить пользователю использовать интерком"
+#~ msgid "Misc Applications"
+#~ msgstr "Дополнительные приложения"
 
-#~ msgid "User Intercom Disallow"
-#~ msgstr "Запретить пользователю использовать интерком"
+#~ msgid "My Voicemail"
+#~ msgstr "Доступ в ящик голосовой почты"
+
+#~ msgid "Paging and Intercom"
+#~ msgstr "Пейджинг и интерком"
+
+#~ msgid "Perform dictation"
+#~ msgstr "Начать надиктовку"
 
 #~ msgid "Phonebook Directory"
 #~ msgstr "Телефонная книга"
@@ -264,38 +234,56 @@ msgstr ""
 #~ msgid "Phonebook dial-by-name directory"
 #~ msgstr "Телефонная книга с набором-по-имени"
 
+#~ msgid "Please select an extension!"
+#~ msgstr "Выберите внутренний номер!"
+
 #~ msgid "Recordings"
 #~ msgstr "Запись сообщений"
 
-#~ msgid "Check Recording"
-#~ msgstr "Проверить запись"
+#~ msgid "Remove a number from the blacklist"
+#~ msgstr "Удалить номер из Черного списка"
 
 #~ msgid "Save Recording"
 #~ msgstr "Сохранить запись"
 
-#~ msgid "Speed dial functions"
-#~ msgstr "Функции быстрого набора"
-
 #~ msgid "Set user speed dial"
 #~ msgstr "Установить быстрый набор для пользователя"
+
+#~ msgid "Simulate Incoming Call"
+#~ msgstr "Симуляция входящего звонка"
+
+#~ msgid "Simulate Incoming FAX Call"
+#~ msgstr "Симуляция входящего факса"
+
+#~ msgid "Speak Your Exten Number"
+#~ msgstr "Ваш внутренний номер..."
+
+#~ msgid "Speaking Clock"
+#~ msgstr "Говорящие часы"
+
+#~ msgid "Speed dial functions"
+#~ msgstr "Функции быстрого набора"
 
 #~ msgid "Speeddial prefix"
 #~ msgstr "Префикс для быстрого набора"
 
+#~ msgid "User Intercom Allow"
+#~ msgstr "Разрешить пользователю использовать интерком"
+
+#~ msgid "User Intercom Disallow"
+#~ msgstr "Запретить пользователю использовать интерком"
+
+#~ msgid "User Logoff"
+#~ msgstr "Выход пользователя"
+
+#~ msgid "User Logon"
+#~ msgstr "Вход пользователя"
+
+#~ msgid "User: "
+#~ msgstr "Пользователь:"
+
 #~ msgid "Voicemail"
 #~ msgstr "Голосовая почта"
 
-#~ msgid "Dial Voicemail"
-#~ msgstr "Доступ в Голосовую почту"
-
-#~ msgid "My Voicemail"
-#~ msgstr "Доступ в ящик голосовой почты"
-
-#~ msgid "Please select an extension!"
-#~ msgstr "Выберите внутренний номер!"
-
-#~ msgid "Day Night Mode"
-#~ msgstr "Режим день/ночь"
-
-#~ msgid "Day/Night Control Toggle"
-#~ msgstr "Переключение режима день/ночь"
+#~ msgid "starting migration"
+#~ msgstr "начало миграции"
