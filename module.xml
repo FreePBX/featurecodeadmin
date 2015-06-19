@@ -2,7 +2,7 @@
 	<rawname>featurecodeadmin</rawname>
 	<repo>standard</repo>
 	<name>Feature Code Admin</name>
-	<version>13.0.1alpha2</version>
+	<version>13.0.2</version>
 	<publisher>FreePBX</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -13,6 +13,7 @@
 		<featurecodeadmin>Feature Codes</featurecodeadmin>
 	</menuitems>
 	<changelog>
+		*13.0.2* Version bump Beta
 		*13.0.1alpha2* Visual Tweaks and fixes
 		*13.0.1alpha1* Consistency changes
 		*12.0.0* Add Help Text bubbles re FREEPBX-6903
@@ -24,8 +25,8 @@
 		*2.9.0.0* #4617, #4653, #4655
 	</changelog>
 	<hooks>
-		<featurecodeadmin namespace="FreePBX\modules" class="Printextensions">
-			<method namespace="FreePBX\modules" class="Featurecodeadmin" callingMethod="getSections">printExtensions</method>
+		<featurecodeadmin class="Printextensions" namespace="FreePBX\modules">
+			<method callingMethod="getSections" class="Featurecodeadmin" namespace="FreePBX\modules">printExtensions</method>
 		</featurecodeadmin>
 	</hooks>
 	<depends>
