@@ -11,12 +11,14 @@ msgstr ""
 "POT-Creation-Date: 2015-05-21 18:09-0400\n"
 "PO-Revision-Date: 2015-05-04 20:38+0200\n"
 "Last-Translator: Andrew <andrew.nagy@the159.com>\n"
-"Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/featurecodeadmin/ru_RU/>\n"
+"Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/"
+"featurecodeadmin/ru_RU/>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ru_RU\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
+"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 2.2-dev\n"
 
 #: Featurecodeadmin.class.php:65
@@ -56,12 +58,19 @@ msgid "Submit"
 msgstr ""
 
 #: page.featurecodeadmin.php:42
-msgid "You have feature code conflicts with extension numbers in other modules. This will result in unexpected and broken behavior."
-msgstr "Обнаружен конфликт сервисного кода с внутренним номером в другом модуле. Что может привести к неожиданному и некорректному поведению."
+msgid ""
+"You have feature code conflicts with extension numbers in other modules. "
+"This will result in unexpected and broken behavior."
+msgstr ""
+"Обнаружен конфликт сервисного кода с внутренним номером в другом модуле. Что "
+"может привести к неожиданному и некорректному поведению."
 
-#: page.featurecodeadmin.php:195
-msgid "Please enter a Feature Code or check Use Default for all Enabled Feature Codes"
-msgstr "Пожалуйста введите сервисный код или отметьте Использовать по умолчанию для всех включенных сервисных кодов"
+#~ msgid ""
+#~ "Please enter a Feature Code or check Use Default for all Enabled Feature "
+#~ "Codes"
+#~ msgstr ""
+#~ "Пожалуйста введите сервисный код или отметьте Использовать по умолчанию "
+#~ "для всех включенных сервисных кодов"
 
 #~ msgid "Status"
 #~ msgstr "Статус"
@@ -109,13 +118,15 @@ msgstr "Пожалуйста введите сервисный код или о�
 #~ msgstr "Перевод звонков при состоянии Занято - активировать"
 
 #~ msgid "Call Forward Busy Prompting Deactivate"
-#~ msgstr "Предложенио о переводе звонков при состоянии Занято - деактивировать"
+#~ msgstr ""
+#~ "Предложенио о переводе звонков при состоянии Занято - деактивировать"
 
 #~ msgid "Call Forward No Answer/Unavailable Activate"
 #~ msgstr "Перевод звонков при состоянии Не отвечен/Не доступен - активировать"
 
 #~ msgid "Call Forward No Answer/Unavailable Deactivate"
-#~ msgstr "Перевод звонков при состоянии Не отвечен/Не доступен - деактивировать"
+#~ msgstr ""
+#~ "Перевод звонков при состоянии Не отвечен/Не доступен - деактивировать"
 
 #~ msgid "Call Pickup (Can be used with GXP-2000)"
 #~ msgstr "Перехват звонка (можно использовать на GXP-2000)"
