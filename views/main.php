@@ -1,6 +1,6 @@
 <div class="container-fluid">
 	<div class="row">
-		<div class='col-md-8'>
+		<div class='col-md-12'>
 			<div class='fpbx-container'>
 				<form autocomplete="off "class="fpbx-submit" name="frmAdmin" action="config.php?display=featurecodeadmin" method="post">
 					<input type="hidden" name="action" value="save">
@@ -23,13 +23,13 @@
 										<div class="row">
 											<div class="form-group">
 												<div class="col-md-6">
-													<h4>Description</h4>
+													<h4><?php echo _("Description")?></h4>
 												</div>
 												<div class="col-md-2">
-													<h4>Code</h4>
+													<h4><?php echo _("Code")?></h4>
 												</div>
 												<div class="col-md-4">
-													<h4>Actions</h4>
+													<h4><?php echo _("Actions")?></h4>
 												</div>
 											</div>
 										</div>
