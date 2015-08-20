@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-21 18:09-0400\n"
+"POT-Creation-Date: 2015-08-20 09:55-0700\n"
 "PO-Revision-Date: 2014-05-28 14:18+0200\n"
 "Last-Translator: Kevin <kevin@qloog.com>\n"
 "Language-Team: Japanese <http://git.freepbx.org/projects/freepbx/"
@@ -49,11 +49,15 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 1.9-dev\n"
 
-#: Featurecodeadmin.class.php:65
+#: views/main.php:32
+msgid "Actions"
+msgstr ""
+
+#: Featurecodeadmin.class.php:65 views/main.php:29
 msgid "Code"
 msgstr ""
 
-#: Featurecodeadmin.class.php:64
+#: Featurecodeadmin.class.php:64 views/main.php:26
 msgid "Description"
 msgstr ""
 
