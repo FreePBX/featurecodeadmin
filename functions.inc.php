@@ -80,6 +80,7 @@ function featurecodeadmin_check_destinations($dest=true) {
 	global $active_modules;
 
 	$fcs = featurecodeadmin_destinations();
+	$fcs = is_array($fcs) ? $fcs : array();
 
 	$destlist = array();
 	if (is_array($dest) && empty($dest)) {
