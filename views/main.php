@@ -45,16 +45,16 @@
 														<?php } ?>
 													</div>
 													<div class="col-md-2">
-														<input type="text" name="fc[<?php echo $item['module']?>][<?php echo $item['feature']?>][code]" value="<?php echo $item['code']?>" id="custom_<?php echo $item['id']?>" data-default="<?php echo $item['default']?>" placeholder="<?php echo $item['default']?>" data-custom="<?php echo $item['custom']?>" class="form-control code" <?php echo (!$item['iscustom']) ? 'readonly' : ''?> required pattern="\*{0,2}[0-9]{0,5}">
+														<input type="text" name="fc[<?php echo $item['module']?>][<?php echo $item['feature']?>][code]" value="<?php echo $item['code']?>" id="custom_<?php echo $item['id']?>" data-default="<?php echo $item['default']?>" placeholder="<?php echo $item['default']?>" data-custom="<?php echo $item['custom']?>" class="form-control code" <?php echo (!$item['iscustom']) ? 'readonly' : ''?> required pattern="[\*\#]{0,2}[0-9]{0,5}">
 													</div>
 													<div class="col-md-4">
 														<span class="radioset">
 															<input type="checkbox" data-for="custom_<?php echo $item['id']?>" name="fc[<?php echo $item['module']?>][<?php echo $item['feature']?>][customize]" class="custom" id="usedefault_<?php echo $item['id']?>" <?php echo ($item['iscustom']) ? 'checked' : ''?>>
-															<label for="usedefault_<?php echo $item['id']?>">Customize</label>
+															<label for="usedefault_<?php echo $item['id']?>"><?php echo _("Customize")?></label>
 														</span>
 														<span class="radioset">
 															<input type="checkbox" name="fc[<?php echo $item['module']?>][<?php echo $item['feature']?>][enable]" id="ena_<?php echo $item['id']?>" <?php echo ($item['isenabled']) ? 'checked' : ''?>>
-															<label for="ena_<?php echo $item['id']?>">Enabled</label>
+															<label for="ena_<?php echo $item['id']?>"><?php echo _("Enabled")?></label>
 														</span>
 													</div>
 												</div>
