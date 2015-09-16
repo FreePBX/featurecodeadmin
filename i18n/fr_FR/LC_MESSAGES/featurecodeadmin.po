@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-20 09:55-0700\n"
+"POT-Creation-Date: 2015-09-16 15:15-0700\n"
 "PO-Revision-Date: 2009-04-20 13:56+0100\n"
 "Last-Translator: Séverine GUTIERREZ <severine@medialsace.fr>\n"
 "Language-Team: Français <LL@li.org>\n"
@@ -36,9 +36,17 @@ msgstr ""
 msgid "Code"
 msgstr ""
 
+#: views/main.php:53
+msgid "Customize"
+msgstr ""
+
 #: Featurecodeadmin.class.php:64 views/main.php:26
 msgid "Description"
 msgstr ""
+
+#: views/main.php:57
+msgid "Enabled"
+msgstr "Activé"
 
 #: views/main.php:9
 msgid "Feature Code Admin"
@@ -85,9 +93,6 @@ msgstr ""
 
 #~ msgid "Disabled"
 #~ msgstr "Désactivé"
-
-#~ msgid "Enabled"
-#~ msgstr "Activé"
 
 #~ msgid "Feature"
 #~ msgstr "Caractéristiques"

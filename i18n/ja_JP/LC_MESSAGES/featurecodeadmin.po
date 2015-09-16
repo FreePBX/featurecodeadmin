@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-20 09:55-0700\n"
+"POT-Creation-Date: 2015-09-16 15:15-0700\n"
 "PO-Revision-Date: 2014-05-28 14:18+0200\n"
 "Last-Translator: Kevin <kevin@qloog.com>\n"
 "Language-Team: Japanese <http://git.freepbx.org/projects/freepbx/"
@@ -57,9 +57,17 @@ msgstr ""
 msgid "Code"
 msgstr ""
 
+#: views/main.php:53
+msgid "Customize"
+msgstr ""
+
 #: Featurecodeadmin.class.php:64 views/main.php:26
 msgid "Description"
 msgstr ""
+
+#: views/main.php:57
+msgid "Enabled"
+msgstr "有効"
 
 #: views/main.php:9
 msgid "Feature Code Admin"
@@ -108,9 +116,6 @@ msgstr ""
 
 #~ msgid "Disabled"
 #~ msgstr "無効"
-
-#~ msgid "Enabled"
-#~ msgstr "有効"
 
 #~ msgid "Feature"
 #~ msgstr "機能"

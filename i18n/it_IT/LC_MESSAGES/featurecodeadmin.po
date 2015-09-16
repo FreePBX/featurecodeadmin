@@ -6,8 +6,16 @@ msgstr ""
 msgid "Code"
 msgstr ""
 
+#: views/main.php:53
+msgid "Customize"
+msgstr ""
+
 #: Featurecodeadmin.class.php:64 views/main.php:26
 msgid "Description"
+msgstr ""
+
+#: views/main.php:57
+msgid "Enabled"
 msgstr ""
 
 #: views/main.php:9

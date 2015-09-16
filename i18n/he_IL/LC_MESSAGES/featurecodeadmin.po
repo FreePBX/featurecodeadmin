@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-20 09:55-0700\n"
+"POT-Creation-Date: 2015-09-16 15:15-0700\n"
 "PO-Revision-Date: 2006-10-17 17:30+0300\n"
 "Last-Translator: Shimi <shimi@shimi.net>\n"
 "MIME-Version: 1.0\n"
@@ -23,9 +23,17 @@ msgstr ""
 msgid "Code"
 msgstr ""
 
+#: views/main.php:53
+msgid "Customize"
+msgstr ""
+
 #: Featurecodeadmin.class.php:64 views/main.php:26
 msgid "Description"
 msgstr ""
+
+#: views/main.php:57
+msgid "Enabled"
+msgstr "פעיל"
 
 #: views/main.php:9
 msgid "Feature Code Admin"
@@ -71,9 +79,6 @@ msgstr ""
 
 #~ msgid "Disabled"
 #~ msgstr "כבוי"
-
-#~ msgid "Enabled"
-#~ msgstr "פעיל"
 
 #~ msgid "Feature"
 #~ msgstr "תכונה"

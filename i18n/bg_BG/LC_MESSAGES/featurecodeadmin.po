@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX v2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-20 09:55-0700\n"
+"POT-Creation-Date: 2015-09-16 15:15-0700\n"
 "PO-Revision-Date: 2014-07-21 17:01+0200\n"
 "Last-Translator: Chavdar <chavdar_75@yahoo.com>\n"
 "Language-Team: Bulgarian <http://git.freepbx.org/projects/freepbx/"
@@ -30,9 +30,17 @@ msgstr ""
 msgid "Code"
 msgstr ""
 
+#: views/main.php:53
+msgid "Customize"
+msgstr ""
+
 #: Featurecodeadmin.class.php:64 views/main.php:26
 msgid "Description"
 msgstr ""
+
+#: views/main.php:57
+msgid "Enabled"
+msgstr "Разрешен"
 
 #: views/main.php:9
 msgid "Feature Code Admin"
@@ -84,9 +92,6 @@ msgstr ""
 
 #~ msgid "Disabled"
 #~ msgstr "Забранен"
-
-#~ msgid "Enabled"
-#~ msgstr "Разрешен"
 
 #~ msgid "Feature"
 #~ msgstr "Специален код"

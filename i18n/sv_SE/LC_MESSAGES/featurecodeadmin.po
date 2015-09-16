@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX featurecodeadmin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-20 09:55-0700\n"
+"POT-Creation-Date: 2015-09-16 15:15-0700\n"
 "PO-Revision-Date: 2008-09-17 10:00+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -36,9 +36,17 @@ msgstr ""
 msgid "Code"
 msgstr ""
 
+#: views/main.php:53
+msgid "Customize"
+msgstr ""
+
 #: Featurecodeadmin.class.php:64 views/main.php:26
 msgid "Description"
 msgstr ""
+
+#: views/main.php:57
+msgid "Enabled"
+msgstr "Aktiverad"
 
 #: views/main.php:9
 msgid "Feature Code Admin"
@@ -84,9 +92,6 @@ msgstr ""
 
 #~ msgid "Disabled"
 #~ msgstr "Avaktiverad"
-
-#~ msgid "Enabled"
-#~ msgstr "Aktiverad"
 
 #~ msgid "Feature"
 #~ msgstr "Funktionskod"

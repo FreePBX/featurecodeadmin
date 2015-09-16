@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-20 09:55-0700\n"
+"POT-Creation-Date: 2015-09-16 15:15-0700\n"
 "PO-Revision-Date: 2015-05-04 20:38+0200\n"
 "Last-Translator: Andrew <andrew.nagy@the159.com>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/"
@@ -29,9 +29,17 @@ msgstr ""
 msgid "Code"
 msgstr ""
 
+#: views/main.php:53
+msgid "Customize"
+msgstr ""
+
 #: Featurecodeadmin.class.php:64 views/main.php:26
 msgid "Description"
 msgstr ""
+
+#: views/main.php:57
+msgid "Enabled"
+msgstr "Включено"
 
 #: views/main.php:9
 msgid "Feature Code Admin"
@@ -203,9 +211,6 @@ msgstr ""
 
 #~ msgid "Email completed dictation"
 #~ msgstr "Надиктовка сообщения в электронную почту"
-
-#~ msgid "Enabled"
-#~ msgstr "Включено"
 
 #~ msgid "Feature"
 #~ msgstr "Сервис"
