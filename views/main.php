@@ -45,7 +45,7 @@
 														<?php } ?>
 													</div>
 													<div class="col-md-2">
-														<input type="text" name="fc[<?php echo $item['module']?>][<?php echo $item['feature']?>][code]" value="<?php echo $item['code']?>" id="custom_<?php echo $item['id']?>" data-default="<?php echo $item['default']?>" placeholder="<?php echo $item['default']?>" data-custom="<?php echo $item['custom']?>" class="form-control code" <?php echo (!$item['iscustom']) ? 'readonly' : ''?> required pattern="[\*\#]{0,2}[0-9]{0,5}">
+														<input type="text" name="fc[<?php echo $item['module']?>][<?php echo $item['feature']?>][code]" value="<?php echo $item['code']?>" id="custom_<?php echo $item['id']?>" data-default="<?php echo $item['default']?>" placeholder="<?php echo $item['default']?>" data-custom="<?php echo $item['custom']?>" class="form-control code" <?php echo (!$item['iscustom']) ? 'readonly' : ''?> required pattern="[0-9A-D\*\#]{0,9}">
 													</div>
 													<div class="col-md-4">
 														<span class="radioset">
