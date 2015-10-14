@@ -10,63 +10,69 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-09-16 15:15-0700\n"
-"PO-Revision-Date: 2015-09-16 15:15-0700\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2015-10-14 11:59+0200\n"
+"Last-Translator: Media <mousavi.media@gmail.com>\n"
+"Language-Team: Persian "
+"<http://weblate.freepbx.org/projects/freepbx/featurecodeadmin/fa/>\n"
+"Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.2-dev\n"
 
 #: views/main.php:32
 msgid "Actions"
-msgstr ""
+msgstr "عملیات"
 
 #: Featurecodeadmin.class.php:65 views/main.php:29
 msgid "Code"
-msgstr ""
+msgstr "کد"
 
 #: views/main.php:53
 msgid "Customize"
-msgstr ""
+msgstr "سفارشی"
 
 #: Featurecodeadmin.class.php:64 views/main.php:26
 msgid "Description"
-msgstr ""
+msgstr "شرح"
 
 #: views/main.php:57
 msgid "Enabled"
-msgstr ""
+msgstr "فعال"
 
 #: views/main.php:9
 msgid "Feature Code Admin"
-msgstr ""
+msgstr "کد ویژه محیط مدیریت"
 
 #: page.featurecodeadmin.php:44
 msgid "Feature Code Conflicts with other Extensions"
-msgstr ""
+msgstr "کد ویژه با سایر برنامه‌ ها تداخل دارد"
 
 #: Featurecodeadmin.class.php:62
 msgid "Feature Codes"
-msgstr ""
+msgstr "کدهای ویژه"
 
 #: functions.inc.php:20
 msgid "Featurecode: "
-msgstr ""
+msgstr "کد ویژه： "
 
 #: assets/js/featurecodeadmin.js:19
 msgid "Please enter a Feature Code or uncheck Customize"
-msgstr ""
+msgstr "لطفا یک کد ویژه وارد کنید و یا تیک سفارشی سازی را بردارید"
 
 #: Featurecodeadmin.class.php:25
 msgid "Reset"
-msgstr ""
+msgstr "تنظیم مجدد"
 
 #: Featurecodeadmin.class.php:30
 msgid "Submit"
-msgstr ""
+msgstr "ثبت"
 
 #: page.featurecodeadmin.php:42
 msgid ""
 "You have feature code conflicts with extension numbers in other modules. "
 "This will result in unexpected and broken behavior."
 msgstr ""
+"کد ویژه با تعدادی برنامه ماژول های دیگر تداخل دارد. این باعث رفتارهای نادرست "
+"میشود."
