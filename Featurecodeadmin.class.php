@@ -72,5 +72,10 @@ class Featurecodeadmin implements \BMO {
     	}
 		return $ret;
 	}
-
+	public function search($query, &$results) {
+		$fcs = $this->printExtensions();
+		foreach ($fcs['items'] as $fc) {
+			$results[] = array("text" => $fc[0] . ' '. $fc[1], "type" => "get", "dest" => "?display=featurecodeadmin");
+		}
+	}
 }
