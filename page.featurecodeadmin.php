@@ -41,11 +41,12 @@ $conflicterror = '';
 if (!empty($conflict_url)) {
 	$str = _("You have feature code conflicts with extension numbers in other modules. This will result in unexpected and broken behavior.");
 	$conflicterror .= "<script>javascript:alert('$str')</script>";
-	$conflicterror .= "<h4>"._("Feature Code Conflicts with other Extensions")."</h4>";
+	$conflicterror .= "<div class='alert alert-danger'>"._("Feature Code Conflicts with other Extensions")."</div>";
 	$conflicterror .=  implode('<br />',$conflict_url);
 
+
 	// Create hash of conflicting extensions
-	foreach ($usage_arr as $module_name => $details) {
+	foreach ($usage_arr as $details) {
 		foreach (array_keys($details) as $exten_conflict) {
 			$exten_conflict_arr[$exten_conflict] = true;
 		}
@@ -105,4 +106,4 @@ foreach($featurecodes as $item) {
 	);
 }
 
-show_view(__DIR__."/views/main.php",array("conflicterror" => $conflicterror, "modules" => $modules));
+show_view(__DIR__."/views/main.php",array("conflicterror" => $conflicterror, "modules" => $modules, "exten_conflict_arr" => $exten_conflict_arr));

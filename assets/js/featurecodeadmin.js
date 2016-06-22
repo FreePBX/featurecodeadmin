@@ -1,5 +1,15 @@
 $(function() {
+	if($(".has-error").length) {
+		$('html,body').animate(
+			{
+				scrollTop: $(".has-error").offset().top-70
+			},'slow');
+	}
+	$(".enabled").click(function() {
+		$(this).parents(".element-container").removeClass("has-error");
+	});
 	$(".custom").click(function() {
+		$(this).parents(".element-container").removeClass("has-error");
 		var id = $(this).data("for"), input = $("#" + id);
 		if (input.length === 0) {
 			return;

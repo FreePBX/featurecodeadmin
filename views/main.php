@@ -35,7 +35,7 @@
 										</div>
 									</div>
 									<?php foreach($data['items'] as $item) {?>
-										<div class="element-container">
+										<div class="element-container <?php echo !empty($exten_conflict_arr[$item['code']]) ? 'has-error' : ''?>">
 											<div class="row">
 												<div class="form-group">
 													<div class="col-md-6">
@@ -53,7 +53,7 @@
 															<label for="usedefault_<?php echo $item['id']?>"><?php echo _("Customize")?></label>
 														</span>
 														<span class="radioset">
-															<input type="checkbox" name="fc[<?php echo $item['module']?>][<?php echo $item['feature']?>][enable]" id="ena_<?php echo $item['id']?>" <?php echo ($item['isenabled']) ? 'checked' : ''?>>
+															<input type="checkbox" class="enabled" name="fc[<?php echo $item['module']?>][<?php echo $item['feature']?>][enable]" id="ena_<?php echo $item['id']?>" <?php echo ($item['isenabled']) ? 'checked' : ''?>>
 															<label for="ena_<?php echo $item['id']?>"><?php echo _("Enabled")?></label>
 														</span>
 													</div>

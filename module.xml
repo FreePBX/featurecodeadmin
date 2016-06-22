@@ -2,7 +2,7 @@
 	<rawname>featurecodeadmin</rawname>
 	<repo>standard</repo>
 	<name>Feature Code Admin</name>
-	<version>13.0.5</version>
+	<version>13.0.6</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -13,6 +13,7 @@
 		<featurecodeadmin>Feature Codes</featurecodeadmin>
 	</menuitems>
 	<changelog>
+		*13.0.6* FREEPBX-12232 Issues if there is a feature code conflict
 		*13.0.5* Add BMO Search provider
 		*13.0.4.1* FREEPBX-10225 Update validation to allow Any valid DTMF digit in any position
 		*13.0.4* FREEPBX-10225 Update validation to allow #
