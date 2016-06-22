@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-16 15:15-0700\n"
+"POT-Creation-Date: 2016-06-22 16:44-0700\n"
 "PO-Revision-Date: 2014-05-28 14:18+0200\n"
 "Last-Translator: Kevin <kevin@qloog.com>\n"
 "Language-Team: Japanese <http://git.freepbx.org/projects/freepbx/"
@@ -52,6 +52,10 @@ msgstr ""
 #: views/main.php:32
 msgid "Actions"
 msgstr ""
+
+#: featurecodeadmin.i18n.php:6 featurecodeadmin.i18n.php:10
+msgid "Admin"
+msgstr "アドミン"
 
 #: Featurecodeadmin.class.php:65 views/main.php:29
 msgid "Code"
@@ -69,7 +73,7 @@ msgstr ""
 msgid "Enabled"
 msgstr "有効"
 
-#: views/main.php:9
+#: featurecodeadmin.i18n.php:4 views/main.php:9
 msgid "Feature Code Admin"
 msgstr "機能コード管理"
 
@@ -77,7 +81,7 @@ msgstr "機能コード管理"
 msgid "Feature Code Conflicts with other Extensions"
 msgstr "他の内線との機能コードの衝突"
 
-#: Featurecodeadmin.class.php:62
+#: Featurecodeadmin.class.php:62 featurecodeadmin.i18n.php:8
 msgid "Feature Codes"
 msgstr "機能コード"
 
@@ -85,7 +89,7 @@ msgstr "機能コード"
 msgid "Featurecode: "
 msgstr "機能コード: "
 
-#: assets/js/featurecodeadmin.js:19
+#: assets/js/featurecodeadmin.js:29
 msgid "Please enter a Feature Code or uncheck Customize"
 msgstr ""
 
@@ -104,9 +108,6 @@ msgid ""
 msgstr ""
 "他のモジュールと機能コードが衝突しています。動作が不定となりエラーが発生する"
 "可能性があります。"
-
-#~ msgid "Admin"
-#~ msgstr "アドミン"
 
 #~ msgid "Are you sure you wish to proceed?"
 #~ msgstr "処理を続行しますか？"

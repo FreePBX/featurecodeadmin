@@ -7,15 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-16 15:15-0700\n"
+"POT-Creation-Date: 2016-06-22 16:44-0700\n"
 "PO-Revision-Date: 2015-11-17 12:22+0200\n"
 "Last-Translator: james <zhulizhong@gmail.com>\n"
-"Language-Team: Simplified Chinese "
-"<http://weblate.freepbx.org/projects/freepbx/featurecodeadmin/zh_CN/>\n"
-"Language: zh_CN\n"
+"Language-Team: Simplified Chinese <http://weblate.freepbx.org/projects/"
+"freepbx/featurecodeadmin/zh_CN/>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 2.2-dev\n"
 "X-Poedit-Language: Chinese\n"
@@ -25,6 +25,10 @@ msgstr ""
 #: views/main.php:32
 msgid "Actions"
 msgstr "操作"
+
+#: featurecodeadmin.i18n.php:6 featurecodeadmin.i18n.php:10
+msgid "Admin"
+msgstr ""
 
 #: Featurecodeadmin.class.php:65 views/main.php:29
 msgid "Code"
@@ -42,7 +46,7 @@ msgstr "描述"
 msgid "Enabled"
 msgstr "启用"
 
-#: views/main.php:9
+#: featurecodeadmin.i18n.php:4 views/main.php:9
 msgid "Feature Code Admin"
 msgstr "功能代码管理"
 
@@ -50,7 +54,7 @@ msgstr "功能代码管理"
 msgid "Feature Code Conflicts with other Extensions"
 msgstr "功能代码与其他分机有冲突"
 
-#: Featurecodeadmin.class.php:62
+#: Featurecodeadmin.class.php:62 featurecodeadmin.i18n.php:8
 msgid "Feature Codes"
 msgstr "功能代码"
 
@@ -58,7 +62,7 @@ msgstr "功能代码"
 msgid "Featurecode: "
 msgstr "功能代码: "
 
-#: assets/js/featurecodeadmin.js:19
+#: assets/js/featurecodeadmin.js:29
 msgid "Please enter a Feature Code or uncheck Customize"
 msgstr "请输入功能代码热键或者未检查的自定义代码"
 
