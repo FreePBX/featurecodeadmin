@@ -107,7 +107,7 @@ foreach($featurecodes as $item) {
 }
 $conf_mode = $freepbx_conf->get_conf_setting('AMPEXTENSIONS');
 if($conf_mode == 'extensions'){
-	$featurecode_settings = $freepbx_conf->get_conf_setting('EXPOSE_ALL_FEATUSRE_CODES');
+	$featurecode_settings = $freepbx_conf->get_conf_setting('EXPOSE_ALL_FEATURE_CODES');
 	if(!$featurecode_settings){
 		if(isset($modules['core'])){
 			$new_items = array();
