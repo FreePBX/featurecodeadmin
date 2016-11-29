@@ -105,5 +105,22 @@ foreach($featurecodes as $item) {
 		'help' => $help
 	);
 }
+$conf_mode = $freepbx_conf->get_conf_setting('AMPEXTENSIONS');
+if($conf_mode == 'extensions'){
+	$featurecode_settings = $freepbx_conf->get_conf_setting('EXPOSE_ALL_FEATURE_CODES');
+	if(!$featurecode_settings){
+		if(isset($modules['core'])){
+			$new_items = array();
+			foreach($modules['core']['items'] as $tmp_item){
+			    	if($tmp_item['id'] == 'core_userlogoff' || $tmp_item['id'] == 'core_userlogon'){
+			    		continue;
+			    	}else{
+			    		$new_items[] = $tmp_item;
+			    	}
+			}
+			$modules['core']['items'] = $new_items;
+		}
+	}
+}
 
 show_view(__DIR__."/views/main.php",array("conflicterror" => $conflicterror, "modules" => $modules, "exten_conflict_arr" => $exten_conflict_arr));
