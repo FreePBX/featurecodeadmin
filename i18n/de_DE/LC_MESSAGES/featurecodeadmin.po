@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-06-22 16:44-0700\n"
-"PO-Revision-Date: 2016-12-06 20:48+0200\n"
+"PO-Revision-Date: 2016-12-06 20:50+0200\n"
 "Last-Translator: Sven <spiderrs4@web.de>\n"
 "Language-Team: German "
 "<http://weblate.freepbx.org/projects/freepbx/featurecodeadmin/de_DE/>\n"
@@ -47,7 +47,7 @@ msgstr "Aktiviert"
 
 #: featurecodeadmin.i18n.php:4 views/main.php:9
 msgid "Feature Code Admin"
-msgstr "Feature Code Administrator"
+msgstr "Funktionscode Administrator"
 
 #: page.featurecodeadmin.php:44
 msgid "Feature Code Conflicts with other Extensions"
@@ -55,11 +55,11 @@ msgstr "Der Code steht im Konflikt mit einer anderen Nebenstelle"
 
 #: Featurecodeadmin.class.php:62 featurecodeadmin.i18n.php:8
 msgid "Feature Codes"
-msgstr "Feature Codes"
+msgstr "Funktionscodes"
 
 #: functions.inc.php:20
 msgid "Featurecode: "
-msgstr "Featurecode: "
+msgstr "Funktionscode: "
 
 #: assets/js/featurecodeadmin.js:29
 msgid "Please enter a Feature Code or uncheck Customize"
