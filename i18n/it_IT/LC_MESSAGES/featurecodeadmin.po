@@ -2,7 +2,7 @@
 msgid "Actions"
 msgstr ""
 
-#: featurecodeadmin.i18n.php:6 featurecodeadmin.i18n.php:10
+#: featurecodeadmin.i18n.php:6
 msgid "Admin"
 msgstr ""
 

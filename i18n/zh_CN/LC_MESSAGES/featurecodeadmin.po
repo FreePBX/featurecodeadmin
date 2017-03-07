@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-22 16:44-0700\n"
+"POT-Creation-Date: 2017-03-07 14:44-0800\n"
 "PO-Revision-Date: 2015-11-17 12:22+0200\n"
 "Last-Translator: james <zhulizhong@gmail.com>\n"
 "Language-Team: Simplified Chinese <http://weblate.freepbx.org/projects/"
@@ -26,7 +26,7 @@ msgstr ""
 msgid "Actions"
 msgstr "操作"
 
-#: featurecodeadmin.i18n.php:6 featurecodeadmin.i18n.php:10
+#: featurecodeadmin.i18n.php:6
 msgid "Admin"
 msgstr ""
 

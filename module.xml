@@ -2,7 +2,7 @@
 	<rawname>featurecodeadmin</rawname>
 	<repo>standard</repo>
 	<name>Feature Code Admin</name>
-	<version>13.0.6.3</version>
+	<version>13.0.6.4</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -13,6 +13,7 @@
 		<featurecodeadmin>Feature Codes</featurecodeadmin>
 	</menuitems>
 	<changelog>
+		*13.0.6.4* FREEPBX-14232 FC accepting same customize code for different features
 		*13.0.6.3* FREEPBX-13806 Fix validation length
 		*13.0.6.2* FREEPBX-7373 Hide *11/*12 feature codes by default exposed with Advanced Settings or if in deviceanduser mode
 		*13.0.6.1* FREEPBX-13348 - Fix invalid regexp in feature code validation
