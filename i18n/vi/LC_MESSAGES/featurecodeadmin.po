@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-07 14:44-0800\n"
-"PO-Revision-Date: 2017-07-07 09:13+0200\n"
+"PO-Revision-Date: 2017-07-20 13:13+0200\n"
 "Last-Translator: PETER <ftek@ymail.com>\n"
 "Language-Team: Vietnamese "
 "<http://weblate.freepbx.org/projects/freepbx/featurecodeadmin/vi/>\n"
@@ -63,7 +63,7 @@ msgstr "Mã tính năng: "
 
 #: assets/js/featurecodeadmin.js:29
 msgid "Please enter a Feature Code or uncheck Customize"
-msgstr "Vui lòng nhập mã tính năng hoặc bỏ chọn ô Customize ( tối ưu hóa)"
+msgstr "Vui lòng nhập mã tính năng hoặc bỏ đánh dấu Customize ( Tùy chỉnh)"
 
 #: Featurecodeadmin.class.php:25
 msgid "Reset"
