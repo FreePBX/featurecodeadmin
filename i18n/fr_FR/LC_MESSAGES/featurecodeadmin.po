@@ -20,8 +20,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-07 14:44-0800\n"
-"PO-Revision-Date: 2017-03-13 01:43+0200\n"
-"Last-Translator: Nicolas <freepbx@riendeau.org>\n"
+"PO-Revision-Date: 2017-12-04 21:01+0200\n"
+"Last-Translator: JCattan <jeremie@famillecattan.com>\n"
 "Language-Team: French "
 "<http://weblate.freepbx.org/projects/freepbx/featurecodeadmin/fr_FR/>\n"
 "Language: fr_FR\n"
@@ -33,23 +33,23 @@ msgstr ""
 
 #: views/main.php:32
 msgid "Actions"
-msgstr ""
+msgstr "Actions"
 
 #: featurecodeadmin.i18n.php:6
 msgid "Admin"
-msgstr ""
+msgstr "Admin"
 
 #: Featurecodeadmin.class.php:65 views/main.php:29
 msgid "Code"
-msgstr ""
+msgstr "Code"
 
 #: views/main.php:53
 msgid "Customize"
-msgstr ""
+msgstr "Personaliser"
 
 #: Featurecodeadmin.class.php:64 views/main.php:26
 msgid "Description"
-msgstr ""
+msgstr "Description"
 
 #: views/main.php:57
 msgid "Enabled"
@@ -73,7 +73,7 @@ msgstr "Code de la caractéristique :"
 
 #: assets/js/featurecodeadmin.js:29
 msgid "Please enter a Feature Code or uncheck Customize"
-msgstr ""
+msgstr "Entrez un code de fonction ou décocher Personnaliser"
 
 #: Featurecodeadmin.class.php:25
 msgid "Reset"
