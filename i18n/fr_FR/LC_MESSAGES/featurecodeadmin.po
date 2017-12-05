@@ -45,7 +45,7 @@ msgstr "Code"
 
 #: views/main.php:53
 msgid "Customize"
-msgstr "Personaliser"
+msgstr "Personnaliser"
 
 #: Featurecodeadmin.class.php:64 views/main.php:26
 msgid "Description"
