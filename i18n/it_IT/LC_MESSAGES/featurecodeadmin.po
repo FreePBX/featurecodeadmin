@@ -1,57 +1,74 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-05-08 06:31+0000\n"
+"PO-Revision-Date: 2018-05-08 06:31+0000\n"
+"Last-Translator: Maurizio Longhitano <mlonghitano@teampower.it>\n"
+"Language-Team: Italian <http://*/projects/freepbx/featurecodeadmin/it/>\n"
+"Language: it_IT\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.19.1\n"
+
 #: views/main.php:32
 msgid "Actions"
-msgstr ""
+msgstr "Azioni"
 
 #: featurecodeadmin.i18n.php:6
 msgid "Admin"
-msgstr ""
+msgstr "Amministrazione"
 
 #: Featurecodeadmin.class.php:65 views/main.php:29
 msgid "Code"
-msgstr ""
+msgstr "Codice"
 
 #: views/main.php:53
 msgid "Customize"
-msgstr ""
+msgstr "Personalizza"
 
 #: Featurecodeadmin.class.php:64 views/main.php:26
 msgid "Description"
-msgstr ""
+msgstr "Descrizione"
 
 #: views/main.php:57
 msgid "Enabled"
-msgstr ""
+msgstr "Abilitato"
 
 #: featurecodeadmin.i18n.php:4 views/main.php:9
 msgid "Feature Code Admin"
-msgstr ""
+msgstr "Amministrazione Codici Servizi"
 
 #: page.featurecodeadmin.php:44
 msgid "Feature Code Conflicts with other Extensions"
-msgstr ""
+msgstr "Codice Servizio in conflitto con altri Interni"
 
 #: Featurecodeadmin.class.php:62 featurecodeadmin.i18n.php:8
 msgid "Feature Codes"
-msgstr ""
+msgstr "Codici Servizi"
 
 #: functions.inc.php:20
 msgid "Featurecode: "
-msgstr ""
+msgstr "Codice servizio: "
 
 #: assets/js/featurecodeadmin.js:29
 msgid "Please enter a Feature Code or uncheck Customize"
-msgstr ""
+msgstr "Inserire un Codice Servizio o deselezionare Personalizza"
 
 #: Featurecodeadmin.class.php:25
 msgid "Reset"
-msgstr ""
+msgstr "Reset"
 
 #: Featurecodeadmin.class.php:30
 msgid "Submit"
-msgstr ""
+msgstr "Invia"
 
 #: page.featurecodeadmin.php:42
 msgid ""
 "You have feature code conflicts with extension numbers in other modules. "
 "This will result in unexpected and broken behavior."
 msgstr ""
+"Sono presenti codici servizi in conflitto con interni in altri moduli. "
+"Questo può comportare un comportamento inaspettato."
