@@ -9,6 +9,8 @@
 	<candisable>no</candisable>
 	<canuninstall>no</canuninstall>
 	<category>Admin</category>
+  	<description>The Feature Codes Module is used to enable and disable certain features available in your PBX and Asterisk, and to set the codes that local users will dial on their phones to use that particular feature.</description>
+  	<more-info>https://wiki.freepbx.org/display/F2/Feature+Codes+Module</more-info>
 	<menuitems>
 		<featurecodeadmin>Feature Codes</featurecodeadmin>
 	</menuitems>
