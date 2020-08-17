@@ -7,15 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-07 14:44-0800\n"
+"POT-Creation-Date: 2020-08-17 02:44+0000\n"
 "PO-Revision-Date: 2015-11-17 12:22+0200\n"
 "Last-Translator: james <zhulizhong@gmail.com>\n"
 "Language-Team: Simplified Chinese <http://weblate.freepbx.org/projects/"
 "freepbx/featurecodeadmin/zh_CN/>\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: zh_CN\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 2.2-dev\n"
 "X-Poedit-Language: Chinese\n"
@@ -54,7 +54,7 @@ msgstr "功能代码管理"
 msgid "Feature Code Conflicts with other Extensions"
 msgstr "功能代码与其他分机有冲突"
 
-#: Featurecodeadmin.class.php:62 featurecodeadmin.i18n.php:8
+#: Featurecodeadmin.class.php:62 featurecodeadmin.i18n.php:10
 msgid "Feature Codes"
 msgstr "功能代码"
 
@@ -73,6 +73,13 @@ msgstr "重置"
 #: Featurecodeadmin.class.php:30
 msgid "Submit"
 msgstr "提交"
+
+#: featurecodeadmin.i18n.php:8
+msgid ""
+"The Feature Codes Module is used to enable and disable certain features "
+"available in your PBX and Asterisk, and to set the codes that local users "
+"will dial on their phones to use that particular feature."
+msgstr ""
 
 #: page.featurecodeadmin.php:42
 msgid ""

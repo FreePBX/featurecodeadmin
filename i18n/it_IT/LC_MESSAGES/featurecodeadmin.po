@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-08 06:31+0000\n"
+"POT-Creation-Date: 2020-08-17 02:44+0000\n"
 "PO-Revision-Date: 2018-05-08 06:31+0000\n"
 "Last-Translator: Maurizio Longhitano <mlonghitano@teampower.it>\n"
 "Language-Team: Italian <http://*/projects/freepbx/featurecodeadmin/it/>\n"
@@ -45,7 +45,7 @@ msgstr "Amministrazione Codici Servizi"
 msgid "Feature Code Conflicts with other Extensions"
 msgstr "Codice Servizio in conflitto con altri Interni"
 
-#: Featurecodeadmin.class.php:62 featurecodeadmin.i18n.php:8
+#: Featurecodeadmin.class.php:62 featurecodeadmin.i18n.php:10
 msgid "Feature Codes"
 msgstr "Codici Servizi"
 
@@ -64,6 +64,13 @@ msgstr "Reset"
 #: Featurecodeadmin.class.php:30
 msgid "Submit"
 msgstr "Invia"
+
+#: featurecodeadmin.i18n.php:8
+msgid ""
+"The Feature Codes Module is used to enable and disable certain features "
+"available in your PBX and Asterisk, and to set the codes that local users "
+"will dial on their phones to use that particular feature."
+msgstr ""
 
 #: page.featurecodeadmin.php:42
 msgid ""

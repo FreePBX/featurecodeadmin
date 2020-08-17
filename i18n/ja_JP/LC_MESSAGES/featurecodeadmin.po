@@ -37,15 +37,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-07 14:44-0800\n"
+"POT-Creation-Date: 2020-08-17 02:44+0000\n"
 "PO-Revision-Date: 2014-05-28 14:18+0200\n"
 "Last-Translator: Kevin <kevin@qloog.com>\n"
 "Language-Team: Japanese <http://git.freepbx.org/projects/freepbx/"
 "featurecodeadmin/ja/>\n"
+"Language: ja_JP\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja_JP\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 1.9-dev\n"
 
@@ -81,7 +81,7 @@ msgstr "機能コード管理"
 msgid "Feature Code Conflicts with other Extensions"
 msgstr "他の内線との機能コードの衝突"
 
-#: Featurecodeadmin.class.php:62 featurecodeadmin.i18n.php:8
+#: Featurecodeadmin.class.php:62 featurecodeadmin.i18n.php:10
 msgid "Feature Codes"
 msgstr "機能コード"
 
@@ -99,6 +99,13 @@ msgstr ""
 
 #: Featurecodeadmin.class.php:30
 msgid "Submit"
+msgstr ""
+
+#: featurecodeadmin.i18n.php:8
+msgid ""
+"The Feature Codes Module is used to enable and disable certain features "
+"available in your PBX and Asterisk, and to set the codes that local users "
+"will dial on their phones to use that particular feature."
 msgstr ""
 
 #: page.featurecodeadmin.php:42

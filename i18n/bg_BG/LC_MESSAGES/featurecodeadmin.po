@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX v2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-07 14:44-0800\n"
+"POT-Creation-Date: 2020-08-17 02:44+0000\n"
 "PO-Revision-Date: 2018-07-04 10:18+0000\n"
 "Last-Translator: Chavdar Shtiliyanov <chavdar_75@yahoo.com>\n"
 "Language-Team: Bulgarian <http://*/projects/freepbx/featurecodeadmin/bg/>\n"
@@ -53,7 +53,7 @@ msgstr "Специални Кодове"
 msgid "Feature Code Conflicts with other Extensions"
 msgstr "Специалният Код е в конфликт с други Вътрешни Номера"
 
-#: Featurecodeadmin.class.php:62 featurecodeadmin.i18n.php:8
+#: Featurecodeadmin.class.php:62 featurecodeadmin.i18n.php:10
 msgid "Feature Codes"
 msgstr "Специални Кодове"
 
@@ -72,6 +72,13 @@ msgstr "Изчисти"
 #: Featurecodeadmin.class.php:30
 msgid "Submit"
 msgstr "Приеми"
+
+#: featurecodeadmin.i18n.php:8
+msgid ""
+"The Feature Codes Module is used to enable and disable certain features "
+"available in your PBX and Asterisk, and to set the codes that local users "
+"will dial on their phones to use that particular feature."
+msgstr ""
 
 #: page.featurecodeadmin.php:42
 msgid ""
