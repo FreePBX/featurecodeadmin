@@ -2,7 +2,7 @@
 	<rawname>featurecodeadmin</rawname>
 	<repo>standard</repo>
 	<name>Feature Code Admin</name>
-	<version>13.0.6.5</version>
+	<version>13.0.6.6</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -10,11 +10,12 @@
 	<canuninstall>no</canuninstall>
 	<category>Admin</category>
   	<description>The Feature Codes Module is used to enable and disable certain features available in your PBX and Asterisk, and to set the codes that local users will dial on their phones to use that particular feature.</description>
-  	<more-info>https://wiki.freepbx.org/display/F2/Feature+Codes+Module</more-info>
+  	<more-info>https://wiki.freepbx.org/display/FPG/Feature+Codes+Module</more-info>
 	<menuitems>
 		<featurecodeadmin>Feature Codes</featurecodeadmin>
 	</menuitems>
 	<changelog>
+		*13.0.6.6* Packaging of ver 13.0.6.6
 		*13.0.6.5* Packaging of ver 13.0.6.5
 		*13.0.6.4* FREEPBX-14232 FC accepting same customize code for different features
 		*13.0.6.3* FREEPBX-13806 Fix validation length
