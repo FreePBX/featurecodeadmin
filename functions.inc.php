@@ -79,7 +79,7 @@ function featurecodeadmin_getdestinfo($dest) {
 function featurecodeadmin_check_destinations($dest=true) {
 	global $active_modules;
 
-	$fcs = featurecodeadmin_destinations();
+	$fcs = featurecodeadmin_destinations_self();
 	$fcs = is_array($fcs) ? $fcs : array();
 
 	$destlist = array();
@@ -106,5 +106,34 @@ function featurecodeadmin_check_destinations($dest=true) {
 		);
 	}
 	return $destlist;
+}
+
+/* removed from destination selection */
+function featurecodeadmin_destinations_self() {
+
+  $featurecodes = featurecodes_getAllFeaturesDetailed();
+	if (isset($featurecodes)) {
+    $text_domain = Array();
+    foreach ($featurecodes as $result) {
+      // Ignore disabled codes, and modules, and ones not providing destinations
+      //
+      if ($result['featureenabled'] == 1 && $result['moduleenabled'] == 1 && $result['providedest'] == 1) {
+        $modulename = $result['modulename'];
+
+				$description = modgettext::_($result['featuredescription'], $modulename);
+				// Just in case the translation was not found in either the module or amp, we will try to see
+				// if they put it in the featurecode module i18n
+        if ($description == $result['featuredescription']) {
+            $description = _($description);
+        }
+        $thisexten = ($result['customcode'] != '')?$result['customcode']:$result['defaultcode'];
+				$extens[] = array('destination' => 'ext-featurecodes,'.$result['defaultcode'].',1', 'description' => $description.' <'.$thisexten.'>');
+      }
+    }
+  }
+  if (isset($extens))
+    return $extens;
+  else
+    return null;
 }
 ?>
