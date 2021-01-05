@@ -108,8 +108,7 @@ function featurecodeadmin_check_destinations($dest=true) {
 	return $destlist;
 }
 
-/* removed from destination selection */
-function featurecodeadmin_destinations_self() {
+function featurecodeadmin_destinations() {
 
   $featurecodes = featurecodes_getAllFeaturesDetailed();
 	if (isset($featurecodes)) {
