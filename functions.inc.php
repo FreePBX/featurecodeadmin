@@ -79,7 +79,7 @@ function featurecodeadmin_getdestinfo($dest) {
 function featurecodeadmin_check_destinations($dest=true) {
 	global $active_modules;
 
-	$fcs = featurecodeadmin_destinations_self();
+	$fcs = featurecodeadmin_destinations();
 	$fcs = is_array($fcs) ? $fcs : array();
 
 	$destlist = array();
