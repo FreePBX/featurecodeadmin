@@ -118,7 +118,10 @@ function featurecodeadmin_destinations() {
       //
       if ($result['featureenabled'] == 1 && $result['moduleenabled'] == 1 && $result['providedest'] == 1) {
         $modulename = $result['modulename'];
-
+	//FREEPBX-21227 Remove Feature Code Admin -> Contact Mgr Speeddial as destination
+	if($modulename == 'contactmanager'){
+		continue;
+	}
 				$description = modgettext::_($result['featuredescription'], $modulename);
 				// Just in case the translation was not found in either the module or amp, we will try to see
 				// if they put it in the featurecode module i18n
