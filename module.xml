@@ -2,7 +2,7 @@
 	<rawname>featurecodeadmin</rawname>
 	<repo>standard</repo>
 	<name>Feature Code Admin</name>
-	<version>13.0.6.10</version>
+	<version>13.0.6.11</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -15,6 +15,7 @@
 		<featurecodeadmin>Feature Codes</featurecodeadmin>
 	</menuitems>
 	<changelog>
+		*13.0.6.11* FREEPBX-21227 remove contact manger from the featurecode admin 
 		*13.0.6.10* FREEPBX-21227 
 		*13.0.6.9* FREEPBX-21227 Remove Feature Code Admin -&amp;gt; Contact Mgr Speeddial as destination 
 		*13.0.6.8* FREEI-2560 Getting whoops error when trying to perform reload after the upgrade of featurecode admin module 
