@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-17 02:44+0000\n"
-"PO-Revision-Date: 2021-09-21 16:26+0000\n"
+"PO-Revision-Date: 2021-09-22 17:00+0000\n"
 "Last-Translator: jeremie cattan <freepbx@famillecattan.com>\n"
 "Language-Team: French <http://weblate.freepbx.org/projects/freepbx/"
 "featurecodeadmin/fr/>\n"
@@ -69,7 +69,7 @@ msgstr "Code de Caractéristique"
 
 #: functions.inc.php:20
 msgid "Featurecode: "
-msgstr "Code de la caractéristique :"
+msgstr "Code de la caractéristique : "
 
 #: assets/js/featurecodeadmin.js:29
 msgid "Please enter a Feature Code or uncheck Customize"
