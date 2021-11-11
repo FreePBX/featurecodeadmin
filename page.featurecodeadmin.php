@@ -122,5 +122,5 @@ if($conf_mode == 'extensions'){
 		}
 	}
 }
-
-show_view(__DIR__."/views/main.php",array("conflicterror" => $conflicterror, "modules" => $modules, "exten_conflict_arr" => $exten_conflict_arr));
+$result =  \FreePBX::Featurecodeadmin()->hookModuleCustomFeaturecodesview();
+show_view(__DIR__."/views/main.php",array("conflicterror" => $conflicterror, "modules" => $modules, "exten_conflict_arr" => $exten_conflict_arr, "moduleCustomFeaturecodes" => $result));

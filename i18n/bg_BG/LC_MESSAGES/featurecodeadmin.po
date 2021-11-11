@@ -7,16 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX v2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-17 02:44+0000\n"
-"PO-Revision-Date: 2018-07-04 10:18+0000\n"
+"POT-Creation-Date: 2021-11-11 09:21+0000\n"
+"PO-Revision-Date: 2021-07-04 04:43+0000\n"
 "Last-Translator: Chavdar Shtiliyanov <chavdar_75@yahoo.com>\n"
-"Language-Team: Bulgarian <http://*/projects/freepbx/featurecodeadmin/bg/>\n"
+"Language-Team: Bulgarian <http://weblate.freepbx.org/projects/freepbx/"
+"featurecodeadmin/bg/>\n"
 "Language: bg_BG\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.19.1\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Poedit-Language: Bulgarian\n"
 "X-Poedit-Country: BULGARIA\n"
 "X-Poedit-SourceCharset: utf-8\n"
@@ -29,7 +30,7 @@ msgstr "Действия"
 msgid "Admin"
 msgstr "Админ"
 
-#: Featurecodeadmin.class.php:65 views/main.php:29
+#: Featurecodeadmin.class.php:65 views/main.php:29 views/main.php:90
 msgid "Code"
 msgstr "Код"
 
@@ -37,7 +38,7 @@ msgstr "Код"
 msgid "Customize"
 msgstr "Персонализиране"
 
-#: Featurecodeadmin.class.php:64 views/main.php:26
+#: Featurecodeadmin.class.php:64 views/main.php:26 views/main.php:87
 msgid "Description"
 msgstr "Описание"
 
@@ -79,6 +80,10 @@ msgid ""
 "available in your PBX and Asterisk, and to set the codes that local users "
 "will dial on their phones to use that particular feature."
 msgstr ""
+"Модулът Специални Кодове се използва за включване и изключване на определени "
+"функции, налични във вашата централа и Asterisk, и за задаване на кодовете, "
+"които местните потребители ще набират на телефоните си за да използват тази "
+"конкретна функция."
 
 #: page.featurecodeadmin.php:42
 msgid ""
