@@ -2,7 +2,7 @@
 	<rawname>featurecodeadmin</rawname>
 	<repo>standard</repo>
 	<name>Feature Code Admin</name>
-	<version>15.0.1</version>
+	<version>15.0.2</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -15,8 +15,9 @@
 		<featurecodeadmin>Feature Codes</featurecodeadmin>
 	</menuitems>
 	<changelog>
+		*15.0.2* FREEI-4087 not listing action tab for vqplus module 
 		*15.0.1*    15.0.1 release 
-		*13.0.6.11* FREEPBX-21227 remove contact manger from the featurecode admin 
+		*13.0.6.11* FREEPBX-21227 remove contact manger from the featurecode admin
 	</changelog>
 	<hooks>
 		<featurecodeadmin class="Printextensions" namespace="FreePBX\modules">
