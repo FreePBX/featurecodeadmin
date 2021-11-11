@@ -78,4 +78,18 @@ class Featurecodeadmin implements \BMO {
 			$results[] = array("text" => $fc[0] . ' '. $fc[1], "type" => "get", "dest" => "?display=featurecodeadmin");
 		}
 	}
+	
+	/**
+	 * Method hookTabs
+	 *
+	 * @return void
+	 */
+	public function hookModuleCustomFeaturecodesview(){
+		$module_hook = \moduleHook::create();
+		$mods = $this->FreePBX->Hooks->processHooks();
+		foreach($mods as $module){
+			return $module;
+		}
+		return array();
+	}
 }
