@@ -20,8 +20,8 @@
 								</div>
 								<div class="section" data-id="<?php echo $rawname?>">
 									<div class="element-container hidden-xs">
-										<div class="row">
-											<div class="form-group">
+										<div class="">
+											<div class="row form-group">
 												<div class="col-md-6">
 													<h4><?php echo _("Description")?></h4>
 												</div>
@@ -36,8 +36,8 @@
 									</div>
 									<?php foreach($data['items'] as $item) {?>
 										<div class="element-container <?php echo !empty($exten_conflict_arr[$item['code']]) ? 'has-error' : ''?>">
-											<div class="row">
-												<div class="form-group">
+											<div class="">
+												<div class="row form-group">
 													<div class="col-md-6">
 														<label class="control-label" for="<?php echo $item['feature']?>"><?php echo $item['title']?></label>
 														<?php if(!empty($item['help'])) {?>
@@ -81,8 +81,8 @@
 								</div>
 								<div class="section" data-id="<?php echo $moduleCustomFeaturecodes['moduleName']; ?>">
 									<div class="element-container hidden-xs">
-										<div class="row">
-											<div class="form-group">
+										<div class="">
+											<div class="row form-group">
 												<div class="col-md-6">
 													<h4><?php echo _("Description")?></h4>
 												</div>
@@ -94,8 +94,8 @@
 									</div>	
 									<?php foreach($moduleCustomFeaturecodes['customCodes'] as $code) { isset($moduleCustomFeaturecodes['featureCode']) ? $featurecode = $moduleCustomFeaturecodes['featureCode'] : ''; ?>
 										<div class="element-container">
-											<div class="row">
-												<div class="form-group">
+											<div class="">
+												<div class="row form-group">
 													<div class="col-md-6">
 														<label class="control-label"> <?php echo $code['reason']; ?> </label>
 													</div>
