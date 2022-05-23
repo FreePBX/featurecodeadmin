@@ -2,7 +2,7 @@
 	<rawname>featurecodeadmin</rawname>
 	<repo>standard</repo>
 	<name>Feature Code Admin</name>
-	<version>16.0.3</version>
+	<version>17.0.1</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -15,9 +15,7 @@
 		<featurecodeadmin>Feature Codes</featurecodeadmin>
 	</menuitems>
 	<changelog>
-		*16.0.3* FREEI-4793 
-		*16.0.2* FREEI-4087 not listing action tab for vqplus module 
-		*16.0.1* 16.0 release
+		*17.0.1* 17.0 release
 	</changelog>
 	<hooks>
 		<featurecodeadmin class="Printextensions" namespace="FreePBX\modules">
@@ -25,11 +23,11 @@
 		</featurecodeadmin>
 	</hooks>
 	<depends>
-		<version>16.0</version>
+		<version>17.0</version>
 		<module>core ge 13.0.117.1</module>
 	</depends>
 	<supported>
-		<version>16.0</version>
+		<version>17.0</version>
 	</supported>
 	<md5sum>8d3a776210d49d0fd03b66cd51e5b23d</md5sum>
 	<location>release/2.11/featurecodeadmin-2.11.0.0.tgz</location>
