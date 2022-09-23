@@ -67,7 +67,12 @@ class Featurecodeadmin implements \BMO {
     	foreach ($featurecodes as $fc) {
     		if($fc['featureenabled'] && $fc['moduleenabled']){
     			$code = $fc['customcode']?$fc['customcode']:$fc['defaultcode'];
-    			$ret['items'][] = array($fc['featuredescription'],$code);
+				$featuredesc = !empty($fc['featuredescription']) ? \modgettext::_($fc['featuredescription'], $fc['modulename']) : "";
+				// just in case the translator put the translation in featurcodes module:
+				if (!empty($fc['featuredescription']) && ($featuredesc == $fc['featuredescription'])) {
+					$featuredesc = _($featuredesc);
+				}
+    			$ret['items'][] = array($featuredesc, $code);
     		}
     	}
 		return $ret;
