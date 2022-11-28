@@ -4,138 +4,14 @@ if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed'); }
 //	Copyright (C) 2014 Schmooze Com Inc.
 //
 
+// TODO: Is kept since there is no hook (Class Extensions in Framework:BMO)
 function featurecodeadmin_check_extensions($exten=true) {
-	$extenlist = array();
-	if (is_array($exten) && empty($exten)) {
-		return $extenlist;
-	}
-	$featurecodes = featurecodes_getAllFeaturesDetailed();
-
-	foreach ($featurecodes as $result) {
-		$thisexten = ($result['customcode'] != '')?$result['customcode']:$result['defaultcode'];
-
-		// Ignore disabled codes, and modules, and any exten not being requested unless all (true)
-		//
-		if (($result['featureenabled'] == 1) && ($result['moduleenabled'] == 1) && ($exten === true || in_array($thisexten, $exten))) {
-			$extenlist[$thisexten]['description'] = _("Featurecode: ").$result['featurename']." (".$result['modulename'].":".$result['featuredescription'].")";
-			$extenlist[$thisexten]['status'] = 'INUSE';
-			$extenlist[$thisexten]['edit_url'] = 'config.php?type=setup&display=featurecodeadmin';
-		}
-	}
-	return $extenlist;
+	return \FreePBX::Featurecodeadmin()->destinations_check_extensions($exten);
 }
 
-
-function featurecodeadmin_get_config($engine) {
-	global $ext;  // is this the best way to pass this?
-
-  switch($engine) {
-    case "asterisk":
-
-      $featurecodes = featurecodes_getAllFeaturesDetailed();
-
-      $contextname = 'ext-featurecodes';
-      foreach ($featurecodes as $result) {
-        // Ignore disabled codes, and modules, and ones not providing destinations
-        //
-        if ($result['featureenabled'] == 1 && $result['moduleenabled'] == 1 && $result['providedest'] == 1) {
-          $thisexten = ($result['customcode'] != '')?$result['customcode']:$result['defaultcode'];
-          $ext->add($contextname, $result['defaultcode'], '', new ext_goto('1',$thisexten,'from-internal'));
-        }
-      }
-    break;
-  }
-}
-
+// TODO: There is no hook on the _redirect_standard_helper function in the view.functions.php file.
 function featurecodeadmin_getdest($exten) {
-	return array("ext-featurecodes,$exten,1");
+	return array(\FreePBX::Featurecodeadmin()->getDest($exten));
 }
 
-function featurecodeadmin_getdestinfo($dest) {
-	if (substr(trim($dest),0,17) == 'ext-featurecodes,') {
-		$fcs = featurecodes_getAllFeaturesDetailed();
-		$found = false;
-		$dest = explode(',',$dest);
-		foreach ($fcs as $fc) {
-			if ($fc['defaultcode'] == $dest[1]) {
-				$desc = $fc['featuredescription'];
-				$found = true;
-				break;
-			}
-		}
-		if (!$found) {
-			return array();
-		} else {
-			return array(
-				'description' => $desc,
-				'edit_url' => 'config.php?display=featurecodeadmin',
-				);
-		}
-	} else {
-		return false;
-	}
-}
-
-function featurecodeadmin_check_destinations($dest=true) {
-	global $active_modules;
-
-	$fcs = featurecodeadmin_destinations();
-	$fcs = is_array($fcs) ? $fcs : array();
-
-	$destlist = array();
-	if (is_array($dest) && empty($dest)) {
-		return $destlist;
-	}
-
-	$results = array();
-	if ($dest === true) {
-		$results = $fcs;
-	} else {
-		foreach ($fcs as $fc) {
-			if (in_array($fc['destination'], $dest)) {
-				$results[] = $fc;
-			}
-		}
-	}
-
-	foreach ($results as $result) {
-		$destlist[] = array(
-			'dest' => $result['destination'],
-			'description' => $result['description'],
-			'edit_url' => 'config.php?display=featurecodeadmin',
-		);
-	}
-	return $destlist;
-}
-
-function featurecodeadmin_destinations() {
-
-  $featurecodes = featurecodes_getAllFeaturesDetailed();
-	if (isset($featurecodes)) {
-    $text_domain = Array();
-    foreach ($featurecodes as $result) {
-      // Ignore disabled codes, and modules, and ones not providing destinations
-      //
-      if ($result['featureenabled'] == 1 && $result['moduleenabled'] == 1 && $result['providedest'] == 1) {
-        $modulename = $result['modulename'];
-	//FREEPBX-21227 Remove Feature Code Admin -> Contact Mgr Speeddial as destination
-	if($modulename == 'contactmanager'){
-		continue;
-	}
-				$description = modgettext::_($result['featuredescription'], $modulename);
-				// Just in case the translation was not found in either the module or amp, we will try to see
-				// if they put it in the featurecode module i18n
-        if ($description == $result['featuredescription']) {
-            $description = _($description);
-        }
-        $thisexten = ($result['customcode'] != '')?$result['customcode']:$result['defaultcode'];
-				$extens[] = array('destination' => 'ext-featurecodes,'.$result['defaultcode'].',1', 'description' => $description.' <'.$thisexten.'>');
-      }
-    }
-  }
-  if (isset($extens))
-    return $extens;
-  else
-    return null;
-}
 ?>
