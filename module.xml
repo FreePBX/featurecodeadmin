@@ -25,6 +25,11 @@
 		<featurecodeadmin class="Printextensions" namespace="FreePBX\modules">
 			<method callingMethod="getSections" class="Featurecodeadmin" namespace="FreePBX\modules">printExtensions</method>
 		</featurecodeadmin>
+		<framework class="Destinations" namespace="FreePBX">
+			<method callingMethod="getModuleDestinations" class="Featurecodeadmin" namespace="FreePBX\modules">destinations</method>
+      		<method callingMethod="getModuleCheckDestinations" class="Featurecodeadmin" namespace="FreePBX\modules">destinations_check</method>
+      		<method callingMethod="getModuleDestinationInfo" class="Featurecodeadmin" namespace="FreePBX\modules">destinations_getdestinfo</method>
+		</framework>
 	</hooks>
 	<depends>
 		<version>16.0</version>

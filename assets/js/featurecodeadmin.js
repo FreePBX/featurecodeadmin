@@ -23,6 +23,13 @@ $(function() {
 			input.val(input.data("default"));
 		}
 	});
+	$(".btn-expand-all").click(function() {
+		ShowHideAll(true);
+	});
+
+	$(".btn-collapse-all").click(function() {
+		ShowHideAll(false);
+	});
 
 	//bind like this for popovers!
 	$("form[name=frmAdmin]")[0].onsubmit = function() {
@@ -46,3 +53,28 @@ $(function() {
 		}
 	};
 });
+
+function ShowHideAll(new_status = true)
+{
+	var isVal = "";
+	if (new_status == true)
+	{
+		isVal = ":visible";
+	}
+	else
+	{
+		isVal = ":hidden";
+	}
+	$(".section-title" ).each(function() {
+		var id = $(this).data("for"), icon = $(this).find("i.fa");
+		if (icon.length > 0) {
+			if ($(".section[data-id='" + id + "']").is(isVal)) {
+				return;
+			}
+			icon.toggleClass("fa-minus").toggleClass("fa-plus");
+			$(".section[data-id='" + id + "']").slideToggle("slow", function() {
+				positionActionBar();
+			});
+		}
+	});
+}
