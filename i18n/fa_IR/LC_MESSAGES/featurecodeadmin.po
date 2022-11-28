@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-11 09:21+0000\n"
+"POT-Creation-Date: 2022-11-28 06:42+0000\n"
 "PO-Revision-Date: 2016-06-24 08:14+0200\n"
 "Last-Translator: Media <mousavi.media@gmail.com>\n"
 "Language-Team: Persian (Iran) <http://weblate.freepbx.org/projects/freepbx/"
@@ -21,7 +21,11 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.4\n"
 
-#: views/main.php:32
+#: Featurecodeadmin.class.php:165
+msgid "(none)"
+msgstr ""
+
+#: views/view.main.list.php:32 views/view.main.php:47
 msgid "Actions"
 msgstr "عملیات"
 
@@ -29,47 +33,72 @@ msgstr "عملیات"
 msgid "Admin"
 msgstr "مدیر"
 
-#: Featurecodeadmin.class.php:65 views/main.php:29 views/main.php:90
+#: Featurecodeadmin.class.php:330 views/view.main.list.php:29
+#: views/view.main.list.php:91 views/view.main.php:44 views/view.main.php:105
 msgid "Code"
 msgstr "کد"
 
-#: views/main.php:53
+#: views/view.main.php:10 views/view.main.toolbar.php:6
+msgid "Collapse All"
+msgstr ""
+
+#: Featurecodeadmin.class.php:114
+#, php-format
+msgid "Command [%s] not valid!"
+msgstr ""
+
+#: views/view.main.list.php:77
+msgid "Custom feature codes"
+msgstr ""
+
+#: views/view.main.list.php:53 views/view.main.php:68
 msgid "Customize"
 msgstr "سفارشی"
 
-#: Featurecodeadmin.class.php:64 views/main.php:26 views/main.php:87
+#: Featurecodeadmin.class.php:329 views/view.main.list.php:26
+#: views/view.main.list.php:88 views/view.main.php:41 views/view.main.php:102
 msgid "Description"
 msgstr "شرح"
 
-#: views/main.php:57
+#: views/view.main.list.php:57 views/view.main.php:72
 msgid "Enabled"
 msgstr "فعال"
 
-#: featurecodeadmin.i18n.php:4 views/main.php:9
+#: views/view.main.php:9 views/view.main.toolbar.php:5
+msgid "Expand All"
+msgstr ""
+
+#: featurecodeadmin.i18n.php:4 views/page.main.php:2 views/view.main.php:2
 msgid "Feature Code Admin"
 msgstr "کد ویژه محیط مدیریت"
 
-#: page.featurecodeadmin.php:44
+#: views/view.main.list.php:10
 msgid "Feature Code Conflicts with other Extensions"
 msgstr "کد ویژه با سایر برنامه‌ ها تداخل دارد"
 
-#: Featurecodeadmin.class.php:62 featurecodeadmin.i18n.php:10
+#: Featurecodeadmin.class.php:328 featurecodeadmin.i18n.php:10
 msgid "Feature Codes"
 msgstr "کدهای ویژه"
 
-#: functions.inc.php:20
-msgid "Featurecode: "
-msgstr "کد ویژه： "
+#: Featurecodeadmin.class.php:465
+#, php-format
+msgid "Featurecode: %s (%s:%s)"
+msgstr ""
 
-#: assets/js/featurecodeadmin.js:29
+#: Featurecodeadmin.class.php:70
+#, php-format
+msgid "Page Not Found (%s)!!!!"
+msgstr ""
+
+#: assets/js/featurecodeadmin.js:36
 msgid "Please enter a Feature Code or uncheck Customize"
 msgstr "لطفا یک کد ویژه وارد کنید و یا تیک سفارشی سازی را بردارید"
 
-#: Featurecodeadmin.class.php:25
+#: Featurecodeadmin.class.php:83
 msgid "Reset"
 msgstr "تنظیم مجدد"
 
-#: Featurecodeadmin.class.php:30
+#: Featurecodeadmin.class.php:88
 msgid "Submit"
 msgstr "ثبت"
 
@@ -80,10 +109,13 @@ msgid ""
 "will dial on their phones to use that particular feature."
 msgstr ""
 
-#: page.featurecodeadmin.php:42
+#: views/view.main.list.php:9
 msgid ""
 "You have feature code conflicts with extension numbers in other modules. "
 "This will result in unexpected and broken behavior."
 msgstr ""
 "کد ویژه با تعدادی برنامه ماژول های دیگر تداخل دارد. این باعث رفتارهای نادرست "
 "میشود."
+
+#~ msgid "Featurecode: "
+#~ msgstr "کد ویژه： "

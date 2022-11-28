@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-11 09:21+0000\n"
+"POT-Creation-Date: 2022-11-28 06:42+0000\n"
 "PO-Revision-Date: 2016-12-11 22:46+0200\n"
 "Last-Translator: Alexander <alexander.schley@paranagua.pr.gov.br>\n"
 "Language-Team: Portuguese (Brazil) <http://weblate.freepbx.org/projects/"
@@ -34,7 +34,11 @@ msgstr ""
 "X-Poedit-Country: BRAZIL\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: views/main.php:32
+#: Featurecodeadmin.class.php:165
+msgid "(none)"
+msgstr ""
+
+#: views/view.main.list.php:32 views/view.main.php:47
 msgid "Actions"
 msgstr "Ações"
 
@@ -42,47 +46,72 @@ msgstr "Ações"
 msgid "Admin"
 msgstr "Admin"
 
-#: Featurecodeadmin.class.php:65 views/main.php:29 views/main.php:90
+#: Featurecodeadmin.class.php:330 views/view.main.list.php:29
+#: views/view.main.list.php:91 views/view.main.php:44 views/view.main.php:105
 msgid "Code"
 msgstr "Código"
 
-#: views/main.php:53
+#: views/view.main.php:10 views/view.main.toolbar.php:6
+msgid "Collapse All"
+msgstr ""
+
+#: Featurecodeadmin.class.php:114
+#, php-format
+msgid "Command [%s] not valid!"
+msgstr ""
+
+#: views/view.main.list.php:77
+msgid "Custom feature codes"
+msgstr ""
+
+#: views/view.main.list.php:53 views/view.main.php:68
 msgid "Customize"
 msgstr "Personalizar"
 
-#: Featurecodeadmin.class.php:64 views/main.php:26 views/main.php:87
+#: Featurecodeadmin.class.php:329 views/view.main.list.php:26
+#: views/view.main.list.php:88 views/view.main.php:41 views/view.main.php:102
 msgid "Description"
 msgstr "Descrição"
 
-#: views/main.php:57
+#: views/view.main.list.php:57 views/view.main.php:72
 msgid "Enabled"
 msgstr "Habilitado"
 
-#: featurecodeadmin.i18n.php:4 views/main.php:9
+#: views/view.main.php:9 views/view.main.toolbar.php:5
+msgid "Expand All"
+msgstr ""
+
+#: featurecodeadmin.i18n.php:4 views/page.main.php:2 views/view.main.php:2
 msgid "Feature Code Admin"
 msgstr "Admin Códigos de Recurso"
 
-#: page.featurecodeadmin.php:44
+#: views/view.main.list.php:10
 msgid "Feature Code Conflicts with other Extensions"
 msgstr "Código de Recurso Conflita com outros Ramais"
 
-#: Featurecodeadmin.class.php:62 featurecodeadmin.i18n.php:10
+#: Featurecodeadmin.class.php:328 featurecodeadmin.i18n.php:10
 msgid "Feature Codes"
 msgstr "Códigos de Recurso"
 
-#: functions.inc.php:20
-msgid "Featurecode: "
-msgstr "Código de recurso: "
+#: Featurecodeadmin.class.php:465
+#, php-format
+msgid "Featurecode: %s (%s:%s)"
+msgstr ""
 
-#: assets/js/featurecodeadmin.js:29
+#: Featurecodeadmin.class.php:70
+#, php-format
+msgid "Page Not Found (%s)!!!!"
+msgstr ""
+
+#: assets/js/featurecodeadmin.js:36
 msgid "Please enter a Feature Code or uncheck Customize"
 msgstr "Insira um Código de Função ou desmarque Personalizar"
 
-#: Featurecodeadmin.class.php:25
+#: Featurecodeadmin.class.php:83
 msgid "Reset"
 msgstr "Reiniciar"
 
-#: Featurecodeadmin.class.php:30
+#: Featurecodeadmin.class.php:88
 msgid "Submit"
 msgstr "Enviar"
 
@@ -93,13 +122,16 @@ msgid ""
 "will dial on their phones to use that particular feature."
 msgstr ""
 
-#: page.featurecodeadmin.php:42
+#: views/view.main.list.php:9
 msgid ""
 "You have feature code conflicts with extension numbers in other modules. "
 "This will result in unexpected and broken behavior."
 msgstr ""
 "Você tem um código de recurso que conflita com os números de ramais nos "
 "outros módulos. Isto irá resultar em um comportamento errado inesperado."
+
+#~ msgid "Featurecode: "
+#~ msgstr "Código de recurso: "
 
 #~ msgid "Are you sure you wish to proceed?"
 #~ msgstr "Tem certeza que deseja continuar?"
