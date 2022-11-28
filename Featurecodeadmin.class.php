@@ -471,6 +471,23 @@ class Featurecodeadmin implements \BMO {
 		return $extenlist;
 	}
 
+	public function destinations_identif($dests)
+	{
+		if (! is_array($dests)) {
+			$dests = array($dests);
+		}
+		$return_data = array();
+		foreach ($dests as $target)
+		{
+			$info = $this->destinations_getdestinfo($target);
+			if (!empty($info))
+			{
+				$return_data[$target] = $info;
+			}
+		}
+		return $return_data;
+	}
+
 	/**
 	 * Hook's functions global's.
 	 * 
