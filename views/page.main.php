@@ -1,5 +1,4 @@
 <div class="container-fluid">
-	<h1><?php echo _("Feature Code Admin"); ?></h1>
 	<div class = "display full-border">
         <div class="row">
             <div class="col-sm-12">

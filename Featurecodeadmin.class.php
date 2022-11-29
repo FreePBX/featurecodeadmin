@@ -47,11 +47,7 @@ class Featurecodeadmin implements \BMO {
 			case 'main':
 				$data_return = load_view(__DIR__."/views/page.main.php", $data);
 			break;
-
-			case "view.main":
-				$data_return = load_view(__DIR__."/views/view.main.php", $data);
-			break;
-
+			
 			case "view.main.toolbar":
 				$data_return = load_view(__DIR__."/views/view.main.toolbar.php", $data);
 			break;

@@ -22,13 +22,13 @@
                     <div class="element-container hidden-xs">
                         <div class="row">
                             <div class="form-group">
-                                <div class="col-md-8">
+                                <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
                                     <h4><?php echo _("Description")?></h4>
                                 </div>
-                                <div class="col-md-2">
+                                <div class="col-lg-4 col-md-3 col-sm-7 col-xs-6">
                                     <h4><?php echo _("Code")?></h4>
                                 </div>
-                                <div class="col-md-2 col-actions">
+                                <div class="col-lg-3 col-md-4 col-sm-5 col-xs-6 col-actions">
                                     <h4><?php echo _("Actions")?></h4>
                                 </div>
                             </div>
@@ -38,16 +38,16 @@
                         <div class="element-container <?php echo !empty($conflict['exten_conflict_arr'][$item['code']]) ? 'has-error' : ''?>">
                             <div class="row">
                                 <div class="form-group">
-                                    <div class="col-md-8">
+                                    <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
                                         <label class="control-label" for="<?php echo $item['feature']?>"><?php echo $item['title']?></label>
                                         <?php if(!empty($item['help'])): ?>
                                             <i class="fa fa-question-circle fpbx-help-icon" data-for="<?php echo $item['feature']?>"></i>
                                         <?php endif ?>
                                     </div>
-                                    <div class="col-md-2">
+                                    <div class="col-lg-4 col-md-3 col-sm-7 col-xs-12">
                                         <input type="text" name="fc[<?php echo $item['module']?>][<?php echo $item['feature']?>][code]" value="<?php echo $item['code']?>" id="custom_<?php echo $item['id']?>" data-default="<?php echo $item['default']?>" placeholder="<?php echo $item['default']?>" data-custom="<?php echo $item['custom']?>" class="form-control extdisplay" <?php echo (!$item['iscustom']) ? 'readonly' : ''?> required pattern="[0-9A-D\*#]*">
                                     </div>
-                                    <div class="col-md-2 col-actions">
+                                    <div class="col-lg-3 col-md-4 col-sm-5 col-xs-12 col-actions">
                                         <span class="radioset">
                                             <input type="checkbox" data-for="custom_<?php echo $item['id']?>" name="fc[<?php echo $item['module']?>][<?php echo $item['feature']?>][customize]" class="custom" id="usedefault_<?php echo $item['id']?>" <?php echo ($item['iscustom']) ? 'checked' : ''?>>
                                             <label for="usedefault_<?php echo $item['id']?>"><?php echo _("Customize")?></label>
@@ -87,7 +87,7 @@
                                 <div class="col-md-8">
                                     <h4><?php echo _("Description")?></h4>
                                 </div>
-                                <div class="col-md-2">
+                                <div class="col-md-4">
                                     <h4><?php echo _("Code")?></h4>
                                 </div>
                             </div>
@@ -103,7 +103,7 @@
                                     <div class="col-md-8">
                                         <label class="control-label"> <?php echo $code['reason']; ?> </label>
                                     </div>
-                                    <div class="col-md-2">
+                                    <div class="col-md-4">
                                         <input type="text" disabled value="<?php echo $featurecode .  $code['code']; ?>">
                                     </div>
                                 </div>
