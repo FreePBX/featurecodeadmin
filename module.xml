@@ -25,6 +25,7 @@
 			<method callingMethod="getModuleDestinations" class="Featurecodeadmin" namespace="FreePBX\modules">destinations</method>
       		<method callingMethod="getModuleCheckDestinations" class="Featurecodeadmin" namespace="FreePBX\modules">destinations_check</method>
       		<method callingMethod="getModuleDestinationInfo" class="Featurecodeadmin" namespace="FreePBX\modules">destinations_getdestinfo</method>
+		<method callingMethod="identifyDestinations" class="Featurecodeadmin" namespace="FreePBX\modules">destinations_identif</method>
 		</framework>
 	</hooks>
 	<depends>
