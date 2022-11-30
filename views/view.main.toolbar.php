@@ -6,8 +6,8 @@
             </span>
             <span class="toolbar-btn">
                 <div class="btn-group">
-                    <button type="button" class="btn btn-default btn-expand-all" title="<?php echo _("Expand All"); ?>"><i class="fa fa-chevron-up"></i></button>
-                    <button type="button" class="btn btn-default btn-collapse-all" title="<?php echo _("Collapse All"); ?>"><i class="fa fa-chevron-down"></i></button>
+                    <button type="button" class="btn btn-default btn-collapse-all" title="<?php echo _("Collapse All"); ?>"><i class="fa fa-chevron-up"></i></button>
+                    <button type="button" class="btn btn-default btn-expand-all" title="<?php echo _("Expand All"); ?>"><i class="fa fa-chevron-down"></i></button>
                 </div>
             </span>
         </div>
