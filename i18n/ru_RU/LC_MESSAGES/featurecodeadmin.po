@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-30 03:54+0000\n"
+"POT-Creation-Date: 2022-12-01 04:16+0000\n"
 "PO-Revision-Date: 2016-02-11 22:36+0200\n"
 "Last-Translator: ded <ceo@postmet.com>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/"
@@ -38,7 +38,7 @@ msgstr "Админ"
 msgid "Code"
 msgstr "Код"
 
-#: views/view.main.toolbar.php:10
+#: views/view.main.toolbar.php:9
 msgid "Collapse All"
 msgstr ""
 
@@ -64,7 +64,7 @@ msgstr "Описание"
 msgid "Enabled"
 msgstr "Включено"
 
-#: views/view.main.toolbar.php:9
+#: views/view.main.toolbar.php:10
 msgid "Expand All"
 msgstr ""
 

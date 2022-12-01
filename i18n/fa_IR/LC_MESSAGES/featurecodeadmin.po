@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-30 03:54+0000\n"
+"POT-Creation-Date: 2022-12-01 04:16+0000\n"
 "PO-Revision-Date: 2016-06-24 08:14+0200\n"
 "Last-Translator: Media <mousavi.media@gmail.com>\n"
 "Language-Team: Persian (Iran) <http://weblate.freepbx.org/projects/freepbx/"
@@ -38,7 +38,7 @@ msgstr "مدیر"
 msgid "Code"
 msgstr "کد"
 
-#: views/view.main.toolbar.php:10
+#: views/view.main.toolbar.php:9
 msgid "Collapse All"
 msgstr ""
 
@@ -64,7 +64,7 @@ msgstr "شرح"
 msgid "Enabled"
 msgstr "فعال"
 
-#: views/view.main.toolbar.php:9
+#: views/view.main.toolbar.php:10
 msgid "Expand All"
 msgstr ""
 

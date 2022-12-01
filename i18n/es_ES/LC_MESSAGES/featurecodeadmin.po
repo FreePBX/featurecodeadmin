@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX - featurecodeadmin module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-30 03:54+0000\n"
+"POT-Creation-Date: 2022-12-01 04:16+0000\n"
 "PO-Revision-Date: 2022-10-09 13:21+0200\n"
 "Last-Translator: Javier Pastor <jpastor@cerebelum.net>\n"
 "Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/"
@@ -32,7 +32,7 @@ msgstr "Admin"
 msgid "Code"
 msgstr "Código"
 
-#: views/view.main.toolbar.php:10
+#: views/view.main.toolbar.php:9
 msgid "Collapse All"
 msgstr "Contraer Todo"
 
@@ -58,7 +58,7 @@ msgstr "Descripción"
 msgid "Enabled"
 msgstr "Habilitado"
 
-#: views/view.main.toolbar.php:9
+#: views/view.main.toolbar.php:10
 msgid "Expand All"
 msgstr "Expandir Todo"
 

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-30 03:54+0000\n"
+"POT-Creation-Date: 2022-12-01 04:16+0000\n"
 "PO-Revision-Date: 2018-08-25 12:00+0000\n"
 "Last-Translator: Bastian Mertgen <b.mertgen@bastian-mertgen.de>\n"
 "Language-Team: German <http://*/projects/freepbx/featurecodeadmin/de/>\n"
@@ -37,7 +37,7 @@ msgstr "Administrator"
 msgid "Code"
 msgstr "Code"
 
-#: views/view.main.toolbar.php:10
+#: views/view.main.toolbar.php:9
 msgid "Collapse All"
 msgstr ""
 
@@ -63,7 +63,7 @@ msgstr "Beschreibung"
 msgid "Enabled"
 msgstr "Aktiviert"
 
-#: views/view.main.toolbar.php:9
+#: views/view.main.toolbar.php:10
 msgid "Expand All"
 msgstr ""
 

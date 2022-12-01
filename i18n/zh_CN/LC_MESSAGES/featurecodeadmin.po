@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-30 03:54+0000\n"
+"POT-Creation-Date: 2022-12-01 04:16+0000\n"
 "PO-Revision-Date: 2015-11-17 12:22+0200\n"
 "Last-Translator: james <zhulizhong@gmail.com>\n"
 "Language-Team: Simplified Chinese <http://weblate.freepbx.org/projects/"
@@ -39,7 +39,7 @@ msgstr ""
 msgid "Code"
 msgstr "代码热键"
 
-#: views/view.main.toolbar.php:10
+#: views/view.main.toolbar.php:9
 msgid "Collapse All"
 msgstr ""
 
@@ -65,7 +65,7 @@ msgstr "描述"
 msgid "Enabled"
 msgstr "启用"
 
-#: views/view.main.toolbar.php:9
+#: views/view.main.toolbar.php:10
 msgid "Expand All"
 msgstr ""
 

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX v2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-30 03:54+0000\n"
+"POT-Creation-Date: 2022-12-01 04:16+0000\n"
 "PO-Revision-Date: 2021-07-04 04:43+0000\n"
 "Last-Translator: Chavdar Shtiliyanov <chavdar_75@yahoo.com>\n"
 "Language-Team: Bulgarian <http://weblate.freepbx.org/projects/freepbx/"
@@ -39,7 +39,7 @@ msgstr "Админ"
 msgid "Code"
 msgstr "Код"
 
-#: views/view.main.toolbar.php:10
+#: views/view.main.toolbar.php:9
 msgid "Collapse All"
 msgstr ""
 
@@ -65,7 +65,7 @@ msgstr "Описание"
 msgid "Enabled"
 msgstr "Разрешен"
 
-#: views/view.main.toolbar.php:9
+#: views/view.main.toolbar.php:10
 msgid "Expand All"
 msgstr ""
 
