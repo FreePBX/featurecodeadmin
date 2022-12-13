@@ -1,3 +1,77 @@
+<?php
+function get_new_row($item, $itemParent = null)
+{
+	$new_row = '
+	<div class="element-container %%__HAS-ERROR__%%">
+		<div class="row">
+			<div class="form-group">
+				<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+					%%__TAB_SUBITEM_START__%%
+					<i class="fa fa-chevron-right" aria-hidden="true"></i>
+					<i class="fa fa-chevron-right" aria-hidden="true"></i>
+					%%__TAB_SUBITEM_END__%%
+					<label class="control-label" for="%%__FEATURE__%%">%%__TITLE__%%</label>
+					%%__IF_HELP_START__%%
+						<i class="fa fa-question-circle fpbx-help-icon" data-for="%%__FEATURE__%%"></i>
+					%%__IF_HELP_END__%%
+				</div>
+				<div class="col-lg-4 col-md-3 col-sm-7 col-xs-12">
+					<input type="text" name="fc[%%__MODULE__%%][%%__FEATURE__%%][code]" value="%%__CODE__%%" id="custom_%%__ID__%%" data-default="%%__DEFAULT__%%" placeholder="%%__DEFAULT__%%" data-custom="%%__CUSTOM__%%" class="form-control extdisplay" %%__IS_CUSTOM_INPUT__%% required pattern="[0-9A-D\*#]*">
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-5 col-xs-12 col-actions">
+					<span class="radioset">
+						<input type="checkbox" data-for="custom_%%__ID__%%" name="fc[%%__MODULE__%%][%%__FEATURE__%%][customize]" class="custom" id="usedefault_%%__ID__%%" %%__IS_CUSTOM_CHECK__%%>
+						<label for="usedefault_%%__ID__%%">%%__LABEL_CUSTOMIZE__%%</label>
+					</span>
+					<span class="radioset">
+						<input type="checkbox" class="enabled" name="fc[%%__MODULE__%%][%%__FEATURE__%%][enable]" id="ena_%%__ID__%%" %%__IS_ENABLED__%% %%__IS_ENABLED_OFF__%%>
+						<label for="ena_%%__ID__%%">%%__LABEL_ENABLED__%%</label>
+					</span>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<span id="%%__FEATURE__%%-help" class="help-block fpbx-help-block">%%__HELP__%%</span>
+			</div>
+		</div>
+	</div>
+	';
+	$isSubItem = (!is_null($itemParent));
+	$remplaces 	= array(
+		'HAS-ERROR' 		=> !empty($conflict['exten_conflict_arr'][$item['code']]) ? 'has-error' : '',
+		'FEATURE' 			=> $item['feature'],
+		'TITLE' 			=> $item['title'],
+		'MODULE'			=> $item['module'],
+		'CODE'				=> $item['code'],
+		'ID'				=> $item['id'],
+		'DEFAULT'			=> $item['default'],
+		'CUSTOM'			=> $item['custom'],
+		'IS_CUSTOM_INPUT' 	=> (! $item['iscustom']) ? 'readonly' : '',
+		'LABEL_CUSTOMIZE' 	=> _("Customize"),
+		'IS_CUSTOM_CHECK' 	=> ($item['iscustom']) ? 'checked' : '',
+		'LABEL_ENABLED' 	=> _("Enabled"),
+		'IS_ENABLED'		=> ($item['isenabled']) ? 'checked' : '',
+		// 'IS_ENABLED_OFF'	=> ($isSubItem && !$itemParent['isenabled']) ? 'disabled' : '',
+		'IS_ENABLED_OFF'	=> '',
+		'HELP' 				=>  $item['help'],
+		'IF_HELP_START'		=> empty($item['help']) ? '<!-- ' : '',
+		'IF_HELP_END'		=> empty($item['help']) ? ' -->' : '',
+		'TAB_SUBITEM_START'	=> ($isSubItem) ? '' : '<!-- ',
+		'TAB_SUBITEM_END'	=> ($isSubItem) ? '' : ' -->',
+	);
+	foreach ($remplaces as $key => $value)
+	{
+		$new_row = str_replace("%%__".$key."__%%", $value, $new_row);
+	}
+	return $new_row;
+}
+
+// True show all subitems; False only show subitems if parent is enabled.
+$any_show_all = true;
+?>
+
+
 <form autocomplete="off "class="fpbx-submit" name="frmAdmin" action="config.php?display=featurecodeadmin" method="post">
     <input type="hidden" name="action" value="save">
     <div class="display no-border">
@@ -34,87 +108,20 @@
                             </div>
                         </div>
                     </div>
-					
                     <?php
 					if (! empty($data['items']))
 					{
-						foreach($data['items'] as $item):
-							?>
-							<div class="element-container <?php echo !empty($conflict['exten_conflict_arr'][$item['code']]) ? 'has-error' : ''?>">
-								<div class="row">
-									<div class="form-group">
-										<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
-											<label class="control-label" for="<?php echo $item['feature']?>"><?php echo $item['title']?></label>
-											<?php if(!empty($item['help'])): ?>
-												<i class="fa fa-question-circle fpbx-help-icon" data-for="<?php echo $item['feature']?>"></i>
-											<?php endif ?>
-										</div>
-										<div class="col-lg-4 col-md-3 col-sm-7 col-xs-12">
-											<input type="text" name="fc[<?php echo $item['module']?>][<?php echo $item['feature']?>][code]" value="<?php echo $item['code']?>" id="custom_<?php echo $item['id']?>" data-default="<?php echo $item['default']?>" placeholder="<?php echo $item['default']?>" data-custom="<?php echo $item['custom']?>" class="form-control extdisplay" <?php echo (!$item['iscustom']) ? 'readonly' : ''?> required pattern="[0-9A-D\*#]*">
-										</div>
-										<div class="col-lg-3 col-md-4 col-sm-5 col-xs-12 col-actions">
-											<span class="radioset">
-												<input type="checkbox" data-for="custom_<?php echo $item['id']?>" name="fc[<?php echo $item['module']?>][<?php echo $item['feature']?>][customize]" class="custom" id="usedefault_<?php echo $item['id']?>" <?php echo ($item['iscustom']) ? 'checked' : ''?>>
-												<label for="usedefault_<?php echo $item['id']?>"><?php echo _("Customize")?></label>
-											</span>
-											<span class="radioset">
-												<input type="checkbox" class="enabled" name="fc[<?php echo $item['module']?>][<?php echo $item['feature']?>][enable]" id="ena_<?php echo $item['id']?>" <?php echo ($item['isenabled']) ? 'checked' : ''?>>
-												<label for="ena_<?php echo $item['id']?>"><?php echo _("Enabled")?></label>
-											</span>
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-12">
-										<span id="<?php echo $item['feature']?>-help" class="help-block fpbx-help-block"><?php echo $item['help']?></span>
-									</div>
-								</div>
-							</div>
-                    		<?php
-							if (! empty($item['subitems']))
+						foreach($data['items'] as $item)
+						{
+							echo get_new_row($item);
+							if (! empty($item['subitems']) && ($item['isenabled'] || $any_show_all))
 							{
-								foreach($item['subitems'] as $subitem):
-								?>
-
-									<div class="element-container <?php echo !empty($conflict['exten_conflict_arr'][$subitem['code']]) ? 'has-error' : ''?>">
-										<div class="row">
-											<div class="form-group">
-												<!-- <div class="col-lg-1 col-md-1 col-sm-6 col-xs-6">
-												</div> -->
-												<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
-													<i class="fa fa-chevron-right" aria-hidden="true"></i>
-													<i class="fa fa-chevron-right" aria-hidden="true"></i>
-													<label class="control-label" for="<?php echo $subitem['feature']?>"><?php echo $subitem['title']?></label>
-													<?php if(!empty($item['help'])): ?>
-														<i class="fa fa-question-circle fpbx-help-icon" data-for="<?php echo $subitem['feature']?>"></i>
-													<?php endif ?>
-												</div>
-												<div class="col-lg-4 col-md-3 col-sm-7 col-xs-12">
-													<input type="text" name="fc[<?php echo $subitem['module']?>][<?php echo $subitem['feature']?>][code]" value="<?php echo $subitem['code']?>" id="custom_<?php echo $subitem['id']?>" data-default="<?php echo $subitem['default']?>" placeholder="<?php echo $subitem['default']?>" data-custom="<?php echo $subitem['custom']?>" class="form-control extdisplay" <?php echo (!$subitem['iscustom']) ? 'readonly' : ''?> required pattern="[0-9A-D\*#]*">
-												</div>
-												<div class="col-lg-3 col-md-4 col-sm-5 col-xs-12 col-actions">
-													<span class="radioset">
-														<input type="checkbox" data-for="custom_<?php echo $subitem['id']?>" name="fc[<?php echo $subitem['module']?>][<?php echo $subitem['feature']?>][customize]" class="custom" id="usedefault_<?php echo $subitem['id']?>" <?php echo ($subitem['iscustom']) ? 'checked' : ''?>>
-														<label for="usedefault_<?php echo $subitem['id']?>"><?php echo _("Customize")?></label>
-													</span>
-													<span class="radioset">
-														<input type="checkbox" class="enabled" name="fc[<?php echo $subitem['module']?>][<?php echo $subitem['feature']?>][enable]" id="ena_<?php echo $subitem['id']?>" <?php echo ($subitem['isenabled']) ? 'checked' : ''?>>
-														<label for="ena_<?php echo $subitem['id']?>"><?php echo _("Enabled")?></label>
-													</span>
-												</div>
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-md-12">
-												<span id="<?php echo $subitem['feature']?>-help" class="help-block fpbx-help-block"><?php echo $subitem['help']?></span>
-											</div>
-										</div>
-									</div>
-
-								<?php
-								endforeach;
+								foreach($item['subitems'] as $subitem)
+								{
+									echo get_new_row($subitem, $item);
+								}
 							}
-						endforeach;
+						}
 					}
 					?>
                 </div>
