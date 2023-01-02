@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-01 04:16+0000\n"
+"POT-Creation-Date: 2023-01-02 06:48+0000\n"
 "PO-Revision-Date: 2018-05-08 06:31+0000\n"
 "Last-Translator: Maurizio Longhitano <mlonghitano@teampower.it>\n"
 "Language-Team: Italian <http://*/projects/freepbx/featurecodeadmin/it/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 msgid "(none)"
 msgstr ""
 
-#: views/view.main.list.php:32
+#: views/view.main.list.php:106
 msgid "Actions"
 msgstr "Azioni"
 
@@ -25,8 +25,8 @@ msgstr "Azioni"
 msgid "Admin"
 msgstr "Amministrazione"
 
-#: Featurecodeadmin.class.php:326 views/view.main.list.php:29
-#: views/view.main.list.php:91
+#: Featurecodeadmin.class.php:341 views/view.main.list.php:103
+#: views/view.main.list.php:149
 msgid "Code"
 msgstr "Codice"
 
@@ -39,20 +39,20 @@ msgstr ""
 msgid "Command [%s] not valid!"
 msgstr ""
 
-#: views/view.main.list.php:77
+#: views/view.main.list.php:135
 msgid "Custom feature codes"
 msgstr ""
 
-#: views/view.main.list.php:53
+#: views/view.main.list.php:51
 msgid "Customize"
 msgstr "Personalizza"
 
-#: Featurecodeadmin.class.php:325 views/view.main.list.php:26
-#: views/view.main.list.php:88
+#: Featurecodeadmin.class.php:340 views/view.main.list.php:100
+#: views/view.main.list.php:146
 msgid "Description"
 msgstr "Descrizione"
 
-#: views/view.main.list.php:57
+#: views/view.main.list.php:53
 msgid "Enabled"
 msgstr "Abilitato"
 
@@ -64,15 +64,15 @@ msgstr ""
 msgid "Feature Code Admin"
 msgstr "Amministrazione Codici Servizi"
 
-#: views/view.main.list.php:10
+#: views/view.main.list.php:84
 msgid "Feature Code Conflicts with other Extensions"
 msgstr "Codice Servizio in conflitto con altri Interni"
 
-#: Featurecodeadmin.class.php:324 featurecodeadmin.i18n.php:10
+#: Featurecodeadmin.class.php:339 featurecodeadmin.i18n.php:10
 msgid "Feature Codes"
 msgstr "Codici Servizi"
 
-#: Featurecodeadmin.class.php:461
+#: Featurecodeadmin.class.php:476
 #, php-format
 msgid "Featurecode: %s (%s:%s)"
 msgstr ""
@@ -101,7 +101,7 @@ msgid ""
 "will dial on their phones to use that particular feature."
 msgstr ""
 
-#: views/view.main.list.php:9
+#: views/view.main.list.php:83
 msgid ""
 "You have feature code conflicts with extension numbers in other modules. "
 "This will result in unexpected and broken behavior."

@@ -2,7 +2,7 @@
 	<rawname>featurecodeadmin</rawname>
 	<repo>standard</repo>
 	<name>Feature Code Admin</name>
-	<version>16.0.9</version>
+	<version>16.0.10</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -15,6 +15,7 @@
 		<featurecodeadmin>Feature Codes</featurecodeadmin>
 	</menuitems>
 	<changelog>
+		*16.0.10* FREEPBX-23698 
 		*16.0.9* Packaging of ver 16.0.9
 		*16.0.8* FREEPBX-23866 
 		*16.0.7* FREEPBX-23849 
@@ -38,7 +39,7 @@
 	</hooks>
 	<depends>
 		<version>16.0</version>
-		<module>core ge 13.0.117.1</module>
+		<module>core ge 16.0.67</module>
 	</depends>
 	<supported>
 		<version>16.0</version>
