@@ -192,30 +192,18 @@ class Featurecodeadmin implements \BMO {
 				$title = ucfirst($thismodule);
 				$modules[$thismodule]['title'] = $title;
 			}
-			$id = sprintf("%s_%s", $item['modulename'], $item['featurename']);
-
-			$item_data = array(
-				'title' 	=> $featuredesc,
-				'id' 		=> $id,
-				'module' 	=> $item['modulename'],
-				'feature' 	=> $item['featurename'],
-				'default' 	=> $default,
-				'iscustom' 	=> ($custom != ''),
-				'code' 		=> $code,
+			$modules[$thismodule]['items'][] = array(
+				'title' => $featuredesc,
+				'id' => sprintf("%s_%s", $item['modulename'], $item['featurename']),
+				'module' => $item['modulename'],
+				'feature' => $item['featurename'],
+				'default' => $default,
+				'iscustom' => ($custom != ''),
+				'code' => $code,
 				'isenabled' => ($item['featureenabled'] == 1 ? true : false),
-				'custom' 	=> $custom,
-				'help' 		=> $help,
-				'depend' 	=> $item['depend'],
+				'custom' => $custom,
+				'help' => $help
 			);
-
-			if (empty($item_data['depend']))
-			{
-				$modules[$thismodule]['items'][$item_data['feature']] = $item_data;
-			}
-			else
-			{
-				$modules[$thismodule]['items'][$item_data['depend']]['subitems'][$item_data['feature']] = $item_data;
-			}
 		}
 
 		$conf_mode = $this->freepbx_conf->get_conf_setting('AMPEXTENSIONS');
@@ -227,16 +215,13 @@ class Featurecodeadmin implements \BMO {
 				if(isset($modules['core']))
 				{
 					$new_items = array();
-					if (! empty($modules['core']['items']))
+					foreach($modules['core']['items'] as $tmp_item)
 					{
-						foreach($modules['core']['items'] as $tmp_item)
+						if($tmp_item['id'] == 'core_userlogoff' || $tmp_item['id'] == 'core_userlogon')
 						{
-							if($tmp_item['id'] == 'core_userlogoff' || $tmp_item['id'] == 'core_userlogon')
-							{
-								continue;
-							}
-							$new_items[] = $tmp_item;
+							continue;
 						}
+						$new_items[] = $tmp_item;
 					}
 					$modules['core']['items'] = $new_items;
 				}
