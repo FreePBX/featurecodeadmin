@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-28 06:42+0000\n"
+"POT-Creation-Date: 2023-01-02 06:48+0000\n"
 "PO-Revision-Date: 2018-05-08 06:31+0000\n"
 "Last-Translator: Maurizio Longhitano <mlonghitano@teampower.it>\n"
 "Language-Team: Italian <http://*/projects/freepbx/featurecodeadmin/it/>\n"
@@ -13,11 +13,11 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.19.1\n"
 
-#: Featurecodeadmin.class.php:165
+#: Featurecodeadmin.class.php:161
 msgid "(none)"
 msgstr ""
 
-#: views/view.main.list.php:32 views/view.main.php:47
+#: views/view.main.list.php:106
 msgid "Actions"
 msgstr "Azioni"
 
@@ -25,59 +25,59 @@ msgstr "Azioni"
 msgid "Admin"
 msgstr "Amministrazione"
 
-#: Featurecodeadmin.class.php:330 views/view.main.list.php:29
-#: views/view.main.list.php:91 views/view.main.php:44 views/view.main.php:105
+#: Featurecodeadmin.class.php:341 views/view.main.list.php:103
+#: views/view.main.list.php:149
 msgid "Code"
 msgstr "Codice"
 
-#: views/view.main.php:10 views/view.main.toolbar.php:6
+#: views/view.main.toolbar.php:9
 msgid "Collapse All"
 msgstr ""
 
-#: Featurecodeadmin.class.php:114
+#: Featurecodeadmin.class.php:110
 #, php-format
 msgid "Command [%s] not valid!"
 msgstr ""
 
-#: views/view.main.list.php:77
+#: views/view.main.list.php:135
 msgid "Custom feature codes"
 msgstr ""
 
-#: views/view.main.list.php:53 views/view.main.php:68
+#: views/view.main.list.php:51
 msgid "Customize"
 msgstr "Personalizza"
 
-#: Featurecodeadmin.class.php:329 views/view.main.list.php:26
-#: views/view.main.list.php:88 views/view.main.php:41 views/view.main.php:102
+#: Featurecodeadmin.class.php:340 views/view.main.list.php:100
+#: views/view.main.list.php:146
 msgid "Description"
 msgstr "Descrizione"
 
-#: views/view.main.list.php:57 views/view.main.php:72
+#: views/view.main.list.php:53
 msgid "Enabled"
 msgstr "Abilitato"
 
-#: views/view.main.php:9 views/view.main.toolbar.php:5
+#: views/view.main.toolbar.php:10
 msgid "Expand All"
 msgstr ""
 
-#: featurecodeadmin.i18n.php:4 views/page.main.php:2 views/view.main.php:2
+#: featurecodeadmin.i18n.php:4 views/view.main.toolbar.php:5
 msgid "Feature Code Admin"
 msgstr "Amministrazione Codici Servizi"
 
-#: views/view.main.list.php:10
+#: views/view.main.list.php:84
 msgid "Feature Code Conflicts with other Extensions"
 msgstr "Codice Servizio in conflitto con altri Interni"
 
-#: Featurecodeadmin.class.php:328 featurecodeadmin.i18n.php:10
+#: Featurecodeadmin.class.php:339 featurecodeadmin.i18n.php:10
 msgid "Feature Codes"
 msgstr "Codici Servizi"
 
-#: Featurecodeadmin.class.php:465
+#: Featurecodeadmin.class.php:476
 #, php-format
 msgid "Featurecode: %s (%s:%s)"
 msgstr ""
 
-#: Featurecodeadmin.class.php:70
+#: Featurecodeadmin.class.php:66
 #, php-format
 msgid "Page Not Found (%s)!!!!"
 msgstr ""
@@ -86,11 +86,11 @@ msgstr ""
 msgid "Please enter a Feature Code or uncheck Customize"
 msgstr "Inserire un Codice Servizio o deselezionare Personalizza"
 
-#: Featurecodeadmin.class.php:83
+#: Featurecodeadmin.class.php:79
 msgid "Reset"
 msgstr "Reset"
 
-#: Featurecodeadmin.class.php:88
+#: Featurecodeadmin.class.php:84
 msgid "Submit"
 msgstr "Invia"
 
@@ -101,7 +101,7 @@ msgid ""
 "will dial on their phones to use that particular feature."
 msgstr ""
 
-#: views/view.main.list.php:9
+#: views/view.main.list.php:83
 msgid ""
 "You have feature code conflicts with extension numbers in other modules. "
 "This will result in unexpected and broken behavior."
