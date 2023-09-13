@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-02 06:48+0000\n"
+"POT-Creation-Date: 2023-09-13 05:18+0000\n"
 "PO-Revision-Date: 2014-05-28 14:18+0200\n"
 "Last-Translator: Kevin <kevin@qloog.com>\n"
 "Language-Team: Japanese <http://git.freepbx.org/projects/freepbx/"
@@ -49,7 +49,7 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 1.9-dev\n"
 
-#: Featurecodeadmin.class.php:161
+#: Featurecodeadmin.class.php:162
 msgid "(none)"
 msgstr ""
 
@@ -57,11 +57,7 @@ msgstr ""
 msgid "Actions"
 msgstr ""
 
-#: featurecodeadmin.i18n.php:6
-msgid "Admin"
-msgstr "アドミン"
-
-#: Featurecodeadmin.class.php:341 views/view.main.list.php:103
+#: Featurecodeadmin.class.php:342 views/view.main.list.php:103
 #: views/view.main.list.php:149
 msgid "Code"
 msgstr ""
@@ -70,7 +66,7 @@ msgstr ""
 msgid "Collapse All"
 msgstr ""
 
-#: Featurecodeadmin.class.php:110
+#: Featurecodeadmin.class.php:111
 #, php-format
 msgid "Command [%s] not valid!"
 msgstr ""
@@ -83,7 +79,7 @@ msgstr ""
 msgid "Customize"
 msgstr ""
 
-#: Featurecodeadmin.class.php:340 views/view.main.list.php:100
+#: Featurecodeadmin.class.php:341 views/view.main.list.php:100
 #: views/view.main.list.php:146
 msgid "Description"
 msgstr ""
@@ -96,7 +92,7 @@ msgstr "有効"
 msgid "Expand All"
 msgstr ""
 
-#: featurecodeadmin.i18n.php:4 views/view.main.toolbar.php:5
+#: views/view.main.toolbar.php:5
 msgid "Feature Code Admin"
 msgstr "機能コード管理"
 
@@ -104,16 +100,16 @@ msgstr "機能コード管理"
 msgid "Feature Code Conflicts with other Extensions"
 msgstr "他の内線との機能コードの衝突"
 
-#: Featurecodeadmin.class.php:339 featurecodeadmin.i18n.php:10
+#: Featurecodeadmin.class.php:340
 msgid "Feature Codes"
 msgstr "機能コード"
 
-#: Featurecodeadmin.class.php:476
+#: Featurecodeadmin.class.php:477
 #, php-format
 msgid "Featurecode: %s (%s:%s)"
 msgstr ""
 
-#: Featurecodeadmin.class.php:66
+#: Featurecodeadmin.class.php:67
 #, php-format
 msgid "Page Not Found (%s)!!!!"
 msgstr ""
@@ -122,19 +118,12 @@ msgstr ""
 msgid "Please enter a Feature Code or uncheck Customize"
 msgstr ""
 
-#: Featurecodeadmin.class.php:79
+#: Featurecodeadmin.class.php:80
 msgid "Reset"
 msgstr ""
 
-#: Featurecodeadmin.class.php:84
+#: Featurecodeadmin.class.php:85
 msgid "Submit"
-msgstr ""
-
-#: featurecodeadmin.i18n.php:8
-msgid ""
-"The Feature Codes Module is used to enable and disable certain features "
-"available in your PBX and Asterisk, and to set the codes that local users "
-"will dial on their phones to use that particular feature."
 msgstr ""
 
 #: views/view.main.list.php:83
@@ -144,6 +133,9 @@ msgid ""
 msgstr ""
 "他のモジュールと機能コードが衝突しています。動作が不定となりエラーが発生する"
 "可能性があります。"
+
+#~ msgid "Admin"
+#~ msgstr "アドミン"
 
 #~ msgid "Featurecode: "
 #~ msgstr "機能コード: "
