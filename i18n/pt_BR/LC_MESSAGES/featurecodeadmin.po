@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-02 06:48+0000\n"
+"POT-Creation-Date: 2023-09-13 05:18+0000\n"
 "PO-Revision-Date: 2016-12-11 22:46+0200\n"
 "Last-Translator: Alexander <alexander.schley@paranagua.pr.gov.br>\n"
 "Language-Team: Portuguese (Brazil) <http://weblate.freepbx.org/projects/"
@@ -34,7 +34,7 @@ msgstr ""
 "X-Poedit-Country: BRAZIL\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: Featurecodeadmin.class.php:161
+#: Featurecodeadmin.class.php:162
 msgid "(none)"
 msgstr ""
 
@@ -42,11 +42,7 @@ msgstr ""
 msgid "Actions"
 msgstr "Ações"
 
-#: featurecodeadmin.i18n.php:6
-msgid "Admin"
-msgstr "Admin"
-
-#: Featurecodeadmin.class.php:341 views/view.main.list.php:103
+#: Featurecodeadmin.class.php:342 views/view.main.list.php:103
 #: views/view.main.list.php:149
 msgid "Code"
 msgstr "Código"
@@ -55,7 +51,7 @@ msgstr "Código"
 msgid "Collapse All"
 msgstr ""
 
-#: Featurecodeadmin.class.php:110
+#: Featurecodeadmin.class.php:111
 #, php-format
 msgid "Command [%s] not valid!"
 msgstr ""
@@ -68,7 +64,7 @@ msgstr ""
 msgid "Customize"
 msgstr "Personalizar"
 
-#: Featurecodeadmin.class.php:340 views/view.main.list.php:100
+#: Featurecodeadmin.class.php:341 views/view.main.list.php:100
 #: views/view.main.list.php:146
 msgid "Description"
 msgstr "Descrição"
@@ -81,7 +77,7 @@ msgstr "Habilitado"
 msgid "Expand All"
 msgstr ""
 
-#: featurecodeadmin.i18n.php:4 views/view.main.toolbar.php:5
+#: views/view.main.toolbar.php:5
 msgid "Feature Code Admin"
 msgstr "Admin Códigos de Recurso"
 
@@ -89,16 +85,16 @@ msgstr "Admin Códigos de Recurso"
 msgid "Feature Code Conflicts with other Extensions"
 msgstr "Código de Recurso Conflita com outros Ramais"
 
-#: Featurecodeadmin.class.php:339 featurecodeadmin.i18n.php:10
+#: Featurecodeadmin.class.php:340
 msgid "Feature Codes"
 msgstr "Códigos de Recurso"
 
-#: Featurecodeadmin.class.php:476
+#: Featurecodeadmin.class.php:477
 #, php-format
 msgid "Featurecode: %s (%s:%s)"
 msgstr ""
 
-#: Featurecodeadmin.class.php:66
+#: Featurecodeadmin.class.php:67
 #, php-format
 msgid "Page Not Found (%s)!!!!"
 msgstr ""
@@ -107,20 +103,13 @@ msgstr ""
 msgid "Please enter a Feature Code or uncheck Customize"
 msgstr "Insira um Código de Função ou desmarque Personalizar"
 
-#: Featurecodeadmin.class.php:79
+#: Featurecodeadmin.class.php:80
 msgid "Reset"
 msgstr "Reiniciar"
 
-#: Featurecodeadmin.class.php:84
+#: Featurecodeadmin.class.php:85
 msgid "Submit"
 msgstr "Enviar"
-
-#: featurecodeadmin.i18n.php:8
-msgid ""
-"The Feature Codes Module is used to enable and disable certain features "
-"available in your PBX and Asterisk, and to set the codes that local users "
-"will dial on their phones to use that particular feature."
-msgstr ""
 
 #: views/view.main.list.php:83
 msgid ""
@@ -129,6 +118,9 @@ msgid ""
 msgstr ""
 "Você tem um código de recurso que conflita com os números de ramais nos "
 "outros módulos. Isto irá resultar em um comportamento errado inesperado."
+
+#~ msgid "Admin"
+#~ msgstr "Admin"
 
 #~ msgid "Featurecode: "
 #~ msgstr "Código de recurso: "

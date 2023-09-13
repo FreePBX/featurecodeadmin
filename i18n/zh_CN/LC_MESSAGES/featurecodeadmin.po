@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-02 06:48+0000\n"
+"POT-Creation-Date: 2023-09-13 05:18+0000\n"
 "PO-Revision-Date: 2015-11-17 12:22+0200\n"
 "Last-Translator: james <zhulizhong@gmail.com>\n"
 "Language-Team: Simplified Chinese <http://weblate.freepbx.org/projects/"
@@ -22,7 +22,7 @@ msgstr ""
 "X-Poedit-Country: CHINA\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: Featurecodeadmin.class.php:161
+#: Featurecodeadmin.class.php:162
 msgid "(none)"
 msgstr ""
 
@@ -30,11 +30,7 @@ msgstr ""
 msgid "Actions"
 msgstr "操作"
 
-#: featurecodeadmin.i18n.php:6
-msgid "Admin"
-msgstr ""
-
-#: Featurecodeadmin.class.php:341 views/view.main.list.php:103
+#: Featurecodeadmin.class.php:342 views/view.main.list.php:103
 #: views/view.main.list.php:149
 msgid "Code"
 msgstr "代码热键"
@@ -43,7 +39,7 @@ msgstr "代码热键"
 msgid "Collapse All"
 msgstr ""
 
-#: Featurecodeadmin.class.php:110
+#: Featurecodeadmin.class.php:111
 #, php-format
 msgid "Command [%s] not valid!"
 msgstr ""
@@ -56,7 +52,7 @@ msgstr ""
 msgid "Customize"
 msgstr "自定义"
 
-#: Featurecodeadmin.class.php:340 views/view.main.list.php:100
+#: Featurecodeadmin.class.php:341 views/view.main.list.php:100
 #: views/view.main.list.php:146
 msgid "Description"
 msgstr "描述"
@@ -69,7 +65,7 @@ msgstr "启用"
 msgid "Expand All"
 msgstr ""
 
-#: featurecodeadmin.i18n.php:4 views/view.main.toolbar.php:5
+#: views/view.main.toolbar.php:5
 msgid "Feature Code Admin"
 msgstr "功能代码管理"
 
@@ -77,16 +73,16 @@ msgstr "功能代码管理"
 msgid "Feature Code Conflicts with other Extensions"
 msgstr "功能代码与其他分机有冲突"
 
-#: Featurecodeadmin.class.php:339 featurecodeadmin.i18n.php:10
+#: Featurecodeadmin.class.php:340
 msgid "Feature Codes"
 msgstr "功能代码"
 
-#: Featurecodeadmin.class.php:476
+#: Featurecodeadmin.class.php:477
 #, php-format
 msgid "Featurecode: %s (%s:%s)"
 msgstr ""
 
-#: Featurecodeadmin.class.php:66
+#: Featurecodeadmin.class.php:67
 #, php-format
 msgid "Page Not Found (%s)!!!!"
 msgstr ""
@@ -95,20 +91,13 @@ msgstr ""
 msgid "Please enter a Feature Code or uncheck Customize"
 msgstr "请输入功能代码热键或者未检查的自定义代码"
 
-#: Featurecodeadmin.class.php:79
+#: Featurecodeadmin.class.php:80
 msgid "Reset"
 msgstr "重置"
 
-#: Featurecodeadmin.class.php:84
+#: Featurecodeadmin.class.php:85
 msgid "Submit"
 msgstr "提交"
-
-#: featurecodeadmin.i18n.php:8
-msgid ""
-"The Feature Codes Module is used to enable and disable certain features "
-"available in your PBX and Asterisk, and to set the codes that local users "
-"will dial on their phones to use that particular feature."
-msgstr ""
 
 #: views/view.main.list.php:83
 msgid ""

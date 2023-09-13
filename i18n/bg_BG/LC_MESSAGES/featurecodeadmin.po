@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX v2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-02 06:48+0000\n"
+"POT-Creation-Date: 2023-09-13 05:18+0000\n"
 "PO-Revision-Date: 2021-07-04 04:43+0000\n"
 "Last-Translator: Chavdar Shtiliyanov <chavdar_75@yahoo.com>\n"
 "Language-Team: Bulgarian <http://weblate.freepbx.org/projects/freepbx/"
@@ -22,7 +22,7 @@ msgstr ""
 "X-Poedit-Country: BULGARIA\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: Featurecodeadmin.class.php:161
+#: Featurecodeadmin.class.php:162
 msgid "(none)"
 msgstr ""
 
@@ -30,11 +30,7 @@ msgstr ""
 msgid "Actions"
 msgstr "Действия"
 
-#: featurecodeadmin.i18n.php:6
-msgid "Admin"
-msgstr "Админ"
-
-#: Featurecodeadmin.class.php:341 views/view.main.list.php:103
+#: Featurecodeadmin.class.php:342 views/view.main.list.php:103
 #: views/view.main.list.php:149
 msgid "Code"
 msgstr "Код"
@@ -43,7 +39,7 @@ msgstr "Код"
 msgid "Collapse All"
 msgstr ""
 
-#: Featurecodeadmin.class.php:110
+#: Featurecodeadmin.class.php:111
 #, php-format
 msgid "Command [%s] not valid!"
 msgstr ""
@@ -56,7 +52,7 @@ msgstr ""
 msgid "Customize"
 msgstr "Персонализиране"
 
-#: Featurecodeadmin.class.php:340 views/view.main.list.php:100
+#: Featurecodeadmin.class.php:341 views/view.main.list.php:100
 #: views/view.main.list.php:146
 msgid "Description"
 msgstr "Описание"
@@ -69,7 +65,7 @@ msgstr "Разрешен"
 msgid "Expand All"
 msgstr ""
 
-#: featurecodeadmin.i18n.php:4 views/view.main.toolbar.php:5
+#: views/view.main.toolbar.php:5
 msgid "Feature Code Admin"
 msgstr "Специални Кодове"
 
@@ -77,16 +73,16 @@ msgstr "Специални Кодове"
 msgid "Feature Code Conflicts with other Extensions"
 msgstr "Специалният Код е в конфликт с други Вътрешни Номера"
 
-#: Featurecodeadmin.class.php:339 featurecodeadmin.i18n.php:10
+#: Featurecodeadmin.class.php:340
 msgid "Feature Codes"
 msgstr "Специални Кодове"
 
-#: Featurecodeadmin.class.php:476
+#: Featurecodeadmin.class.php:477
 #, php-format
 msgid "Featurecode: %s (%s:%s)"
 msgstr ""
 
-#: Featurecodeadmin.class.php:66
+#: Featurecodeadmin.class.php:67
 #, php-format
 msgid "Page Not Found (%s)!!!!"
 msgstr ""
@@ -95,24 +91,13 @@ msgstr ""
 msgid "Please enter a Feature Code or uncheck Customize"
 msgstr "Моля въведете Специален Код или размаркирайте Персонализиране"
 
-#: Featurecodeadmin.class.php:79
+#: Featurecodeadmin.class.php:80
 msgid "Reset"
 msgstr "Изчисти"
 
-#: Featurecodeadmin.class.php:84
+#: Featurecodeadmin.class.php:85
 msgid "Submit"
 msgstr "Приеми"
-
-#: featurecodeadmin.i18n.php:8
-msgid ""
-"The Feature Codes Module is used to enable and disable certain features "
-"available in your PBX and Asterisk, and to set the codes that local users "
-"will dial on their phones to use that particular feature."
-msgstr ""
-"Модулът Специални Кодове се използва за включване и изключване на определени "
-"функции, налични във вашата централа и Asterisk, и за задаване на кодовете, "
-"които местните потребители ще набират на телефоните си за да използват тази "
-"конкретна функция."
 
 #: views/view.main.list.php:83
 msgid ""
@@ -121,6 +106,19 @@ msgid ""
 msgstr ""
 "Вие имате специален код, който е в конфликт с вътрешни номера в други "
 "модули. Това може да доведе до неочакван и неправилен режим на работа."
+
+#~ msgid "Admin"
+#~ msgstr "Админ"
+
+#~ msgid ""
+#~ "The Feature Codes Module is used to enable and disable certain features "
+#~ "available in your PBX and Asterisk, and to set the codes that local users "
+#~ "will dial on their phones to use that particular feature."
+#~ msgstr ""
+#~ "Модулът Специални Кодове се използва за включване и изключване на "
+#~ "определени функции, налични във вашата централа и Asterisk, и за задаване "
+#~ "на кодовете, които местните потребители ще набират на телефоните си за да "
+#~ "използват тази конкретна функция."
 
 #~ msgid "Featurecode: "
 #~ msgstr "Специален Код: "

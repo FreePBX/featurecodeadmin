@@ -2,7 +2,7 @@
 	<rawname>featurecodeadmin</rawname>
 	<repo>standard</repo>
 	<name>Feature Code Admin</name>
-	<version>17.0.1</version>
+	<version>17.0.2</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -10,11 +10,12 @@
 	<canuninstall>no</canuninstall>
 	<category>Admin</category>
   	<description>The Feature Codes Module is used to enable and disable certain features available in your PBX and Asterisk, and to set the codes that local users will dial on their phones to use that particular feature.</description>
-  	<more-info>https://wiki.freepbx.org/display/FPG/Feature+Codes+Module</more-info>
+  	<more-info>https://sangomakb.atlassian.net/wiki/spaces/PG/pages/20873386/PBX+GUI+-+Feature+Codes+Module</more-info>
 	<menuitems>
 		<featurecodeadmin>Feature Codes</featurecodeadmin>
 	</menuitems>
 	<changelog>
+		*17.0.2* Packaging of ver 17.0.2
 		*17.0.1* 17.0 release
 	</changelog>
 	<hooks>
