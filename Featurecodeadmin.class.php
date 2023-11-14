@@ -210,7 +210,11 @@ class Featurecodeadmin implements \BMO {
 
 			if (empty($item_data['depend']))
 			{
-				$modules[$thismodule]['items'][$item_data['feature']] = $item_data;
+				if( array_key_exists('items',$modules[$thismodule]) && array_key_exists($item_data['feature'],$modules[$thismodule]['items']) ){
+					$modules[$thismodule]['items'][$item_data['feature']] = array_merge( $modules[$thismodule]['items'][$item_data['feature']], $item_data );
+				}else{
+					$modules[$thismodule]['items'][$item_data['feature']] = $item_data;
+				}
 			}
 			else
 			{
