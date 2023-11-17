@@ -10,69 +10,73 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-01-21 10:51+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2023-11-17 14:03+0000\n"
+"Last-Translator: Szymon Wysokinski <szymon.wysokinski@sqspolska.pl>\n"
+"Language-Team: Polish <http://weblate.freepbx.org/projects/freepbx/"
+"featurecodeadmin/pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 3.0.1\n"
 
 #: views/main.php:32
 msgid "Actions"
-msgstr ""
+msgstr "Działania"
 
 #: featurecodeadmin.i18n.php:6
 msgid "Admin"
-msgstr ""
+msgstr "Administrator"
 
 #: Featurecodeadmin.class.php:65
 #: views/main.php:29
 msgid "Code"
-msgstr ""
+msgstr "Kody"
 
 #: views/main.php:53
 msgid "Customize"
-msgstr ""
+msgstr "Dostosuj"
 
 #: Featurecodeadmin.class.php:64
 #: views/main.php:26
 msgid "Description"
-msgstr ""
+msgstr "Opis"
 
 #: views/main.php:57
 msgid "Enabled"
-msgstr ""
+msgstr "Włączony"
 
 #: featurecodeadmin.i18n.php:4
 #: views/main.php:9
 msgid "Feature Code Admin"
-msgstr ""
+msgstr "Administrator kodów funkcji"
 
 #: page.featurecodeadmin.php:44
 msgid "Feature Code Conflicts with other Extensions"
-msgstr ""
+msgstr "Kod funkcji powoduje konflikt z innymi numerami"
 
 #: Featurecodeadmin.class.php:62
 #: featurecodeadmin.i18n.php:10
 msgid "Feature Codes"
-msgstr ""
+msgstr "Kody funkcji"
 
 #: functions.inc.php:20
 msgid "Featurecode: "
-msgstr ""
+msgstr "Kod funkcji: "
 
 #: assets/js/featurecodeadmin.js:29
 msgid "Please enter a Feature Code or uncheck Customize"
-msgstr ""
+msgstr "Proszę podać kod funkcji lub odznacz opcję Dostosuj"
 
 #: Featurecodeadmin.class.php:25
 msgid "Reset"
-msgstr ""
+msgstr "Zresetuj"
 
 #: Featurecodeadmin.class.php:30
 msgid "Submit"
-msgstr ""
+msgstr "Wyślij"
 
 #: featurecodeadmin.i18n.php:8
 msgid ""
@@ -80,9 +84,15 @@ msgid ""
 "available in your PBX and Asterisk, and to set the codes that local users "
 "will dial on their phones to use that particular feature."
 msgstr ""
+"Moduł kodów funkcji służy do włączania i wyłączania niektórych funkcji "
+"dostępnych w centrali PBX i Asterisk oraz do ustawiania kodów, które lokalni "
+"użytkownicy mogą wybrać na swoich telefonach, aby korzystać z tej konkretnej "
+"funkcji."
 
 #: page.featurecodeadmin.php:42
 msgid ""
 "You have feature code conflicts with extension numbers in other modules. "
 "This will result in unexpected and broken behavior."
 msgstr ""
+"Występują konflikty kodów funkcji z numerami wewnętrznymi w innych modułach. "
+"Spowoduje to nieoczekiwane i błędne zachowania systemu."
