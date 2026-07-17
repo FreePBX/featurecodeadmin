@@ -2,7 +2,7 @@
 	<rawname>featurecodeadmin</rawname>
 	<repo>standard</repo>
 	<name>Feature Code Admin</name>
-	<version>17.0.2</version>
+	<version>18.0.1</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -15,8 +15,7 @@
 		<featurecodeadmin>Feature Codes</featurecodeadmin>
 	</menuitems>
 	<changelog>
-		*17.0.2* Packaging of ver 17.0.2
-		*17.0.1* 17.0 release
+		*18.0.1* initial release
 	</changelog>
 	<hooks>
 		<featurecodeadmin class="Printextensions" namespace="FreePBX\modules">
@@ -30,11 +29,11 @@
 		</framework>
 	</hooks>
 	<depends>
-		<version>17.0</version>
-		<module>core ge 13.0.117.1</module>
+		<version>18.0</version>
+		<module>core ge 18.0.1</module>
 	</depends>
 	<supported>
-		<version>17.0</version>
+		<version>18.0</version>
 	</supported>
 	<md5sum>8d3a776210d49d0fd03b66cd51e5b23d</md5sum>
 	<location>release/2.11/featurecodeadmin-2.11.0.0.tgz</location>
