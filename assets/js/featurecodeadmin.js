@@ -37,7 +37,7 @@ $(function() {
 		fcs = [],
 		error = null;
 
-		$(".code").each(function(i, v) {
+		$(".extdisplay").each(function(i, v) {
 			var input = $(v);
 			fcs.push(input.val());
 			if (!input.prop("readonly") && input.val().trim() === "") {

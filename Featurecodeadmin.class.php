@@ -2,19 +2,18 @@
 //	License for all code of this FreePBX module can be found in the license file inside the module directory
 //	Copyright (C) 2014 Schmooze Com Inc.
 namespace FreePBX\modules;
-#[\AllowDynamicProperties]
 class Featurecodeadmin implements \BMO {
 
 	const ASTERISK_SECTION = 'ext-featurecodes';
+
+	private \FreePBX $FreePBX;
 
 	public function __construct($freepbx = null) {
 		if ($freepbx == null) {
 			throw new \Exception("Not given a FreePBX Object");
 		}
-		global $freepbx_conf;
 
 		$this->FreePBX = $freepbx;
-		$this->freepbx_conf = &$freepbx_conf;
 	}
 
 	public function install() {}
@@ -219,10 +218,10 @@ class Featurecodeadmin implements \BMO {
 			}
 		}
 
-		$conf_mode = $this->freepbx_conf->get_conf_setting('AMPEXTENSIONS');
+		$conf_mode = $this->FreePBX->Config->get_conf_setting('AMPEXTENSIONS');
 		if($conf_mode == 'extensions')
 		{
-			$featurecode_settings = $this->freepbx_conf->get_conf_setting('EXPOSE_ALL_FEATURE_CODES');
+			$featurecode_settings = $this->FreePBX->Config->get_conf_setting('EXPOSE_ALL_FEATURE_CODES');
 			if(!$featurecode_settings)
 			{
 				if(isset($modules['core']))
@@ -260,7 +259,7 @@ class Featurecodeadmin implements \BMO {
 			* is created. However, the logic would be the same, thus my willingness to put in such a kludge for now. When the schema changes to add this
 			* then this can be updated to reflect that
 			*/
-			if (($result['featureenabled'] == 1) && ($result['moduleenabled'] == 1) && substr($result['featuredescription'],0,16) != 'In-Call Asterisk')
+			if (($result['featureenabled'] == 1) && ($result['moduleenabled'] == 1) && substr((string)($result['featuredescription'] ?? ''), 0, 16) != 'In-Call Asterisk')
 			{
 				$exten_arr[] = ($result['customcode'] != '')?$result['customcode']:$result['defaultcode'];
 			}
@@ -444,7 +443,7 @@ class Featurecodeadmin implements \BMO {
 	public function destinations_getdestinfo($dest)
 	{
 		$srt_section = sprintf("%s,", self::ASTERISK_SECTION);
-		if (substr(trim($dest),0, strlen($srt_section)) == $srt_section)
+		if (is_string($dest) && substr(trim($dest),0, strlen($srt_section)) == $srt_section)
 		{
 			$dest = explode(',', $dest);
 			$exten = $dest[1];
@@ -462,7 +461,7 @@ class Featurecodeadmin implements \BMO {
 		return false;
 	}
 
-	function destinations_check_extensions($exten=true) {
+	public function destinations_check_extensions($exten=true) {
 		$extenlist = array();
 		if (is_array($exten) && empty($exten)) {
 			return $extenlist;
@@ -505,6 +504,6 @@ class Featurecodeadmin implements \BMO {
 	 * 
 	 */
 	public function getAllFeaturesDetailed($sort_module=true) {
-		return \featurecodes_getAllFeaturesDetailed($sort_module);
+		return \featurecodes_getAllFeaturesDetailed($sort_module) ?? array();
 	}
 }

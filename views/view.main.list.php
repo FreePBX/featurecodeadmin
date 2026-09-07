@@ -1,5 +1,5 @@
 <?php
-function get_new_row($item, $itemParent = null)
+function get_new_row($item, $itemParent = null, $conflict = array())
 {
 	$new_row = '
 	<div class="element-container %%__HAS-ERROR__%%">
@@ -113,12 +113,12 @@ $any_show_all = true;
 					{
 						foreach($data['items'] as $item)
 						{
-							echo get_new_row($item);
+							echo get_new_row($item, null, $conflict);
 							if (! empty($item['subitems']) && ($item['isenabled'] || $any_show_all))
 							{
 								foreach($item['subitems'] as $subitem)
 								{
-									echo get_new_row($subitem, $item);
+									echo get_new_row($subitem, $item, $conflict);
 								}
 							}
 						}
@@ -153,7 +153,7 @@ $any_show_all = true;
                     </div>	
                     <?php
                         foreach($moduleCustomFeaturecodes['customCodes'] as $code):
-                        isset($moduleCustomFeaturecodes['featureCode']) ? $featurecode = $moduleCustomFeaturecodes['featureCode'] : '';
+                        $featurecode = $moduleCustomFeaturecodes['featureCode'] ?? '';
                         ?>
                         <div class="element-container">
                             <div class="row">
